@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "chariot",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 7,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "戦車"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "directed-will",
+      "integrated-forces",
+      "forward-motion"
+    ],
+    "prohibitedThemeIds": [
+      "speed-without-direction",
+      "domination-as-victory"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "相反する力を一つの方向へ束ね、意志を移動と達成へ変える推進力。",
+      "journeyStage": "選んだ道を現実に進み、外界の抵抗と自分の揺れを制御する段階。",
+      "coreTension": "目的に向かう統率と、速度や勝利に取りつかれることのあいだ。",
+      "developmentalTask": "進む方向を明確にし、勢いの異なる力を抑圧せず協調させる。",
+      "lightAspects": [
+        "推進力",
+        "意志",
+        "統率",
+        "達成"
+      ],
+      "shadowAspects": [
+        "暴走",
+        "対立の抑圧",
+        "勝利への執着",
+        "方向喪失"
+      ],
+      "upright": {
+        "keywords": [
+          "前進",
+          "決意",
+          "統率",
+          "勝利"
+        ],
+        "core": "迷いを完全に消すのではなく、異なる力を扱いながら方向を選ぶ時を示す。",
+        "advice": "目的地と停止条件を定め、次の区間に集中する。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "excess",
+          "distorted"
+        ],
+        "keywords": [
+          "暴走",
+          "停滞",
+          "方向喪失",
+          "内部分裂"
+        ],
+        "core": "速度は出ていても方向がずれているか、相反する力が互いを止めている。",
+        "advice": "速さを落とし、目標、手段、代償が同じ方向を向いているか確認する。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "プロジェクト推進、競争、複数要素の統率",
+          "reflectionQuestion": "進捗を測る前に目的地は共有されているか。"
+        },
+        "relationships": {
+          "focus": "二人の違いを残したまま同じ方向へ進むこと",
+          "reflectionQuestion": "相手を従わせず共有できる目的は何か。"
+        },
+        "creativity": {
+          "focus": "制作の勢いと締切へ向かう集中",
+          "reflectionQuestion": "今は広げる時か、一案を走らせる時か。"
+        },
+        "self": {
+          "focus": "衝動と理性を一つの行動へまとめること",
+          "reflectionQuestion": "自分の中で別方向へ引く二つの力は何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "複数の力を統率する構図を含める",
+          "移動方向または目的地を示す"
+        ],
+        "avoid": [
+          "単純な軍事的征服だけにしない",
+          "速さそのものを成功として描かない"
+        ],
+        "visualMotifs": [
+          "二つ以上の牽引力",
+          "進路を示す線",
+          "移動する乗り物や器",
+          "手綱または制御装置"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

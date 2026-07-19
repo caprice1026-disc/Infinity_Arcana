@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "strength",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 8,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "力"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "gentle-courage",
+      "inner-mastery",
+      "compassionate-restraint"
+    ],
+    "prohibitedThemeIds": [
+      "brute-force",
+      "emotion-erasure"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "本能や恐れを力で押し潰さず、忍耐と慈しみによって扱う内的な勇気。",
+      "journeyStage": "外の障害より、自分の衝動、恐れ、怒りとの関係を学ぶ段階。",
+      "coreTension": "感情を受け止めて導くことと、抑圧または放任することのあいだ。",
+      "developmentalTask": "弱さを敵とせず、持続可能な強さへ変える。",
+      "lightAspects": [
+        "勇気",
+        "忍耐",
+        "慈しみ",
+        "自己統制"
+      ],
+      "shadowAspects": [
+        "自己否定",
+        "感情の抑圧",
+        "力任せ",
+        "自信喪失"
+      ],
+      "upright": {
+        "keywords": [
+          "内なる力",
+          "勇気",
+          "忍耐",
+          "慈愛"
+        ],
+        "core": "状況をねじ伏せるより、反応を選べる静かな強さが必要である。",
+        "advice": "消したい感情の役割を認め、傷つけない扱い方を一つ選ぶ。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "deficiency",
+          "excess"
+        ],
+        "keywords": [
+          "自信喪失",
+          "抑圧",
+          "衝動",
+          "消耗"
+        ],
+        "core": "強く見せることに力を使いすぎているか、自分の感情に主導権を渡している。",
+        "advice": "耐え続ける前に休息と支援を確保し、小さく制御を取り戻す。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "圧力下での冷静さ、粘り強さ、人への配慮",
+          "reflectionQuestion": "強行ではなく持続させるために何を緩めるか。"
+        },
+        "relationships": {
+          "focus": "感情の強さを傷つけず伝えること",
+          "reflectionQuestion": "怒りや恐れの下にある守りたいものは何か。"
+        },
+        "creativity": {
+          "focus": "批判への耐性と作品を育てる辛抱",
+          "reflectionQuestion": "不完全さに耐えて続けるため何が必要か。"
+        },
+        "self": {
+          "focus": "弱さを含む自己受容と回復力",
+          "reflectionQuestion": "自分に向ける言葉は他者にも向けられるものか。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "強い本能と穏やかな応答の対比を含める",
+          "支配ではなく関係性としての力を示す"
+        ],
+        "avoid": [
+          "筋力や暴力だけで表現しない",
+          "感情を消すことを成熟として描かない"
+        ],
+        "visualMotifs": [
+          "大きな生き物と静かな接触",
+          "開いた手",
+          "緩やかな輪",
+          "激しさと柔らかさの対比"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "wheel-of-fortune",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 10,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "運命の輪"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "cyclical-change",
+      "contingency",
+      "turning-point"
+    ],
+    "prohibitedThemeIds": [
+      "fixed-fate",
+      "moralized-luck"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "個人の意志だけでは制御できない周期、偶然、環境の変化が局面を動かすこと。",
+      "journeyStage": "自力で築いた方向へ、時間と外部条件の変化が介入する段階。",
+      "coreTension": "変化へ適応することと、すべてを運命のせいにして主体性を捨てることのあいだ。",
+      "developmentalTask": "制御できない変化を認め、制御できる応答へ力を使う。",
+      "lightAspects": [
+        "転機",
+        "循環",
+        "機会",
+        "適応"
+      ],
+      "shadowAspects": [
+        "宿命論",
+        "変化への抵抗",
+        "一時的な幸運への依存",
+        "不安定さ"
+      ],
+      "upright": {
+        "keywords": [
+          "転機",
+          "循環",
+          "変化",
+          "機会"
+        ],
+        "core": "停滞して見えた状況が外部条件や時間の巡りによって動き始める。",
+        "advice": "変化の波そのものではなく、波が来たときに選べる行動を準備する。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "delayed",
+          "distorted"
+        ],
+        "keywords": [
+          "停滞",
+          "反復",
+          "不運感",
+          "抵抗"
+        ],
+        "core": "同じ循環が繰り返されているか、変化を認めず古い位置へ留まろうとしている。",
+        "advice": "繰り返すパターンの中で、自分が毎回同じく選んでいる部分を一つ変える。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "市場、組織、タイミングなど外部条件の転換",
+          "reflectionQuestion": "環境が変わったとき残すものと変えるものは何か。"
+        },
+        "relationships": {
+          "focus": "関係の周期と変化する役割",
+          "reflectionQuestion": "同じ衝突が起きる直前に何が繰り返されているか。"
+        },
+        "creativity": {
+          "focus": "流行、偶然の出会い、制作周期",
+          "reflectionQuestion": "偶然の機会を受け取れる余白はあるか。"
+        },
+        "self": {
+          "focus": "人生の周期と制御可能性の識別",
+          "reflectionQuestion": "変えられないものを受け入れた後、何を選べるか。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "循環と局面転換を同時に示す",
+          "複数の位置が移り変わる構図を含める"
+        ],
+        "avoid": [
+          "善人には幸運、悪人には不運という因果にしない",
+          "未来が固定されていると描かない"
+        ],
+        "visualMotifs": [
+          "回転する構造",
+          "上昇と下降",
+          "季節や位相の変化",
+          "中心と外周"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

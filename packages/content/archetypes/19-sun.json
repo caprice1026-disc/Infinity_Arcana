@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "sun",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 19,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "太陽"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "clarity",
+      "vitality",
+      "shared-joy"
+    ],
+    "prohibitedThemeIds": [
+      "toxic-positivity",
+      "permanent-triumph"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "物事が明るみに出て、生命力、喜び、理解を他者と分かち合える状態。",
+      "journeyStage": "曖昧さを抜け、自己と世界を隠さず肯定的に経験できる段階。",
+      "coreTension": "率直な喜びと、影や限界を認めない過剰な楽観のあいだ。",
+      "developmentalTask": "成果と生命力を受け取りながら、休息や他者の影も尊重する。",
+      "lightAspects": [
+        "明晰さ",
+        "活力",
+        "喜び",
+        "成功の共有"
+      ],
+      "shadowAspects": [
+        "過信",
+        "露出過多",
+        "燃え尽き",
+        "強制的な明るさ"
+      ],
+      "upright": {
+        "keywords": [
+          "明晰",
+          "活力",
+          "喜び",
+          "成功"
+        ],
+        "core": "隠れていたことが理解可能になり、成果や喜びを率直に受け取れる局面を示す。",
+        "advice": "うまくいっている理由を言葉にし、支えた人と成果を分かち合う。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "excess",
+          "blocked",
+          "deficiency"
+        ],
+        "keywords": [
+          "過信",
+          "疲労",
+          "喜びの遮断",
+          "露出過多"
+        ],
+        "core": "良い結果が小さく見えているか、明るさを保つために疲労や問題を隠している。",
+        "advice": "成功を否定せず、同時に休息と未解決部分を認める。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "成果の可視化、透明性、チームの活力",
+          "reflectionQuestion": "成功を再現するために共有すべき要因は何か。"
+        },
+        "relationships": {
+          "focus": "率直さ、安心、共に喜ぶこと",
+          "reflectionQuestion": "遠慮せず感謝や喜びとして伝えられることは何か。"
+        },
+        "creativity": {
+          "focus": "作品の公開、分かりやすさ、遊び",
+          "reflectionQuestion": "作品の中で最も生命力がある部分はどこか。"
+        },
+        "self": {
+          "focus": "自己肯定と身体的な活力",
+          "reflectionQuestion": "自分が受け取ることを許していない喜びは何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "明るさによって物事が見える構図を含める",
+          "喜びが共有または循環することを示す"
+        ],
+        "avoid": [
+          "否定的感情を排除する明るさにしない",
+          "勝利が永続すると保証しない"
+        ],
+        "visualMotifs": [
+          "全体を照らす光源",
+          "影が短くなる空間",
+          "開かれた顔や窓",
+          "育つ生命"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

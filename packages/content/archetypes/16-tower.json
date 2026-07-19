@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "tower",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 16,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "塔"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "structural-collapse",
+      "sudden-revelation",
+      "false-foundation"
+    ],
+    "prohibitedThemeIds": [
+      "catastrophe-certainty",
+      "suffering-as-punishment"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "誤った前提や耐えられない構造が急に崩れ、隠れていた現実が露出すること。",
+      "journeyStage": "維持してきた自己像や制度が現実に耐えられず、強制的な再構築が始まる段階。",
+      "coreTension": "崩壊から真実を学ぶことと、恐怖を煽って全てを破壊することのあいだ。",
+      "developmentalTask": "壊れた外形ではなく、崩壊によって判明した弱い基礎を見つけ直す。",
+      "lightAspects": [
+        "解放的な真実",
+        "偽りの終わり",
+        "急速な再評価",
+        "再建の契機"
+      ],
+      "shadowAspects": [
+        "混乱",
+        "否認",
+        "破局への恐怖",
+        "衝動的な全破壊"
+      ],
+      "upright": {
+        "keywords": [
+          "崩壊",
+          "衝撃",
+          "露見",
+          "再構築"
+        ],
+        "core": "維持不能だった前提が崩れ、見ないで済ませていた問題へ向き合う局面を示す。",
+        "advice": "被害を限定して安全を確保し、何が壊れたかより何が最初から弱かったかを記録する。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "delayed",
+          "internalized"
+        ],
+        "keywords": [
+          "危機回避",
+          "崩壊の先送り",
+          "内的動揺",
+          "否認"
+        ],
+        "core": "大きな崩壊を避けた可能性と、必要な修正を先送りしている可能性が同時にある。",
+        "advice": "小さな警告を列挙し、制御可能な範囲で弱い構造を一つ補修または終了する。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "障害、破綻した計画、組織前提の急変",
+          "reflectionQuestion": "今回露見した単一障害点や暗黙の前提は何か。"
+        },
+        "relationships": {
+          "focus": "隠されていた事実や関係構造の急変",
+          "reflectionQuestion": "元へ戻す前に、以前から壊れていたものは何か。"
+        },
+        "creativity": {
+          "focus": "作品や構想の根本的な破棄と再構成",
+          "reflectionQuestion": "崩れた案から残すべき核は何か。"
+        },
+        "self": {
+          "focus": "自己像を揺らす発見と再建",
+          "reflectionQuestion": "失った肩書きや前提を除いても残るものは何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "高く積まれた構造と弱い基礎を示す",
+          "突然の露見とその後の再建可能性を含める"
+        ],
+        "avoid": [
+          "災害が必ず起きる予言にしない",
+          "苦しみを罰や当然の報いとして描かない"
+        ],
+        "visualMotifs": [
+          "亀裂の入った高構造",
+          "内部を照らす閃光",
+          "落下する外装",
+          "露出した基礎"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

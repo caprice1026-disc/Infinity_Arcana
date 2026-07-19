@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "world",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 21,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "世界"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "completion",
+      "integrated-wholeness",
+      "belonging"
+    ],
+    "prohibitedThemeIds": [
+      "static-perfection",
+      "end-without-renewal"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "旅で得た異なる要素が一つの全体へ統合され、完了と所属を経験すること。",
+      "journeyStage": "一つの周期を閉じ、成果を世界へ返しながら次の始まりへ余白を作る段階。",
+      "coreTension": "十分な完成を受け取ることと、完璧を求めて閉じられないことのあいだ。",
+      "developmentalTask": "未完成な部分が残っていても周期を閉じ、学びと成果を次へ渡す。",
+      "lightAspects": [
+        "完成",
+        "統合",
+        "達成",
+        "所属"
+      ],
+      "shadowAspects": [
+        "未完了",
+        "完璧主義",
+        "完了への恐れ",
+        "成功後の空白"
+      ],
+      "upright": {
+        "keywords": [
+          "完成",
+          "統合",
+          "達成",
+          "全体性"
+        ],
+        "core": "異なる経験がつながり、一つの周期を終え成果を受け取れる状態を示す。",
+        "advice": "完了条件を満たしたものを正式に閉じ、学びと成果を共有する。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "delayed",
+          "distorted"
+        ],
+        "keywords": [
+          "未完了",
+          "完璧主義",
+          "統合不足",
+          "閉じられない周期"
+        ],
+        "core": "ほぼ完成しているのに最後の一歩を避けているか、一部を排除したまま全体を名乗っている。",
+        "advice": "必須の未完了と、完璧主義が作った追加作業を分け、終了を宣言する。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "納品、節目、組織横断の統合、成果共有",
+          "reflectionQuestion": "完了を証明する条件は具体的に何か。"
+        },
+        "relationships": {
+          "focus": "一つの関係段階の成熟または完了",
+          "reflectionQuestion": "二人が得たものを認め、次の形をどう選ぶか。"
+        },
+        "creativity": {
+          "focus": "作品の完成、公開、シリーズの統合",
+          "reflectionQuestion": "改善ではなく公開を妨げている最後の執着は何か。"
+        },
+        "self": {
+          "focus": "経験を自己の一部として統合すること",
+          "reflectionQuestion": "排除していた過去の自分をどう全体へ戻すか。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "複数要素が循環する一つの全体を含める",
+          "完了の中に次の入口を残す"
+        ],
+        "avoid": [
+          "変化しない完全無欠の世界にしない",
+          "終わりを空虚な停止として描かない"
+        ],
+        "visualMotifs": [
+          "閉じた輪と小さな開口",
+          "四方を支える要素",
+          "中心で調和する姿",
+          "旅の断片が組み上がった全景"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

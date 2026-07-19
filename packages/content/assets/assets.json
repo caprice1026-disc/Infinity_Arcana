@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "catalogVersion": 1,
+  "assetRoots": [
+    {
+      "id": "sites-public",
+      "basePath": "apps/sites-lite/public/assets"
+    }
+  ],
+  "assets": [
+    {
+      "id": "card-babel-library-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/babel-library/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "cards/babel-library/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    }
+  ]
+}

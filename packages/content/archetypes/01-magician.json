@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "magician",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 1,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "魔術師"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "focused-will",
+      "skillful-action",
+      "resource-use"
+    ],
+    "prohibitedThemeIds": [
+      "effortless-miracle",
+      "power-without-agency"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "意志、技術、手元の資源を結び付け、可能性を現実の働きへ変える力。",
+      "journeyStage": "旅人が自分の能力と道具に気づき、初めて能動的に世界へ働きかける段階。",
+      "coreTension": "能力を創造へ使うことと、印象操作や支配へ使うことのあいだ。",
+      "developmentalTask": "目的を明確にし、言葉、技能、道具、行動を一つの方向へ揃える。",
+      "lightAspects": [
+        "集中",
+        "創意工夫",
+        "実行力",
+        "資源の活用"
+      ],
+      "shadowAspects": [
+        "操作",
+        "虚勢",
+        "才能の散漫",
+        "手段の目的化"
+      ],
+      "upright": {
+        "keywords": [
+          "意志",
+          "技能",
+          "実現",
+          "集中"
+        ],
+        "core": "必要な材料はすでに手元にあり、意図を行動へ変えられる状態を示す。",
+        "advice": "目的を一文で定め、いま使える道具を一つ実際に動かす。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "distorted",
+          "excess"
+        ],
+        "keywords": [
+          "空回り",
+          "操作",
+          "未熟な技能",
+          "散漫"
+        ],
+        "core": "能力が不足しているというより、意図と手段が噛み合っていない可能性がある。",
+        "advice": "見栄えではなく成果へつながる技能と作業に焦点を戻す。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "技能、道具、裁量を成果へ変えること",
+          "reflectionQuestion": "いま持っている資源で結果へ最も近いものは何か。"
+        },
+        "relationships": {
+          "focus": "言葉と意図を一致させること",
+          "reflectionQuestion": "相手を動かすためでなく理解を作るために何を伝えるか。"
+        },
+        "creativity": {
+          "focus": "着想を具体物へ変換する技術",
+          "reflectionQuestion": "アイデアを形にする最初の道具は何か。"
+        },
+        "self": {
+          "focus": "自分の能力を認識し責任を持って使うこと",
+          "reflectionQuestion": "自分が過小評価または誇張している力は何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "意図と道具の結合を示す",
+          "能動的な変換または制作を含める"
+        ],
+        "avoid": [
+          "理由なく万能な存在にしない",
+          "詐欺師という一面だけへ縮小しない"
+        ],
+        "visualMotifs": [
+          "整然と配置された道具",
+          "上と下を結ぶ動き",
+          "集中する手",
+          "変換の途中にある素材"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "star",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 17,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "星"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "renewed-hope",
+      "healing-guidance",
+      "authentic-openness"
+    ],
+    "prohibitedThemeIds": [
+      "wish-without-action",
+      "guaranteed-rescue"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "混乱の後に戻ってくる静かな希望、回復、遠くても進む方向を示す光。",
+      "journeyStage": "崩壊を経験した後、誇張のない希望と自分らしさを取り戻す段階。",
+      "coreTension": "未来を信頼して開くことと、救済を待つだけの受動的な願望のあいだ。",
+      "developmentalTask": "希望を現実逃避にせず、小さな回復行動と結び付ける。",
+      "lightAspects": [
+        "希望",
+        "回復",
+        "誠実さ",
+        "導き"
+      ],
+      "shadowAspects": [
+        "失望",
+        "比較",
+        "受動的な願望",
+        "希望への不信"
+      ],
+      "upright": {
+        "keywords": [
+          "希望",
+          "回復",
+          "導き",
+          "開放"
+        ],
+        "core": "すぐに完成しなくても、進む方向と回復の可能性を再び信頼できることを示す。",
+        "advice": "遠い理想へつながる小さな回復行動を今日一つ行う。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "deficiency",
+          "distorted"
+        ],
+        "keywords": [
+          "失望",
+          "希望の喪失",
+          "比較",
+          "空願望"
+        ],
+        "core": "未来が見えないか、理想像と現状を比べることで自分の光を見失っている。",
+        "advice": "大きな希望を要求せず、昨日より少し楽になる具体的条件を整える。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "長期ビジョン、回復、意義の再発見",
+          "reflectionQuestion": "この仕事を続ける理由へつながる小さな行動は何か。"
+        },
+        "relationships": {
+          "focus": "傷ついた後の信頼と率直さ",
+          "reflectionQuestion": "安全を守りながら少しだけ開示できることは何か。"
+        },
+        "creativity": {
+          "focus": "固有の声と遠い理想への接続",
+          "reflectionQuestion": "評価を離れて、作りたいと感じるものは何か。"
+        },
+        "self": {
+          "focus": "自己信頼と回復の方向",
+          "reflectionQuestion": "いま完全でなくても信じてよい可能性は何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "遠くから方向を示す光を含める",
+          "傷つきや回復途中であることを隠さない"
+        ],
+        "avoid": [
+          "願うだけで救われる構図にしない",
+          "成功や救済を保証しない"
+        ],
+        "visualMotifs": [
+          "一つの強い星と複数の小光",
+          "水または傷んだ土地への注ぎ",
+          "開かれた姿勢",
+          "夜明け前の空"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

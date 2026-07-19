@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "death",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 13,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "死神"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "necessary-ending",
+      "transition",
+      "release"
+    ],
+    "prohibitedThemeIds": [
+      "literal-death-prediction",
+      "gratuitous-destruction"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "役割を終えた形を閉じ、次の状態へ移るための不可逆な変化と手放し。",
+      "journeyStage": "古い自己や状況が終わり、まだ名のない次の段階へ移行する時。",
+      "coreTension": "必要な終わりを受け入れることと、恐れから固執または早すぎる破壊へ走ることのあいだ。",
+      "developmentalTask": "失われるものを悼みながら、終わったものへ使っていた力を回収する。",
+      "lightAspects": [
+        "終結",
+        "変容",
+        "解放",
+        "移行"
+      ],
+      "shadowAspects": [
+        "執着",
+        "変化への恐怖",
+        "破壊衝動",
+        "喪失の否認"
+      ],
+      "upright": {
+        "keywords": [
+          "終わり",
+          "変容",
+          "手放し",
+          "移行"
+        ],
+        "core": "修復や延命ではなく、明確に閉じることで次の状態へ進めるものがある。",
+        "advice": "すでに役割を終えた約束、習慣、計画を一つ認め、終了の手順を作る。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "delayed",
+          "distorted"
+        ],
+        "keywords": [
+          "執着",
+          "停滞",
+          "変化への抵抗",
+          "未完了"
+        ],
+        "core": "終わりを避けることで、失いたくないものまで消耗させている可能性がある。",
+        "advice": "完全に切る前に、何を保存し何を終えるか分けて移行を始める。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "終了、撤退、役割変更、旧方式からの移行",
+          "reflectionQuestion": "終わらせないコストが始めるコストを超えていないか。"
+        },
+        "relationships": {
+          "focus": "関係の形や期待が変わること",
+          "reflectionQuestion": "実際の相手ではなく過去の関係像へ執着していないか。"
+        },
+        "creativity": {
+          "focus": "不要な案を捨て作品を変容させること",
+          "reflectionQuestion": "作品を生かすために終えるべき要素は何か。"
+        },
+        "self": {
+          "focus": "古い自己像や習慣からの移行",
+          "reflectionQuestion": "もう自分を説明しなくなった役割は何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "終わりと次への移行を両方示す",
+          "喪失の重さを軽視しない"
+        ],
+        "avoid": [
+          "身体的な死の予言として扱わない",
+          "無差別な破壊や恐怖演出だけにしない"
+        ],
+        "visualMotifs": [
+          "閉じられる門",
+          "脱ぎ捨てられた殻",
+          "季節の境目",
+          "古い形から現れる新しい芽"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

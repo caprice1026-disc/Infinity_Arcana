@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "temperance",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 14,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "節制"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "balanced-integration",
+      "calibration",
+      "healing-flow"
+    ],
+    "prohibitedThemeIds": [
+      "self-denial",
+      "featureless-compromise"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "異なる要素を適切な比率と速度で混ぜ、どちらも失わない新しい調和を作ること。",
+      "journeyStage": "大きな変化の後、ばらばらになった要素を生活可能な形へ統合する段階。",
+      "coreTension": "調整による統合と、対立を避けるため全てを薄める妥協のあいだ。",
+      "developmentalTask": "固定的な中間点ではなく、状況に応じて配分を微調整する。",
+      "lightAspects": [
+        "調和",
+        "節度",
+        "統合",
+        "回復"
+      ],
+      "shadowAspects": [
+        "不均衡",
+        "過剰な妥協",
+        "希薄化",
+        "極端の往復"
+      ],
+      "upright": {
+        "keywords": [
+          "調和",
+          "節度",
+          "統合",
+          "調整"
+        ],
+        "core": "一方を捨てる二者択一ではなく、比率と順序を変えて両立させる道を示す。",
+        "advice": "時間、資源、感情の配分を測り、少量ずつ調整して反応を見る。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "excess",
+          "deficiency",
+          "distorted"
+        ],
+        "keywords": [
+          "不均衡",
+          "過剰",
+          "希薄化",
+          "極端"
+        ],
+        "core": "混ぜるべきでないものを混ぜているか、調整の名で重要な差を消している。",
+        "advice": "何が多すぎ何が少なすぎるかを具体的に測り、一箇所だけ比率を変える。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "速度、品質、資源配分の継続的調整",
+          "reflectionQuestion": "最適解ではなく今週改善できる比率は何か。"
+        },
+        "relationships": {
+          "focus": "違いを消さずに折り合うこと",
+          "reflectionQuestion": "互いに半分我慢する以外の組み合わせはあるか。"
+        },
+        "creativity": {
+          "focus": "異質な素材や技法を一つの表現へ統合すること",
+          "reflectionQuestion": "どの要素を主役にし、何を支えに回すか。"
+        },
+        "self": {
+          "focus": "生活、感情、身体のリズム調整",
+          "reflectionQuestion": "極端に振れた後で戻すべき小さな習慣は何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "二つ以上の流れが変化しながら混ざる構図を含める",
+          "固定された均等ではなく調整過程を示す"
+        ],
+        "avoid": [
+          "我慢や禁欲だけを節制としない",
+          "差異のない無難な妥協を理想化しない"
+        ],
+        "visualMotifs": [
+          "二つの器の間の流れ",
+          "異なる色の混合",
+          "片足ずつ異なる領域",
+          "測定と微調整"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}
