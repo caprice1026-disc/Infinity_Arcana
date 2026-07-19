@@ -1,0 +1,350 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:infinity-arcana:schema:archetype:1.0.0",
+  "title": "Infinity Arcana archetype",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "contentVersion",
+    "arcana",
+    "majorArcanaNumber",
+    "tradition",
+    "status",
+    "defaultLocale",
+    "name",
+    "semanticAnchors",
+    "localizedContent",
+    "inheritancePolicy",
+    "publication"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableId"
+    },
+    "contentVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "arcana": {
+      "const": "major"
+    },
+    "majorArcanaNumber": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 21
+    },
+    "tradition": {
+      "const": "rider-waite-smith"
+    },
+    "status": {
+      "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/contentStatus"
+    },
+    "defaultLocale": {
+      "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/locale"
+    },
+    "name": {
+      "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/localizedText"
+    },
+    "aliases": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z]{2,3}(?:-[A-Z]{2})?$": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "semanticAnchors": {
+      "type": "object",
+      "required": [
+        "requiredThemeIds",
+        "prohibitedThemeIds"
+      ],
+      "properties": {
+        "requiredThemeIds": {
+          "allOf": [
+            {
+              "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableIdArray"
+            },
+            {
+              "type": "array",
+              "minItems": 3
+            }
+          ]
+        },
+        "prohibitedThemeIds": {
+          "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableIdArray"
+        }
+      },
+      "additionalProperties": false
+    },
+    "localizedContent": {
+      "type": "object",
+      "minProperties": 1,
+      "patternProperties": {
+        "^[a-z]{2,3}(?:-[A-Z]{2})?$": {
+          "$ref": "#/$defs/localeContent"
+        }
+      },
+      "additionalProperties": false
+    },
+    "inheritancePolicy": {
+      "type": "object",
+      "required": [
+        "coreEssenceRequired",
+        "minimumRequiredThemeMatches",
+        "cardMayExtend",
+        "cardMayContradict"
+      ],
+      "properties": {
+        "coreEssenceRequired": {
+          "const": true
+        },
+        "minimumRequiredThemeMatches": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "cardMayExtend": {
+          "const": true
+        },
+        "cardMayContradict": {
+          "const": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "publication": {
+      "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/publication"
+    }
+  },
+  "$defs": {
+    "orientation": {
+      "type": "object",
+      "required": [
+        "keywords",
+        "core",
+        "advice"
+      ],
+      "properties": {
+        "keywords": {
+          "allOf": [
+            {
+              "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/nonEmptyStringArray"
+            },
+            {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 8
+            }
+          ]
+        },
+        "core": {
+          "type": "string",
+          "minLength": 1
+        },
+        "advice": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "context": {
+      "type": "object",
+      "required": [
+        "focus",
+        "reflectionQuestion"
+      ],
+      "properties": {
+        "focus": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reflectionQuestion": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "localeContent": {
+      "type": "object",
+      "required": [
+        "essence",
+        "journeyStage",
+        "coreTension",
+        "developmentalTask",
+        "lightAspects",
+        "shadowAspects",
+        "upright",
+        "reversed",
+        "contexts",
+        "generationGuidance"
+      ],
+      "properties": {
+        "essence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "journeyStage": {
+          "type": "string",
+          "minLength": 1
+        },
+        "coreTension": {
+          "type": "string",
+          "minLength": 1
+        },
+        "developmentalTask": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lightAspects": {
+          "allOf": [
+            {
+              "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/nonEmptyStringArray"
+            },
+            {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 8
+            }
+          ]
+        },
+        "shadowAspects": {
+          "allOf": [
+            {
+              "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/nonEmptyStringArray"
+            },
+            {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 8
+            }
+          ]
+        },
+        "upright": {
+          "$ref": "#/$defs/orientation"
+        },
+        "reversed": {
+          "type": "object",
+          "required": [
+            "allowedModes",
+            "keywords",
+            "core",
+            "advice"
+          ],
+          "properties": {
+            "allowedModes": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/reversedMode"
+              }
+            },
+            "keywords": {
+              "allOf": [
+                {
+                  "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/nonEmptyStringArray"
+                },
+                {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 8
+                }
+              ]
+            },
+            "core": {
+              "type": "string",
+              "minLength": 1
+            },
+            "advice": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "contexts": {
+          "type": "object",
+          "required": [
+            "work",
+            "relationships",
+            "creativity",
+            "self"
+          ],
+          "properties": {
+            "work": {
+              "$ref": "#/$defs/context"
+            },
+            "relationships": {
+              "$ref": "#/$defs/context"
+            },
+            "creativity": {
+              "$ref": "#/$defs/context"
+            },
+            "self": {
+              "$ref": "#/$defs/context"
+            }
+          },
+          "additionalProperties": false
+        },
+        "generationGuidance": {
+          "type": "object",
+          "required": [
+            "preserve",
+            "avoid",
+            "visualMotifs"
+          ],
+          "properties": {
+            "preserve": {
+              "allOf": [
+                {
+                  "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/nonEmptyStringArray"
+                },
+                {
+                  "type": "array",
+                  "minItems": 2
+                }
+              ]
+            },
+            "avoid": {
+              "allOf": [
+                {
+                  "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/nonEmptyStringArray"
+                },
+                {
+                  "type": "array",
+                  "minItems": 2
+                }
+              ]
+            },
+            "visualMotifs": {
+              "allOf": [
+                {
+                  "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/nonEmptyStringArray"
+                },
+                {
+                  "type": "array",
+                  "minItems": 3
+                }
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

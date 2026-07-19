@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "fool",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 0,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "愚者"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "new-beginning",
+      "openness",
+      "leap-into-unknown"
+    ],
+    "prohibitedThemeIds": [
+      "guaranteed-success",
+      "mindless-destruction"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "まだ形を持たない可能性と、未知へ最初の一歩を踏み出す自由。",
+      "journeyStage": "旅が始まる直前、経験より好奇心が先に立つ段階。",
+      "coreTension": "自由な冒険心と、現実的な危険への注意のあいだ。",
+      "developmentalTask": "不確実さを受け入れつつ、無自覚な無謀さと区別して行動する。",
+      "lightAspects": [
+        "開放性",
+        "好奇心",
+        "自発性",
+        "新しい可能性への信頼"
+      ],
+      "shadowAspects": [
+        "無計画",
+        "現実逃避",
+        "危険の軽視",
+        "責任からの離脱"
+      ],
+      "upright": {
+        "keywords": [
+          "始まり",
+          "冒険",
+          "可能性",
+          "自由"
+        ],
+        "core": "正解を知ってからではなく、学ぶために一歩を踏み出す時を示す。",
+        "advice": "戻れる余地を残しながら、小さく未知へ踏み出す。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "excess",
+          "delayed"
+        ],
+        "keywords": [
+          "ためらい",
+          "無謀",
+          "準備不足",
+          "逃避"
+        ],
+        "core": "恐れで出発できないか、反対に危険を見ずに飛び出そうとしている。",
+        "advice": "止まっている理由と、見落としている最低限の安全策を一つずつ確かめる。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "未経験の役割、試作、新しい進路への着手",
+          "reflectionQuestion": "失敗しても回収できる最小の一歩は何か。"
+        },
+        "relationships": {
+          "focus": "先入観を置いて相手と出会い直すこと",
+          "reflectionQuestion": "期待を決めつけずに尋ねられることは何か。"
+        },
+        "creativity": {
+          "focus": "評価前の実験と遊び",
+          "reflectionQuestion": "完成を求めず今日試せる表現は何か。"
+        },
+        "self": {
+          "focus": "過去の自己像に縛られない可能性",
+          "reflectionQuestion": "いま初心者であることを許せる領域はどこか。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "未知への入口を必ず含める",
+          "希望と危険の両方を同時に示す"
+        ],
+        "avoid": [
+          "成功が保証された英雄として描かない",
+          "単なる愚かさや失敗の象徴にしない"
+        ],
+        "visualMotifs": [
+          "境界線",
+          "開いた空間",
+          "旅立ちの道具",
+          "足元にある小さな危険"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "devil",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 15,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "悪魔"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "binding-desire",
+      "shadow-awareness",
+      "self-maintained-chain"
+    ],
+    "prohibitedThemeIds": [
+      "external-evil-only",
+      "shame-as-liberation"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "欲望、恐れ、依存、利益によって自ら維持している束縛と、その中に隠れた選択可能性。",
+      "journeyStage": "自分が否認してきた欲望や影が、外部の敵ではなく内的な契約として現れる段階。",
+      "coreTension": "欲望を認めて扱うことと、欲望へ支配されること、または恥で否定することのあいだ。",
+      "developmentalTask": "鎖が何を与えているかを正直に見て、代償を理解したうえで選び直す。",
+      "lightAspects": [
+        "影の自覚",
+        "欲望の理解",
+        "束縛の可視化",
+        "選択権の回収"
+      ],
+      "shadowAspects": [
+        "依存",
+        "強迫",
+        "搾取",
+        "自己欺瞞"
+      ],
+      "upright": {
+        "keywords": [
+          "束縛",
+          "欲望",
+          "依存",
+          "影"
+        ],
+        "core": "外部から強制されているように見える状況の一部を、自分も利益や恐れから維持している可能性を示す。",
+        "advice": "やめられない行動が与えている短期的報酬と長期的代償を両方書く。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "internalized",
+          "distorted"
+        ],
+        "keywords": [
+          "解放の兆し",
+          "否認",
+          "恥",
+          "隠れた依存"
+        ],
+        "core": "鎖を外し始めている一方、問題を認める代わりに自分を責めている可能性がある。",
+        "advice": "人格ではなく行動と環境を対象にし、支援を使って一つの結び目を緩める。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "過労、地位、報酬、恐れが作る抜けにくい関係",
+          "reflectionQuestion": "この状況へ留まることで得ているものは何か。"
+        },
+        "relationships": {
+          "focus": "依存、支配、秘密、反復する魅力",
+          "reflectionQuestion": "愛情と恐れや取引が混ざっている部分はどこか。"
+        },
+        "creativity": {
+          "focus": "評価への依存、執着、禁じた題材",
+          "reflectionQuestion": "恥じている欲望の中に表現の核はあるか。"
+        },
+        "self": {
+          "focus": "否認した欲望と選択の回収",
+          "reflectionQuestion": "自分を責めずに認める必要がある欲求は何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "束縛に本人の選択余地が残ることを示す",
+          "欲望が与える報酬と代償を両方含める"
+        ],
+        "avoid": [
+          "悪を完全な外部存在として責任転嫁しない",
+          "恥や自己嫌悪を解放の方法として描かない"
+        ],
+        "visualMotifs": [
+          "外せる余地のある鎖",
+          "魅力的だが代償を伴う中心物",
+          "鏡や影",
+          "反復する輪"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "justice",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 11,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "正義"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "fair-accountability",
+      "truthful-assessment",
+      "consequence"
+    ],
+    "prohibitedThemeIds": [
+      "vengeance",
+      "context-free-punishment"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "事実、基準、行為の結果を公平に見つめ、選択へ責任を結び付ける働き。",
+      "journeyStage": "進んできた行為を振り返り、その結果と釣り合いを引き受ける段階。",
+      "coreTension": "公平な判断と、事情を切り捨てる冷酷な裁断のあいだ。",
+      "developmentalTask": "自分に都合のよい物語から離れ、同じ基準を自他へ適用する。",
+      "lightAspects": [
+        "公平",
+        "誠実",
+        "説明責任",
+        "因果の理解"
+      ],
+      "shadowAspects": [
+        "偏見",
+        "責任回避",
+        "断罪",
+        "形式だけの中立"
+      ],
+      "upright": {
+        "keywords": [
+          "公平",
+          "真実",
+          "責任",
+          "均衡"
+        ],
+        "core": "感情を否定せず、確認できる事実と合意した基準で判断する必要を示す。",
+        "advice": "事実、解釈、希望を分け、判断基準を先に明文化する。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "distorted",
+          "blocked",
+          "excess"
+        ],
+        "keywords": [
+          "不公平",
+          "責任回避",
+          "偏見",
+          "過剰な断罪"
+        ],
+        "core": "判断基準が自分に都合よく変わっているか、形式的な正しさが事情を覆い隠している。",
+        "advice": "同じ状況を立場が逆ならどう評価するか検討し、修正できる責任を引き受ける。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "評価、契約、役割、意思決定の説明責任",
+          "reflectionQuestion": "その判断基準は当事者全員へ同じように適用できるか。"
+        },
+        "relationships": {
+          "focus": "相互の責任と修復可能な合意",
+          "reflectionQuestion": "正しさを証明することと関係を修復することのどちらを求めているか。"
+        },
+        "creativity": {
+          "focus": "批評と評価基準の透明性",
+          "reflectionQuestion": "作品を何と比較し、何を改善したいのか。"
+        },
+        "self": {
+          "focus": "自己評価における公平さ",
+          "reflectionQuestion": "他人には許すのに自分へだけ禁じていることは何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "比較可能な基準と結果を含める",
+          "判断する者も責任から免れない構図を示す"
+        ],
+        "avoid": [
+          "復讐や刑罰だけに限定しない",
+          "事情を無視する機械的中立を理想化しない"
+        ],
+        "visualMotifs": [
+          "均衡する二要素",
+          "記録された証拠",
+          "明瞭な境界線",
+          "判断後に残る結果"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

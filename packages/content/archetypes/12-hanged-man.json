@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hanged-man",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 12,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "吊るされた男"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "voluntary-pause",
+      "perspective-shift",
+      "surrender"
+    ],
+    "prohibitedThemeIds": [
+      "meaningless-suffering",
+      "coerced-sacrifice"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "前進を一度止め、慣れた見方や支配欲を手放すことで別の理解を得ること。",
+      "journeyStage": "力で進めない局面で、行動より視点の変化が求められる段階。",
+      "coreTension": "意味ある保留と、決断を避ける停滞や自己犠牲のあいだ。",
+      "developmentalTask": "何を手放せば状況が違って見えるかを見極め、停止に期限と意味を持たせる。",
+      "lightAspects": [
+        "受容",
+        "視点転換",
+        "保留",
+        "自発的な手放し"
+      ],
+      "shadowAspects": [
+        "停滞",
+        "犠牲者意識",
+        "無期限の待機",
+        "自己否定"
+      ],
+      "upright": {
+        "keywords": [
+          "停止",
+          "手放し",
+          "逆転した視点",
+          "受容"
+        ],
+        "core": "同じ力のかけ方を続けるより、いったん保留して別の角度から見る必要を示す。",
+        "advice": "結論を急ぐ代わりに、前提を一つ逆転させて観察する期限を決める。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "excess",
+          "blocked",
+          "delayed"
+        ],
+        "keywords": [
+          "無為",
+          "徒労",
+          "自己犠牲",
+          "抵抗"
+        ],
+        "core": "待つことが洞察を生まず、苦しみや先延ばしを正当化している可能性がある。",
+        "advice": "この停止で何を学ぶ予定だったか確認し、得るものがなければ小さく動く。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "保留、見直し、従来手法を手放す局面",
+          "reflectionQuestion": "進める前に疑うべき前提は何か。"
+        },
+        "relationships": {
+          "focus": "相手を変えようとする力を緩めること",
+          "reflectionQuestion": "相手の立場から見ると何が異なって見えるか。"
+        },
+        "creativity": {
+          "focus": "作品を寝かせ、構図や意味を反転させること",
+          "reflectionQuestion": "削る、逆にする、待つのどれが新しい視点を生むか。"
+        },
+        "self": {
+          "focus": "制御できないことの受容",
+          "reflectionQuestion": "手放すことで失うものと得る余白は何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "通常と逆転した視点を含める",
+          "停止が自発的で観察を生むことを示す"
+        ],
+        "avoid": [
+          "苦痛そのものを高潔として美化しない",
+          "強制された犠牲を本人の選択として描かない"
+        ],
+        "visualMotifs": [
+          "上下が反転した構図",
+          "静止する身体または物体",
+          "解かれた手",
+          "見慣れた景色の別角度"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:infinity-arcana:schema:shared:1.0.0",
+  "title": "Infinity Arcana shared definitions",
+  "$defs": {
+    "stableId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 1,
+      "maxLength": 96
+    },
+    "locale": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$"
+    },
+    "localizedText": {
+      "type": "object",
+      "minProperties": 1,
+      "patternProperties": {
+        "^[a-z]{2,3}(?:-[A-Z]{2})?$": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "nonEmptyStringArray": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "stableIdArray": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/stableId"
+      }
+    },
+    "contentStatus": {
+      "enum": [
+        "draft",
+        "generated",
+        "automatically-validated",
+        "needs-review",
+        "approved",
+        "published",
+        "deprecated"
+      ]
+    },
+    "publication": {
+      "type": "object",
+      "required": [
+        "publishedAt",
+        "retiredAt"
+      ],
+      "properties": {
+        "publishedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "retiredAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "reversedMode": {
+      "enum": [
+        "blocked",
+        "excess",
+        "deficiency",
+        "internalized",
+        "distorted",
+        "delayed"
+      ]
+    }
+  }
+}

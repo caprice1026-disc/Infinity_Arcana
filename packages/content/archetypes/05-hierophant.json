@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hierophant",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 5,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "教皇"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "shared-tradition",
+      "transmitted-knowledge",
+      "initiation"
+    ],
+    "prohibitedThemeIds": [
+      "blind-obedience",
+      "private-revelation-only"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "共同体が蓄積した知恵、儀礼、教育を通じて意味と技能を受け渡す働き。",
+      "journeyStage": "個人の経験を越え、先人と共同体の知識へ参加する段階。",
+      "coreTension": "伝統から学ぶことと、権威へ無批判に従うことのあいだ。",
+      "developmentalTask": "型が守ってきた価値を理解し、必要なら責任を持って更新する。",
+      "lightAspects": [
+        "伝承",
+        "学習",
+        "共同体",
+        "儀礼"
+      ],
+      "shadowAspects": [
+        "教条主義",
+        "同調圧力",
+        "空洞化した形式",
+        "権威依存"
+      ],
+      "upright": {
+        "keywords": [
+          "伝統",
+          "教育",
+          "儀礼",
+          "共有知"
+        ],
+        "core": "独力で再発明する前に、蓄積された方法と信頼できる指導から学ぶ価値を示す。",
+        "advice": "従う規則の由来と目的を学び、経験ある相手へ具体的に尋ねる。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "distorted",
+          "excess",
+          "blocked"
+        ],
+        "keywords": [
+          "教条",
+          "反抗",
+          "形式主義",
+          "価値の空洞化"
+        ],
+        "core": "伝統が意味を失っているか、反発すること自体が新しい束縛になっている。",
+        "advice": "残す価値と変える形式を分け、自分の判断理由を言葉にする。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "標準、教育、専門知、組織文化",
+          "reflectionQuestion": "その手順は何を守るために存在しているか。"
+        },
+        "relationships": {
+          "focus": "共有する価値観と約束の形",
+          "reflectionQuestion": "二人が当然と思い込んでいる規範は同じか。"
+        },
+        "creativity": {
+          "focus": "技法の継承と型破りの順序",
+          "reflectionQuestion": "破る前に十分理解すべき型は何か。"
+        },
+        "self": {
+          "focus": "信念体系と所属感",
+          "reflectionQuestion": "借り物の信念と自分で選んだ信念をどう区別するか。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "知識が複数世代または共同体を通じて渡る構図を含める",
+          "形式の背後にある意味を示す"
+        ],
+        "avoid": [
+          "特定の実在宗教を無批判に流用しない",
+          "服従だけを善として描かない"
+        ],
+        "visualMotifs": [
+          "受け渡される書物や道具",
+          "複数の聞き手",
+          "反復される印",
+          "入口となる儀礼"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

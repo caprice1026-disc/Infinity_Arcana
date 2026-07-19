@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "lovers",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 6,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "恋人"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "value-aligned-choice",
+      "mutual-connection",
+      "commitment"
+    ],
+    "prohibitedThemeIds": [
+      "romance-only",
+      "loss-of-consent"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "他者との結び付き、または複数の道の中から、自分の価値に沿って選び責任を持つこと。",
+      "journeyStage": "自分だけでは完結しない関係と選択に向き合う段階。",
+      "coreTension": "親密さの中で結び付くことと、自分や相手の自律性を失うことのあいだ。",
+      "developmentalTask": "魅力や恐れだけでなく、守りたい価値を基準に選択する。",
+      "lightAspects": [
+        "結合",
+        "選択",
+        "調和",
+        "誠実な合意"
+      ],
+      "shadowAspects": [
+        "依存",
+        "価値の不一致",
+        "決断回避",
+        "投影"
+      ],
+      "upright": {
+        "keywords": [
+          "選択",
+          "結び付き",
+          "価値観",
+          "合意"
+        ],
+        "core": "重要なのは選択肢の優劣だけでなく、その選択が自分の価値と一致するかである。",
+        "advice": "選んだ後に引き受ける責任まで含め、守りたい価値を明文化する。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "distorted",
+          "deficiency"
+        ],
+        "keywords": [
+          "不一致",
+          "依存",
+          "迷い",
+          "不誠実"
+        ],
+        "core": "関係または選択の表面は保たれていても、価値や合意が内側でずれている。",
+        "advice": "失いたくないものではなく、譲れない価値から対話と選択をやり直す。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "共同作業、契約、価値に沿うキャリア選択",
+          "reflectionQuestion": "条件以外に、この選択で守りたい価値は何か。"
+        },
+        "relationships": {
+          "focus": "相互性、同意、親密さの中の自律",
+          "reflectionQuestion": "互いに明示していない期待は何か。"
+        },
+        "creativity": {
+          "focus": "異なる要素の結合と表現上の選択",
+          "reflectionQuestion": "どの案が自分の伝えたい価値と一致するか。"
+        },
+        "self": {
+          "focus": "内的な矛盾を統合する選択",
+          "reflectionQuestion": "他人の期待を除いたとき何を選びたいか。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "相互性または分岐する選択を含める",
+          "選択と責任を切り離さない"
+        ],
+        "avoid": [
+          "恋愛関係だけに限定しない",
+          "自己消失や同意のない結合を美化しない"
+        ],
+        "visualMotifs": [
+          "向き合う二者",
+          "分岐と合流",
+          "共有される中心物",
+          "開かれた手"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

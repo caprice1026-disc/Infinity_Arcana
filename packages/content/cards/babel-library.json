@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "babel-library",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "バベルの図書館"
+  },
+  "subtitle": {
+    "ja-JP": "すべての答えが存在する迷宮"
+  },
+  "archetypeId": "high-priestess",
+  "domainIds": [
+    "books",
+    "infinite-architecture",
+    "knowledge"
+  ],
+  "packIds": [
+    "base-infinite"
+  ],
+  "tags": [
+    "hidden-truth",
+    "library",
+    "paradox",
+    "search"
+  ],
+  "manifestationForm": "place",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "hidden-knowledge",
+    "receptivity"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "あらゆる文章を収め、無限に連なる六角形の書庫",
+        "centralParadox": "すべての答えが存在するが、目的の一冊を発見できる保証はない",
+        "lightAspects": [
+          "深い探求",
+          "直感による選別",
+          "知識への畏敬"
+        ],
+        "shadowAspects": [
+          "情報への埋没",
+          "答えへの執着",
+          "探索そのものの目的化"
+        ],
+        "lore": "六角形の部屋が果てなく連なる図書館。そこには意味のある本も無意味な文字列も等しく収められている。司書たちは完全な目録を夢見るが、目録もまた図書館の一冊にすぎない。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "直感",
+            "探求",
+            "隠された知識"
+          ],
+          "core": "答えが不足しているのではなく、無数の情報から意味のあるものを選ぶ内的な基準が求められている。",
+          "advice": "情報を増やす前に、何を知れば判断できるのかを一文で定める。",
+          "warning": "探索すること自体が、決断を避ける目的へ変わっていないか確認する。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "情報過多",
+            "迷走",
+            "都合のよい確信"
+          ],
+          "core": "情報の多さによって判断を失い、自分が期待する答えだけを探している可能性がある。",
+          "advice": "新しい資料を一時的に遮断し、すでに得た事実、推測、希望を分けて整理する。",
+          "warning": "検索結果の量を、理解の深さと取り違えない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "調査と決断の境界",
+          "advice": "判断に必要な情報の終了条件と期限を決める。"
+        },
+        "relationships": {
+          "focus": "相手を理解しようとする姿勢と詮索の境界",
+          "advice": "推測を積み重ねず、確認できることを相手へ尋ねる。"
+        },
+        "creativity": {
+          "focus": "参照資料と自分の表現の境界",
+          "advice": "調査を止め、集めた断片だけで小さな試作を作る。"
+        },
+        "self": {
+          "focus": "知識と自己理解の関係",
+          "advice": "答えよりも、繰り返し戻ってくる問いを観察する。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-babel-library-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "無限に続く六角形の書架と、その中央で一冊の本を見上げる小さな人物"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

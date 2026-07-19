@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:infinity-arcana:schema:asset-catalog:1.0.0",
+  "title": "Infinity Arcana image asset catalog",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "catalogVersion",
+    "assetRoots",
+    "assets"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "catalogVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "assetRoots": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "basePath"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableId"
+          },
+          "basePath": {
+            "type": "string",
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assets": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    }
+  },
+  "$defs": {
+    "localSource": {
+      "type": "object",
+      "required": [
+        "type",
+        "rootId",
+        "path"
+      ],
+      "properties": {
+        "type": {
+          "const": "local"
+        },
+        "rootId": {
+          "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableId"
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+        }
+      },
+      "additionalProperties": false,
+      "examples": [
+        {
+          "type": "local",
+          "rootId": "sites-public",
+          "path": "cards/babel-library/front.webp"
+        }
+      ]
+    },
+    "remoteUrlSource": {
+      "type": "object",
+      "required": [
+        "type",
+        "url"
+      ],
+      "properties": {
+        "type": {
+          "const": "remote-url"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "integrity": {
+          "type": "string",
+          "pattern": "^sha256-[A-Za-z0-9+/]+={0,2}$"
+        }
+      },
+      "additionalProperties": false,
+      "examples": [
+        {
+          "type": "remote-url",
+          "url": "https://cdn.example.com/cards/babel-library/front.webp"
+        }
+      ]
+    },
+    "objectStorageSource": {
+      "type": "object",
+      "required": [
+        "type",
+        "provider",
+        "connectionId",
+        "bucket",
+        "objectKey",
+        "access"
+      ],
+      "properties": {
+        "type": {
+          "const": "object-storage"
+        },
+        "provider": {
+          "enum": [
+            "s3",
+            "s3-compatible",
+            "r2",
+            "gcs",
+            "azure-blob"
+          ]
+        },
+        "connectionId": {
+          "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableId"
+        },
+        "bucket": {
+          "type": "string",
+          "minLength": 1
+        },
+        "objectKey": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+        },
+        "access": {
+          "enum": [
+            "public",
+            "signed"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "examples": [
+        {
+          "type": "object-storage",
+          "provider": "s3-compatible",
+          "connectionId": "cards-production",
+          "bucket": "infinity-arcana-assets",
+          "objectKey": "cards/babel-library/front.webp",
+          "access": "signed"
+        }
+      ]
+    },
+    "source": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/localSource"
+        },
+        {
+          "$ref": "#/$defs/remoteUrlSource"
+        },
+        {
+          "$ref": "#/$defs/objectStorageSource"
+        }
+      ]
+    },
+    "variant": {
+      "type": "object",
+      "required": [
+        "id",
+        "usage",
+        "mimeType",
+        "width",
+        "height",
+        "source"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableId"
+        },
+        "usage": {
+          "enum": [
+            "thumbnail",
+            "display",
+            "original",
+            "share"
+          ]
+        },
+        "mimeType": {
+          "enum": [
+            "image/avif",
+            "image/webp",
+            "image/png",
+            "image/jpeg"
+          ]
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "byteSize": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        }
+      },
+      "additionalProperties": false
+    },
+    "asset": {
+      "type": "object",
+      "required": [
+        "id",
+        "contentVersion",
+        "status",
+        "kind",
+        "defaultVariantId",
+        "variants"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableId"
+        },
+        "contentVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "available",
+            "deprecated"
+          ]
+        },
+        "kind": {
+          "enum": [
+            "card-front",
+            "card-back",
+            "pack-cover",
+            "domain-cover",
+            "share-image"
+          ]
+        },
+        "defaultVariantId": {
+          "$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableId"
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/variant"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

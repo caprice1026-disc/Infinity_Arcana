@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "high-priestess",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 2,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "女教皇"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "intuition",
+      "hidden-knowledge",
+      "receptivity"
+    ],
+    "prohibitedThemeIds": [
+      "omniscience",
+      "forced-disclosure"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "外からは直接見えない知識と、静かに受け取ることで得られる内的理解。",
+      "journeyStage": "外界へ働きかける前に、沈黙、記憶、直感の奥行きへ向き合う段階。",
+      "coreTension": "秘密を守る知恵と、必要な情報まで閉ざしてしまうことのあいだ。",
+      "developmentalTask": "情報の量ではなく、自分が何を知り何をまだ知らないかを見分ける。",
+      "lightAspects": [
+        "直感",
+        "洞察",
+        "沈黙の理解",
+        "内省"
+      ],
+      "shadowAspects": [
+        "情報の秘匿",
+        "受動性の過剰",
+        "直感と妄想の混同",
+        "答えへの執着"
+      ],
+      "upright": {
+        "keywords": [
+          "直感",
+          "秘められた知識",
+          "静観",
+          "洞察"
+        ],
+        "core": "答えを急いで外へ求めるより、未整理の感覚と既知の事実を静かに読む時を示す。",
+        "advice": "新しい情報を増やす前に、すでに感じ取っていることを書き出す。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "excess",
+          "distorted",
+          "internalized"
+        ],
+        "keywords": [
+          "情報過多",
+          "閉鎖",
+          "誤読",
+          "直感の遮断"
+        ],
+        "core": "沈黙が洞察ではなく混乱や回避を隠している可能性がある。",
+        "advice": "直感を事実と分けて記録し、確認できる一点だけを確かめる。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "表面化していない情報、暗黙知、観察",
+          "reflectionQuestion": "判断前に確認すべき静かな違和感は何か。"
+        },
+        "relationships": {
+          "focus": "言葉になっていない感情と境界",
+          "reflectionQuestion": "推測せず、相手へ確認すべきことは何か。"
+        },
+        "creativity": {
+          "focus": "着想が形になる前の熟成",
+          "reflectionQuestion": "まだ説明できないが繰り返し現れる像は何か。"
+        },
+        "self": {
+          "focus": "内面の声と事実の識別",
+          "reflectionQuestion": "自分は何を知っていて、何を想像しているだけか。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "見えない知識または境界を含める",
+          "能動的支配より受容と観察を中心にする"
+        ],
+        "avoid": [
+          "何でも知る全知の存在にしない",
+          "秘密を暴くことだけを成功として描かない"
+        ],
+        "visualMotifs": [
+          "閉じた入口",
+          "二つの境界物",
+          "記録または水面",
+          "一部だけ見える光"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

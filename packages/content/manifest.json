@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0.0",
+  "releaseId": "release-2026-07-19-phase-0",
+  "releasedAt": "2026-07-19T00:00:00Z",
+  "minimumAppVersion": "0.1.0",
+  "counts": {
+    "archetypes": 22,
+    "cards": 1,
+    "assets": 1
+  },
+  "files": {
+    "archetypes": [
+      "archetypes/00-fool.json",
+      "archetypes/01-magician.json",
+      "archetypes/02-high-priestess.json",
+      "archetypes/03-empress.json",
+      "archetypes/04-emperor.json",
+      "archetypes/05-hierophant.json",
+      "archetypes/06-lovers.json",
+      "archetypes/07-chariot.json",
+      "archetypes/08-strength.json",
+      "archetypes/09-hermit.json",
+      "archetypes/10-wheel-of-fortune.json",
+      "archetypes/11-justice.json",
+      "archetypes/12-hanged-man.json",
+      "archetypes/13-death.json",
+      "archetypes/14-temperance.json",
+      "archetypes/15-devil.json",
+      "archetypes/16-tower.json",
+      "archetypes/17-star.json",
+      "archetypes/18-moon.json",
+      "archetypes/19-sun.json",
+      "archetypes/20-judgement.json",
+      "archetypes/21-world.json"
+    ],
+    "cards": [
+      "cards/babel-library.json"
+    ],
+    "assetCatalog": "assets/assets.json"
+  }
+}

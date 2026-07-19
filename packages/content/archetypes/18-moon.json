@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "moon",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 18,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "月"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "ambiguity",
+      "subconscious-imagery",
+      "uncertain-path"
+    ],
+    "prohibitedThemeIds": [
+      "all-fear-is-prophecy",
+      "automatic-deception"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "輪郭の曖昧な状況、夢、記憶、無意識が現実の見え方へ影響する領域。",
+      "journeyStage": "希望を得た後も残る不確実さの中で、直感と恐れを識別しながら進む段階。",
+      "coreTension": "曖昧さを急いで消さず感じ取ることと、幻想や不安を事実として扱うことのあいだ。",
+      "developmentalTask": "完全な明るさを待たず、仮説と感情を区別して安全な一歩を選ぶ。",
+      "lightAspects": [
+        "想像力",
+        "夢",
+        "感受性",
+        "曖昧さへの耐性"
+      ],
+      "shadowAspects": [
+        "錯覚",
+        "不安",
+        "投影",
+        "方向感覚の喪失"
+      ],
+      "upright": {
+        "keywords": [
+          "曖昧さ",
+          "夢",
+          "無意識",
+          "直感"
+        ],
+        "core": "情報が不足し、感情や過去の記憶が現実の輪郭を変えて見せている可能性を示す。",
+        "advice": "確定事項、推測、恐れを分け、視界の届く範囲だけ進む。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "distorted",
+          "blocked",
+          "internalized"
+        ],
+        "keywords": [
+          "混乱の晴れ間",
+          "否認",
+          "妄想",
+          "隠れた不安"
+        ],
+        "core": "霧が晴れ始めている一方、見たくない不安を理屈で覆っている可能性がある。",
+        "advice": "不安を予言として扱わず、検証できる事実を一つ増やす。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "要件不明、噂、不透明な状況での仮説管理",
+          "reflectionQuestion": "いま事実として確認できる範囲はどこまでか。"
+        },
+        "relationships": {
+          "focus": "投影、言外の感情、曖昧な期待",
+          "reflectionQuestion": "相手の意図として決めつけていることは何か。"
+        },
+        "creativity": {
+          "focus": "夢、連想、非論理的な素材",
+          "reflectionQuestion": "説明を急がず残しておくべき像は何か。"
+        },
+        "self": {
+          "focus": "不安、記憶、無意識のパターン",
+          "reflectionQuestion": "恐れが伝えている必要と、恐れが作った物語を分けられるか。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "不完全な光と複数解釈を含める",
+          "進路は存在するが全体が見えない構図にする"
+        ],
+        "avoid": [
+          "不安を未来予知として肯定しない",
+          "すべてを嘘や裏切りの象徴にしない"
+        ],
+        "visualMotifs": [
+          "反射光",
+          "二つに見える道",
+          "水面や霧",
+          "遠近の曖昧な生き物"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

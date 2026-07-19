@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "empress",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 3,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "女帝"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "nurturing-abundance",
+      "embodied-creativity",
+      "growth"
+    ],
+    "prohibitedThemeIds": [
+      "sterile-control",
+      "self-erasure"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "生命、感覚、関係を養い、豊かさを時間をかけて育てる創造力。",
+      "journeyStage": "内側に芽生えた可能性が、環境と身体を通じて成長し始める段階。",
+      "coreTension": "育むことと、過保護や過剰な供給によって自立を妨げることのあいだ。",
+      "developmentalTask": "自分自身を枯らさず、成長に必要な余白と資源を与える。",
+      "lightAspects": [
+        "養育",
+        "豊かさ",
+        "創造性",
+        "身体感覚"
+      ],
+      "shadowAspects": [
+        "過保護",
+        "浪費",
+        "停滞した快楽",
+        "自己犠牲"
+      ],
+      "upright": {
+        "keywords": [
+          "成長",
+          "豊穣",
+          "創造",
+          "養育"
+        ],
+        "core": "何かを急いで完成させるより、育つ条件を整え継続的に世話する時を示す。",
+        "advice": "成果ではなく、成長を支える環境、休息、資源を一つ整える。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "excess",
+          "deficiency"
+        ],
+        "keywords": [
+          "枯渇",
+          "過保護",
+          "停滞",
+          "浪費"
+        ],
+        "core": "与えすぎて自分が枯れているか、育てるべきものへ十分な資源が届いていない。",
+        "advice": "誰に何をどこまで与えるか境界を引き、自分への補給を先に確保する。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "人材、企画、環境を継続的に育てること",
+          "reflectionQuestion": "短期成果より先に整えるべき成長条件は何か。"
+        },
+        "relationships": {
+          "focus": "愛情と自立を両立させる世話",
+          "reflectionQuestion": "相手のためにしていることが相手の力を奪っていないか。"
+        },
+        "creativity": {
+          "focus": "感覚と反復から作品を育てること",
+          "reflectionQuestion": "作品が育つために必要な時間と素材は何か。"
+        },
+        "self": {
+          "focus": "身体、休息、自己価値への配慮",
+          "reflectionQuestion": "自分が受け取ることを拒んでいる豊かさは何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "成長を支える環境を含める",
+          "豊かさを消費ではなく循環として示す"
+        ],
+        "avoid": [
+          "母性を特定の性別や出産だけへ限定しない",
+          "際限のない自己犠牲を美徳にしない"
+        ],
+        "visualMotifs": [
+          "実りつつある植物",
+          "満ちた器",
+          "柔らかな布や大地",
+          "循環する水"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

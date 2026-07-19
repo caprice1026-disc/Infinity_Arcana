@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "emperor",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 4,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "皇帝"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "structure",
+      "responsible-authority",
+      "stability"
+    ],
+    "prohibitedThemeIds": [
+      "arbitrary-tyranny",
+      "control-for-its-own-sake"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "境界、規則、責任を引き受け、持続可能な秩序を築く力。",
+      "journeyStage": "育ったものを守り、集団や計画が続くための形を与える段階。",
+      "coreTension": "安定を支える権威と、変化や他者を抑圧する支配のあいだ。",
+      "developmentalTask": "権限と責任を一致させ、例外にも耐えられる構造を作る。",
+      "lightAspects": [
+        "秩序",
+        "責任",
+        "安定",
+        "決断"
+      ],
+      "shadowAspects": [
+        "硬直",
+        "支配",
+        "権威主義",
+        "脆さを隠す強がり"
+      ],
+      "upright": {
+        "keywords": [
+          "構造",
+          "統率",
+          "責任",
+          "境界"
+        ],
+        "core": "曖昧さを減らし、誰が何を担うかを明確にする必要を示す。",
+        "advice": "守るべき基準、担当、決定期限を明文化する。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "excess",
+          "blocked",
+          "distorted"
+        ],
+        "keywords": [
+          "硬直",
+          "過剰統制",
+          "無責任",
+          "権力争い"
+        ],
+        "core": "秩序が目的を支える道具ではなく、従わせるための壁になっている可能性がある。",
+        "advice": "規則ごとに守る対象を確認し、目的のない統制を一つ外す。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "権限、責任、役割、運用ルール",
+          "reflectionQuestion": "決定できる人と責任を負う人は一致しているか。"
+        },
+        "relationships": {
+          "focus": "安心を作る境界と合意",
+          "reflectionQuestion": "互いの自由を守るために必要な境界は何か。"
+        },
+        "creativity": {
+          "focus": "制作を継続させる工程と制約",
+          "reflectionQuestion": "創造性を支える締切や型をどこに置くか。"
+        },
+        "self": {
+          "focus": "自己統率と生活の基盤",
+          "reflectionQuestion": "自分を罰する規律ではなく支える習慣は何か。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "秩序と責任の対応を示す",
+          "何かを守る境界を含める"
+        ],
+        "avoid": [
+          "暴君または軍事力だけの象徴にしない",
+          "変化不能な完全秩序として描かない"
+        ],
+        "visualMotifs": [
+          "堅固な座または基壇",
+          "区切られた領域",
+          "測定器具",
+          "遠景を見渡す高所"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}

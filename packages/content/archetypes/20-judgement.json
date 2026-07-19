@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "judgement",
+  "contentVersion": 1,
+  "arcana": "major",
+  "majorArcanaNumber": 20,
+  "tradition": "rider-waite-smith",
+  "status": "published",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "審判"
+  },
+  "semanticAnchors": {
+    "requiredThemeIds": [
+      "awakening-call",
+      "life-review",
+      "renewed-response"
+    ],
+    "prohibitedThemeIds": [
+      "eternal-condemnation",
+      "external-approval-only"
+    ]
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "essence": "過去を振り返って意味を受け取り、呼びかけに応えて新しい生き方を選ぶ覚醒。",
+      "journeyStage": "旅全体を見直し、過去の失敗も含めて次の役割へ立ち上がる段階。",
+      "coreTension": "責任を認めて再出発することと、自他を永久に断罪することのあいだ。",
+      "developmentalTask": "過去を消すのではなく、学びと責任を持って応答を選び直す。",
+      "lightAspects": [
+        "覚醒",
+        "召命",
+        "再評価",
+        "赦し"
+      ],
+      "shadowAspects": [
+        "自己断罪",
+        "過去の否認",
+        "評価への依存",
+        "呼びかけの拒否"
+      ],
+      "upright": {
+        "keywords": [
+          "覚醒",
+          "再評価",
+          "呼びかけ",
+          "再出発"
+        ],
+        "core": "過去の経験が一つの意味へまとまり、以前とは違う応答を選べる時を示す。",
+        "advice": "過去から学んだこと、修復すべきこと、今後応じたい役割を分けて書く。"
+      },
+      "reversed": {
+        "allowedModes": [
+          "blocked",
+          "internalized",
+          "distorted"
+        ],
+        "keywords": [
+          "自己断罪",
+          "先延ばし",
+          "呼びかけの拒否",
+          "評価依存"
+        ],
+        "core": "変わる機会を感じながら、過去の恥や他者の評価によって立ち上がれずにいる。",
+        "advice": "判決ではなく学びとして過去を見直し、修復可能な一行動を選ぶ。"
+      },
+      "contexts": {
+        "work": {
+          "focus": "キャリアの再評価、責任の清算、新しい役割",
+          "reflectionQuestion": "これまでの経験が今後の誰の役に立つか。"
+        },
+        "relationships": {
+          "focus": "過去の行為を認め、赦しと再選択を行うこと",
+          "reflectionQuestion": "謝罪、修復、別離のどれに応答する時か。"
+        },
+        "creativity": {
+          "focus": "過去作品の統合と本当に作るべき題材",
+          "reflectionQuestion": "繰り返し戻ってくる表現上の呼びかけは何か。"
+        },
+        "self": {
+          "focus": "人生の振り返りと自己赦免",
+          "reflectionQuestion": "過去の自分へ判決ではなく何を伝えたいか。"
+        }
+      },
+      "generationGuidance": {
+        "preserve": [
+          "呼びかけとそれに応じる動きを含める",
+          "過去の複数断片が一つの意味へまとまる構図を示す"
+        ],
+        "avoid": [
+          "永遠の断罪や恐怖だけにしない",
+          "他者からの承認だけを救済条件にしない"
+        ],
+        "visualMotifs": [
+          "遠くまで届く音や光",
+          "眠りから起きる複数の形",
+          "開かれる記録",
+          "過去と未来を結ぶ門"
+        ]
+      }
+    }
+  },
+  "inheritancePolicy": {
+    "coreEssenceRequired": true,
+    "minimumRequiredThemeMatches": 1,
+    "cardMayExtend": true,
+    "cardMayContradict": false
+  },
+  "publication": {
+    "publishedAt": "2026-07-19T00:00:00Z",
+    "retiredAt": null
+  }
+}
