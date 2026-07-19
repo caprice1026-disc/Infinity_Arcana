@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": 1,
+  "catalogVersion": 2,
   "assetRoots": [
     {
       "id": "sites-public",
@@ -9,8 +9,80 @@
   ],
   "assets": [
     {
-      "id": "card-babel-library-front",
+      "id": "card-unwritten-page-front",
       "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/unwritten-page/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/unwritten-page/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-scribe-of-all-things-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/scribe-of-all-things/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/scribe-of-all-things/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-babel-library-front",
+      "contentVersion": 2,
       "status": "planned",
       "kind": "card-front",
       "defaultVariantId": "display-local",
@@ -38,7 +110,727 @@
             "provider": "s3-compatible",
             "connectionId": "cards-production",
             "bucket": "infinity-arcana-assets",
-            "objectKey": "cards/babel-library/front.png",
+            "objectKey": "knowledge-arcana-vol-1/cards/babel-library/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-orchard-of-stories-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/orchard-of-stories/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/orchard-of-stories/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-first-catalogue-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/first-catalogue/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/first-catalogue/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-millennial-lecture-hall-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/millennial-lecture-hall/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/millennial-lecture-hall/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-twin-variant-texts-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/twin-variant-texts/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/twin-variant-texts/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-roaming-grand-library-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/roaming-grand-library/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/roaming-grand-library/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-compiler-of-beast-tongues-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/compiler-of-beast-tongues/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/compiler-of-beast-tongues/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-last-annotator-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/last-annotator/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/last-annotator/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-night-the-chronicle-rewrites-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/night-the-chronicle-rewrites/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/night-the-chronicle-rewrites/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-scales-of-testimony-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/scales-of-testimony/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/scales-of-testimony/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-inverted-atlas-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/inverted-atlas/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/inverted-atlas/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-final-revision-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/final-revision/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/final-revision/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-workshop-of-two-inks-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/workshop-of-two-inks/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/workshop-of-two-inks/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-labyrinth-of-citations-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/labyrinth-of-citations/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/labyrinth-of-citations/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-collapsing-book-tower-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/collapsing-book-tower/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/collapsing-book-tower/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-chart-of-the-lost-route-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/chart-of-the-lost-route/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/chart-of-the-lost-route/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-moonlight-manuscript-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/moonlight-manuscript/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/moonlight-manuscript/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-noon-open-archive-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/noon-open-archive/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/noon-open-archive/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-day-of-rereading-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/day-of-rereading/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/day-of-rereading/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "card-cyclical-encyclopedia-front",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/cyclical-encyclopedia/front.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 2048,
+          "height": 3072,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/cards/cyclical-encyclopedia/front.png",
+            "access": "signed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pack-knowledge-arcana-vol-1-cover",
+      "contentVersion": 1,
+      "status": "planned",
+      "kind": "pack-cover",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1536,
+          "height": 1024,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "packs/knowledge-arcana-vol-1/cover.webp"
+          }
+        },
+        {
+          "id": "original-remote",
+          "usage": "original",
+          "mimeType": "image/png",
+          "width": 3072,
+          "height": 2048,
+          "source": {
+            "type": "object-storage",
+            "provider": "s3-compatible",
+            "connectionId": "cards-production",
+            "bucket": "infinity-arcana-assets",
+            "objectKey": "knowledge-arcana-vol-1/pack/cover.png",
             "access": "signed"
           }
         }

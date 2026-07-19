@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cyclical-encyclopedia",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "円環百科全書"
+  },
+  "subtitle": {
+    "ja-JP": "最後の項目が最初の頁と読者へ帰る書"
+  },
+  "archetypeId": "world",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "belonging",
+    "completion",
+    "encyclopedia",
+    "wholeness"
+  ],
+  "manifestationForm": "object",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "completion",
+    "integrated-wholeness"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "四方の索引が一つの輪を作り、最終巻の末尾が第一巻と読者の余白へつながる百科全書",
+        "centralParadox": "全体は完成した時に見えるが、その完成は未知と次の読者を含むことでしか保たれない",
+        "lightAspects": [
+          "統合された完成",
+          "世界とのつながり",
+          "成果を次へ渡すこと"
+        ],
+        "shadowAspects": [
+          "完成への固執",
+          "閉じた体系",
+          "終わりを迎えられないこと"
+        ],
+        "lore": "円環百科全書は世界のすべてを収めると称するが、最後の項目は必ず「未記載」になる。読者が自分の学びを余白へ書くと、背表紙の輪が閉じ、第一巻が新しい題名で開く。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "完成",
+            "統合",
+            "帰属"
+          ],
+          "core": "多くの経験や断片が一つの全体として結び付き、成果を認めて次の循環へ渡せる段階にある。",
+          "advice": "完了を明確に祝い、得た知識、支えてくれた関係、次へ渡すものを一つずつ残す。",
+          "warning": "最後の細部を足し続けて、完成を受け取る瞬間を先延ばしにしない。"
+        },
+        "reversed": {
+          "mode": "delayed",
+          "keywords": [
+            "未完了感",
+            "閉鎖",
+            "区切れなさ"
+          ],
+          "core": "ほぼ終わっているにもかかわらず、完全でなければ価値がないと考え、統合や公開を止めている。",
+          "advice": "残件を完成条件、次版の課題、手放すものへ分け、今版を閉じる日を決める。",
+          "warning": "自分だけで完結する体系を作り、他者が続きを書く余白を奪わない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "プロジェクトの完了と知識移転",
+          "advice": "成果、判断理由、残課題を引き継ぎ、完了を正式に宣言する。"
+        },
+        "relationships": {
+          "focus": "違いを含んだ関係全体の受容",
+          "advice": "支えられたことを伝え、次の段階で互いに望む役割を確認する。"
+        },
+        "creativity": {
+          "focus": "作品を閉じて世界へ渡すこと",
+          "advice": "今作の完成条件を満たしたら公開し、次作の問いは別の頁へ移す。"
+        },
+        "self": {
+          "focus": "経験を自己の一部として統合すること",
+          "advice": "成功も失敗も含め、この周期で身に付いたものを自分の言葉で認める。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-cyclical-encyclopedia-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "四方の索引が光の輪を作る巨大な百科全書で、最終巻の末尾が第一巻と読者の余白へつながっている"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

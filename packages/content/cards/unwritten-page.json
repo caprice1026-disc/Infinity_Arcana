@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "unwritten-page",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "未記載の頁"
+  },
+  "subtitle": {
+    "ja-JP": "踏み出した後にだけ文字が現れる白紙"
+  },
+  "archetypeId": "fool",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "blank-page",
+    "beginning",
+    "possibility",
+    "unknown"
+  ],
+  "manifestationForm": "object",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "new-beginning",
+    "openness"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "巨大な書物から風へ解き放たれ、まだ一文字も記されていない一枚の頁",
+        "centralParadox": "何も書かれていないから何にでもなれるが、選ばなければ永遠に物語は始まらない",
+        "lightAspects": [
+          "先入観のない出発",
+          "未知への好奇心",
+          "試しながら学ぶ自由"
+        ],
+        "shadowAspects": [
+          "準備不足の美化",
+          "可能性だけを抱える停滞",
+          "記録や責任からの逃避"
+        ],
+        "lore": "世界のすべてを記す書には、最後まで白いまま残る頁が一枚だけある。その頁は持ち主が未知へ一歩踏み出した瞬間に最初の文字を浮かべ、戻ろうとすると再び白紙になる。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "出発",
+            "好奇心",
+            "余白"
+          ],
+          "core": "十分な確証を待つより、小さく始めた経験そのものが次に必要な知識を生む時である。",
+          "advice": "失敗しても戻せる最小の一歩を決め、今日のうちに最初の記録を残す。",
+          "warning": "無知であることと、確認できる危険まで無視することを混同しない。"
+        },
+        "reversed": {
+          "mode": "delayed",
+          "keywords": [
+            "先送り",
+            "白紙への恐れ",
+            "無計画"
+          ],
+          "core": "自由な選択肢を失うことが怖く、始めないことで可能性を保存しようとしている。",
+          "advice": "完璧な題名を決める前に、仮の目的と撤退条件だけを書いて試す。",
+          "warning": "勢いだけの着手か、準備を装った回避かを区別する。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "未経験の仕事や仮説検証の入口",
+          "advice": "一週間で検証できる試作に範囲を絞り、学びを記録する。"
+        },
+        "relationships": {
+          "focus": "相手を決めつけずに始める対話",
+          "advice": "過去の型を当てはめず、いま知りたいことを素直に一つ尋ねる。"
+        },
+        "creativity": {
+          "focus": "空白と最初の一筆",
+          "advice": "完成像より遊びを優先し、捨ててもよい一案を作る。"
+        },
+        "self": {
+          "focus": "未知の自分を許すこと",
+          "advice": "分からないまま進んだ経験と、そこで得た感覚を一行で残す。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-unwritten-page-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "巨大な開いた書物から白い一頁が風へ舞い、頁の先に未知の道が続いている"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

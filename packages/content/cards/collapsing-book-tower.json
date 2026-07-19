@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "collapsing-book-tower",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "崩落する書塔"
+  },
+  "subtitle": {
+    "ja-JP": "偽りの礎が頁ごと空へ暴かれる瞬間"
+  },
+  "archetypeId": "tower",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "collapse",
+    "revelation",
+    "ruins",
+    "tower"
+  ],
+  "manifestationForm": "event",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "structural-collapse",
+    "false-foundation"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "一冊の偽造された基礎文書が抜け落ち、雲まで届く書物の塔が内側から崩れる光景",
+        "centralParadox": "崩壊は蓄積した知を失わせるが、閉ざされていた空と偽りの土台を同時に露出させる",
+        "lightAspects": [
+          "虚構からの解放",
+          "突然の真相",
+          "再建のための更地"
+        ],
+        "shadowAspects": [
+          "破壊の連鎖",
+          "衝撃による混乱",
+          "真実を武器にすること"
+        ],
+        "lore": "書塔は一冊の建国記を礎に築かれた。ある雷夜、その記録の印章が偽造だと判明し、塔は頁の嵐となって崩れる。瓦礫の中央には、誰も見たことのない星空が開いていた。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "崩壊",
+            "露見",
+            "解放"
+          ],
+          "core": "維持できない前提や構造が急に崩れ、痛みを伴っても現実に沿った再建が可能になる局面である。",
+          "advice": "まず安全と事実を確保し、守るべき人・機能と、戻さない旧構造を分ける。",
+          "warning": "衝撃の最中に、すべての意味や次の完成形まで決めようとしない。"
+        },
+        "reversed": {
+          "mode": "delayed",
+          "keywords": [
+            "崩壊の予感",
+            "延命",
+            "内なる動揺"
+          ],
+          "core": "土台の問題に気付いていながら、小さな補修で不可避の見直しを先送りしている。",
+          "advice": "最悪の破綻点を特定し、安全に停止・退避できる手順を先に用意する。",
+          "warning": "秘密を守ることが人を守るのか、構造を延命するだけなのか見極める。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "前提崩壊、障害、重大な認識違い",
+          "advice": "被害を止め、確認済み事実と仮説を分け、復旧と再発防止を別工程にする。"
+        },
+        "relationships": {
+          "focus": "信頼を揺るがす事実の露見",
+          "advice": "防御的な説明より先に、起きた影響と安全の回復を扱う。"
+        },
+        "creativity": {
+          "focus": "作品の根本前提が機能しない発見",
+          "advice": "表面修正を止め、残したい核だけを瓦礫から拾う。"
+        },
+        "self": {
+          "focus": "自己像や信念の急な崩壊",
+          "advice": "今すぐ確かな事実と支えになる人を確認し、新しい答えを急がない。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-collapsing-book-tower-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "雲まで積まれた書物の塔から礎の一冊が抜け、頁の嵐と雷光の中で塔が崩れ空が開いている"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

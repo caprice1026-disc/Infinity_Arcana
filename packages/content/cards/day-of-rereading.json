@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "day-of-rereading",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "再読の日"
+  },
+  "subtitle": {
+    "ja-JP": "過去の頁が現在の名を呼ぶ一日"
+  },
+  "archetypeId": "judgement",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "awakening",
+    "calling",
+    "review",
+    "response"
+  ],
+  "manifestationForm": "event",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "awakening-call",
+    "life-review"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "都市中の古い日記と決定記録が一斉に開き、書き手の現在の名を呼ぶ鐘のような現象",
+        "centralParadox": "過去の文章は書き換えられないが、読み直した者の応答によってその意味と続きを変えられる",
+        "lightAspects": [
+          "目覚めの呼び声",
+          "誠実な振り返り",
+          "新しい応答"
+        ],
+        "shadowAspects": [
+          "自己断罪",
+          "過去の正当化",
+          "呼び声からの逃避"
+        ],
+        "lore": "再読の日には、忘れられた記録が持ち主の前へ戻る。頁は罪を決めず、当時の選択と現在の結果を同時に映す。読み手は一つだけ返事を書き、次の一年をその言葉に応える。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "覚醒",
+            "再評価",
+            "応答"
+          ],
+          "core": "過去の選択と現在の自分を誠実に結び直し、いま聞こえる呼び声へ新しい行動で答える時である。",
+          "advice": "繰り返し戻るテーマを一つ選び、赦すこと、償うこと、再開することのどれが必要か決める。",
+          "warning": "反省を自己処罰で終わらせず、現在の責任ある応答へ移す。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "自己断罪",
+            "呼び声の拒否",
+            "再評価の恐れ"
+          ],
+          "core": "過去を見れば価値まで否定されると感じ、必要な振り返りや再出発を避けている。",
+          "advice": "当時知っていたことと今知っていることを分け、今できる修復を一つ選ぶ。",
+          "warning": "赦すことを、影響や責任が消えることと取り違えない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "節目の振り返りと使命の再確認",
+          "advice": "成果と失敗を同じ基準で見直し、次期に応答する一つの変更を決める。"
+        },
+        "relationships": {
+          "focus": "過去の行動を認め関係へ答え直すこと",
+          "advice": "意図より影響を聞き、修復できる具体的な行動を申し出る。"
+        },
+        "creativity": {
+          "focus": "眠っていた作品や主題からの呼び声",
+          "advice": "昔の案を現在の技量で読み、今も生きる問いだけを再開する。"
+        },
+        "self": {
+          "focus": "人生の物語を評価し直し次へ応えること",
+          "advice": "繰り返し現れる願いを一つ認め、今週の行動へ変える。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-day-of-rereading-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "都市中で古い日記と記録が一斉に宙へ開き、頁から鐘の輪のような光が読者の名を呼んでいる"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

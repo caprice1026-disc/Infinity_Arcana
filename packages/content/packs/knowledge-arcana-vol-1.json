@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "knowledge-arcana-vol-1",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "知識領域アルカナ 第一集"
+  },
+  "subtitle": {
+    "ja-JP": "書物と記録が運命を語る二十二景"
+  },
+  "description": {
+    "ja-JP": "「バベルの図書館」を女教皇に据え、知識を集め、編み、疑い、手放し、分かち合う旅を22原型で一巡するセット。"
+  },
+  "domainIds": [
+    "knowledge"
+  ],
+  "tags": [
+    "archive",
+    "complete-major-set",
+    "knowledge",
+    "volume-one"
+  ],
+  "cardIds": [
+    "unwritten-page",
+    "scribe-of-all-things",
+    "babel-library",
+    "orchard-of-stories",
+    "first-catalogue",
+    "millennial-lecture-hall",
+    "twin-variant-texts",
+    "roaming-grand-library",
+    "compiler-of-beast-tongues",
+    "last-annotator",
+    "night-the-chronicle-rewrites",
+    "scales-of-testimony",
+    "inverted-atlas",
+    "final-revision",
+    "workshop-of-two-inks",
+    "labyrinth-of-citations",
+    "collapsing-book-tower",
+    "chart-of-the-lost-route",
+    "moonlight-manuscript",
+    "noon-open-archive",
+    "day-of-rereading",
+    "cyclical-encyclopedia"
+  ],
+  "coverAssetId": "pack-knowledge-arcana-vol-1-cover",
+  "accessPolicy": {
+    "accessLevel": "free",
+    "entitlementId": null
+  },
+  "compositionPolicy": {
+    "type": "one-per-major-archetype",
+    "expectedCardCount": 22,
+    "allowDuplicateArchetypes": false
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "concept": "世界は一冊の完成した本ではなく、書く者、読む者、消す者によって絶えず改訂される巨大な知識機関である。",
+      "curatorialRule": "各カードは異なる大アルカナ原型を一つ継承し、知識の生成・保存・伝達・解釈・忘却のいずれかを固有の象徴として表す。",
+      "readingTone": "神秘性を保ちながらも、相談内容を調査、判断、対話、試作、手放しといった実行可能な営みへ結び付ける。"
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

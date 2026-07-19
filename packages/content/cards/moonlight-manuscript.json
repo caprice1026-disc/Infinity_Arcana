@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "moonlight-manuscript",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "月光写本"
+  },
+  "subtitle": {
+    "ja-JP": "夜ごと異なる真実を浮かべる頁"
+  },
+  "archetypeId": "moon",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "ambiguity",
+    "dream",
+    "manuscript",
+    "moonlight"
+  ],
+  "manifestationForm": "object",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "ambiguity",
+    "subconscious-imagery"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "月相に応じて文字と挿絵が変わり、読者の夢を余白へ映す青銀の写本",
+        "centralParadox": "写本は言葉にならない真実を映すが、現実の事実と読者の恐れを同じインクで描く",
+        "lightAspects": [
+          "夢と直感の受容",
+          "曖昧さを進む感覚",
+          "隠れた感情への気付き"
+        ],
+        "shadowAspects": [
+          "不安による投影",
+          "幻想への迷入",
+          "曖昧な合図の過信"
+        ],
+        "lore": "月光写本は昼には空白で、夜になると読者が避けてきた像を描く。新月には恐れが、満月には願いが濃く出るため、司書は必ず翌朝の事実と照合して読む。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "曖昧さ",
+            "直感",
+            "夢"
+          ],
+          "core": "全体像がまだ見えず、感情や直感が重要な手掛かりを持つ一方、事実との区別を丁寧に保つ必要がある。",
+          "advice": "感じたこと、想像したこと、確認できたことを別々に記録し、暗い道を一歩ずつ進む。",
+          "warning": "強く感じることを、そのまま外界の事実だと断定しない。"
+        },
+        "reversed": {
+          "mode": "distorted",
+          "keywords": [
+            "混乱",
+            "投影",
+            "自己欺瞞"
+          ],
+          "core": "不安や願望が手掛かりを歪め、曖昧な状況へ一つの怖い物語だけを当てはめている。",
+          "advice": "結論を保留し、第三者が確認できる事実を一つずつ増やす。",
+          "warning": "安心するための説明も、恐れるための説明も同じように検証する。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "情報不足の状況での仮説と不安",
+          "advice": "推測を意思決定ログへ明記し、次に確認する事実と期限を決める。"
+        },
+        "relationships": {
+          "focus": "相手の沈黙へ意味を投影すること",
+          "advice": "物語を作る前に、自分の不安として伝えて確認を求める。"
+        },
+        "creativity": {
+          "focus": "夢や曖昧な像を素材にすること",
+          "advice": "意味を説明し切らず、繰り返し現れる像をそのまま作品へ置く。"
+        },
+        "self": {
+          "focus": "言葉にならない感覚と現実検討",
+          "advice": "夢や感情を記録し、翌朝に事実と解釈を色分けする。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-moonlight-manuscript-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "青銀の写本が月光の下で開き、頁に夢の森と二つの月が浮かび、余白の文字が波のように変化している"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

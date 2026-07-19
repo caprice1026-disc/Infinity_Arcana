@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scribe-of-all-things",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "万象の写字生"
+  },
+  "subtitle": {
+    "ja-JP": "四つの道具で思考を現実へ写す者"
+  },
+  "archetypeId": "magician",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "craft",
+    "focus",
+    "scribe",
+    "tools"
+  ],
+  "manifestationForm": "person",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "focused-will",
+    "skillful-action"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "羽根筆、測量器、拡大鏡、封印を一つの机で操る若い写字生",
+        "centralParadox": "世界を正確に写そうとするほど、選んだ言葉と形式が世界の見え方を変えてしまう",
+        "lightAspects": [
+          "意図を形にする技術",
+          "資源の巧みな組み合わせ",
+          "集中した実行"
+        ],
+        "shadowAspects": [
+          "言葉による操作",
+          "技術の誇示",
+          "手段を目的化すること"
+        ],
+        "lore": "万象の写字生は、名のない現象に記号を与える。机上の四つの道具は観察、構成、検証、公開を司り、四つが揃って初めて記述は現実へ作用する。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "集中",
+            "編集",
+            "具現化"
+          ],
+          "core": "必要な材料と技能はすでに手元にあり、焦点を定めて組み合わせれば構想を動く形へ変えられる。",
+          "advice": "目的、使える道具、最初の成果物を一枚の作業面に並べ、順番に手を動かす。",
+          "warning": "巧みな説明が、実物や検証の不足を覆っていないか確かめる。"
+        },
+        "reversed": {
+          "mode": "distorted",
+          "keywords": [
+            "見せかけ",
+            "散漫",
+            "言葉の操作"
+          ],
+          "core": "能力が不足しているのではなく、意図が散らばるか、技術が相手を動かすためだけに使われている。",
+          "advice": "誰に何を証明したいのかを外し、成果物が満たすべき一つの機能へ戻る。",
+          "warning": "都合のよい表現で事実の輪郭を書き換えない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "技能と資源を成果へ変える段取り",
+          "advice": "会議より先に、触れて評価できる小さな成果物を作る。"
+        },
+        "relationships": {
+          "focus": "言葉の力と誠実さ",
+          "advice": "相手を説得する前に、自分の意図と望む合意を明言する。"
+        },
+        "creativity": {
+          "focus": "着想を媒体へ定着させる技術",
+          "advice": "使う道具を限定し、制約の中で一つ完成させる。"
+        },
+        "self": {
+          "focus": "自分の能力を意図的に使うこと",
+          "advice": "得意なことを三つ挙げ、今の課題に一つずつ対応させる。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-scribe-of-all-things-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "羽根筆、測量器、拡大鏡、封印を並べた机で発光する文字を書く若い写字生"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

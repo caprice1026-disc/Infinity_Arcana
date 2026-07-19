@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "last-annotator",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "最後の注釈者"
+  },
+  "subtitle": {
+    "ja-JP": "消えゆく本文の余白に灯を置く者"
+  },
+  "archetypeId": "hermit",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "annotation",
+    "inquiry",
+    "solitude",
+    "wisdom"
+  ],
+  "manifestationForm": "person",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "solitary-inquiry",
+    "earned-wisdom"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "崩れゆく古写本の余白へ、小さな灯火で最後の注釈を書き込む孤独な老人",
+        "centralParadox": "他者のために本文を明らかにするほど、注釈者自身の言葉は次代の謎として余白へ沈む",
+        "lightAspects": [
+          "静かな探求",
+          "経験から得た知恵",
+          "必要な灯を分けること"
+        ],
+        "shadowAspects": [
+          "孤立の固定化",
+          "終わらない注釈",
+          "自分だけが分かるという傲慢"
+        ],
+        "lore": "最後の注釈者は、誰も読めなくなった本を一冊だけ携えて辺境を歩く。答えを本文へ書き足さず、次の読者が自分で確かめられる手掛かりだけを余白へ残す。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "内省",
+            "識別",
+            "灯火"
+          ],
+          "core": "外部の声から距離を取り、自分の経験を丁寧に読み返すことで、次に進むための小さく確かな指針が見つかる。",
+          "advice": "一人で考える時間に期限を置き、得た洞察を他者が試せる言葉へまとめる。",
+          "warning": "孤独を深さの証明にせず、必要な時は別の読者へ本を開く。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "閉鎖",
+            "考え過ぎ",
+            "孤立"
+          ],
+          "core": "探求が共有や行動から切り離され、答えを完成させるまで誰にも会わない姿勢になっている。",
+          "advice": "未完成の考えを信頼できる一人へ示し、何が伝わらないかを聞く。",
+          "warning": "他者の浅さを決めつけることで、自分が傷つかない場所へ退かない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "専門的な調査と共有の境界",
+          "advice": "調査の中間成果を、判断に使える三点へ絞って共有する。"
+        },
+        "relationships": {
+          "focus": "一人になる必要と関係からの撤退",
+          "advice": "距離が必要な理由と、いつ戻って話すかを相手へ伝える。"
+        },
+        "creativity": {
+          "focus": "参照と推敲から自分の洞察を得ること",
+          "advice": "注釈を増やす前に、作品が本当に問う一文を書く。"
+        },
+        "self": {
+          "focus": "経験を知恵へ変える静かな時間",
+          "advice": "繰り返す出来事の共通点と、自分が選べる一点を記す。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-last-annotator-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "崩れかけた巨大写本の余白へ、手持ちの灯火を頼りに一人の老人が細い注釈を書き込んでいる"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

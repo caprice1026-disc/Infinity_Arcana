@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "twin-variant-texts",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "双生の異本"
+  },
+  "subtitle": {
+    "ja-JP": "同じ物語を二つの真実へ分けた写本"
+  },
+  "archetypeId": "lovers",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "choice",
+    "connection",
+    "manuscript",
+    "values"
+  ],
+  "manifestationForm": "object",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "value-aligned-choice",
+    "mutual-connection"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "同じ背表紙から左右へ開き、互いに異なる結末を記す二冊一体の写本",
+        "centralParadox": "二つの読みは互いを豊かにするが、進むにはどちらを大切にするか選ばなければならない",
+        "lightAspects": [
+          "価値に沿った選択",
+          "差異を保つ結び付き",
+          "相互の理解"
+        ],
+        "shadowAspects": [
+          "選択の先送り",
+          "同一化による親密さ",
+          "都合のよい読み替え"
+        ],
+        "lore": "双生の異本は一つの出来事から生まれた。片方を読むともう片方の余白へ注釈が現れ、二冊を閉じて重ねると、読者が選ばなかった結末だけが金色に光る。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "選択",
+            "共鳴",
+            "約束"
+          ],
+          "core": "複数の正しさを認めた上で、自分が守りたい価値と結び付き方を意識的に選ぶ時である。",
+          "advice": "得たい結果ではなく、選択後も守りたい態度を言葉にして相手と共有する。",
+          "warning": "調和のために、自分や相手の重要な違いを消さない。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "不一致",
+            "決められなさ",
+            "自己否定"
+          ],
+          "core": "選ばないことで関係や可能性を保とうとしているが、曖昧さそのものが信頼を削っている。",
+          "advice": "譲れる条件、譲れない価値、まだ分からない点を三つに分けて伝える。",
+          "warning": "相手に選ばせる形で、自分の決断責任を隠さない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "価値の衝突を含む共同判断",
+          "advice": "評価軸の優先順位を合意してから案を比較する。"
+        },
+        "relationships": {
+          "focus": "違いを保った親密さと約束",
+          "advice": "期待を推測せず、互いが選びたい関係の形を言葉にする。"
+        },
+        "creativity": {
+          "focus": "二つの方向性から核を選ぶこと",
+          "advice": "両案の好きな理由を抽出し、今回守る一つの価値を決める。"
+        },
+        "self": {
+          "focus": "自分の価値観と選択の一致",
+          "advice": "誰の期待もなければ何を選ぶかを書き、その理由を確かめる。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-twin-variant-texts-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "一つの背表紙から左右へ開く二冊の写本が異なる結末を映し、中央で金色の糸が両者を結んでいる"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

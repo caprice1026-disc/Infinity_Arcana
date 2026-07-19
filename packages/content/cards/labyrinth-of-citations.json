@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "labyrinth-of-citations",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "引用の迷宮"
+  },
+  "subtitle": {
+    "ja-JP": "根拠を辿るほど自分の声から遠ざかる回廊"
+  },
+  "archetypeId": "devil",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "attachment",
+    "citations",
+    "dependency",
+    "labyrinth"
+  ],
+  "manifestationForm": "place",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "binding-desire",
+    "self-maintained-chain"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "すべての文章の脚注が別の扉となり、中央の空白へ決して着かない地下迷宮",
+        "centralParadox": "根拠を確かめる営みが信頼を生む一方、完全な裏付けを求め続けると自分の判断を永遠に他者へ預ける",
+        "lightAspects": [
+          "依存への気付き",
+          "欲望の正体を見ること",
+          "自分で鎖を外す可能性"
+        ],
+        "shadowAspects": [
+          "権威への依存",
+          "終わらない参照",
+          "借り物の言葉による自己正当化"
+        ],
+        "lore": "引用の迷宮では、どの扉にも正当な出典が刻まれている。旅人は一つ前の文章へ戻れば安全だと思い、同じ階段を降り続ける。出口の鍵は、誰の言葉でもない自分の仮説を一文書くことだ。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "執着",
+            "依存",
+            "自覚"
+          ],
+          "core": "安心や正当性を得るために続けている行動が、自分の選択肢を狭める鎖になっている可能性がある。",
+          "advice": "得ている利益、払っている代償、やめられない理由を隠さず書き、自分で外せる輪を一つ選ぶ。",
+          "warning": "問題を理解したことだけで、行動の鎖まで外れたと思わない。"
+        },
+        "reversed": {
+          "mode": "internalized",
+          "keywords": [
+            "自己拘束",
+            "恥",
+            "出口の否認"
+          ],
+          "core": "外部の権威がなくても、その声を内面化して自分自身を監視し、許可を待ち続けている。",
+          "advice": "引用なしで現在の判断を一文書き、信頼できる人に現実的な危険だけを点検してもらう。",
+          "warning": "自由になるために、責任や検証まで拒絶しない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "資料や前例へ依存して決められない状態",
+          "advice": "必要な根拠の最低条件を定め、満たしたら仮説として決定する。"
+        },
+        "relationships": {
+          "focus": "相手や過去の言葉に縛られること",
+          "advice": "実際の約束と、自分が推測して守っている規則を分ける。"
+        },
+        "creativity": {
+          "focus": "参照作品の影から出られない状態",
+          "advice": "資料を閉じ、自分が主張したい違いを一文から作る。"
+        },
+        "self": {
+          "focus": "安心と引き換えに維持する自己制限",
+          "advice": "許可を待っている相手を特定し、今日自分で出せる許可を書く。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-labyrinth-of-citations-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "地下迷宮のすべての脚注が別の扉へ続き、旅人の足元から引用符の形をした鎖が伸びている"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

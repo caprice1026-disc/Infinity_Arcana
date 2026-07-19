@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "roaming-grand-library",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "走る大書庫"
+  },
+  "subtitle": {
+    "ja-JP": "相反する知を一つの進路へ運ぶ建築"
+  },
+  "archetypeId": "chariot",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "direction",
+    "integration",
+    "library",
+    "movement"
+  ],
+  "manifestationForm": "place",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "directed-will",
+    "integrated-forces"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "昼の書庫と夜の書庫を左右に従え、無数の車輪で荒野を進む巨大図書館",
+        "centralParadox": "異なる知を一つの目的地へ運べるが、進路を失えば蓄えた重さそのものに押し潰される",
+        "lightAspects": [
+          "相反する力の統合",
+          "明確な進路",
+          "意志ある前進"
+        ],
+        "shadowAspects": [
+          "速度への執着",
+          "統制の疲弊",
+          "目的地なき拡張"
+        ],
+        "lore": "走る大書庫には、互いを否定する二つの蔵がある。館長はどちらも切り離さず、中央の操舵室で問いを一つ掲げる。その問いが明確な間だけ、巨大な車輪は同じ方角へ回る。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "進路",
+            "統合",
+            "前進"
+          ],
+          "core": "相反する意見や感情を消さず、上位の目的へ束ねることで勢いを持って前進できる。",
+          "advice": "目的地、今期の到達点、進路から外れた時の合図を短く共有する。",
+          "warning": "速さを成果と取り違えず、積荷と乗員が持続できるか確認する。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "暴走",
+            "分裂",
+            "方向喪失"
+          ],
+          "core": "前進すること自体が目的になり、統合できていない力が別々の方向へ車体を引いている。",
+          "advice": "いったん速度を落とし、成功条件を一つに絞って不要な積荷を降ろす。",
+          "warning": "強く操縦するほど制御できるという思い込みを手放す。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "複数チームや制約を同じ成果へ束ねること",
+          "advice": "各案の勝敗ではなく、共通の成功指標を一つ定める。"
+        },
+        "relationships": {
+          "focus": "二人の違う速度と同じ行き先",
+          "advice": "進めたいことと待ちたいことを分け、次の合流点を決める。"
+        },
+        "creativity": {
+          "focus": "多様な素材を一つの作品へ統合する推進力",
+          "advice": "中心の問いを一文にし、寄与しない要素を一度外す。"
+        },
+        "self": {
+          "focus": "矛盾する欲求を抱えたまま進むこと",
+          "advice": "両方の声を聞いた上で、今日操縦できる一つの行動を選ぶ。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-roaming-grand-library-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "昼と夜の二つの書庫を左右に載せた巨大な移動図書館が無数の車輪で荒野を進んでいる"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

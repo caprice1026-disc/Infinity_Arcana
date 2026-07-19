@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "babel-library",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -12,15 +12,15 @@
   },
   "archetypeId": "high-priestess",
   "domainIds": [
-    "books",
-    "infinite-architecture",
     "knowledge"
   ],
   "packIds": [
-    "base-infinite"
+    "knowledge-arcana-vol-1"
   ],
   "tags": [
+    "books",
     "hidden-truth",
+    "infinite-architecture",
     "library",
     "paradox",
     "search"

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scales-of-testimony",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "証言の天秤"
+  },
+  "subtitle": {
+    "ja-JP": "声の大きさではなく重みを量る器"
+  },
+  "archetypeId": "justice",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "accountability",
+    "evidence",
+    "judgement",
+    "testimony"
+  ],
+  "manifestationForm": "object",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "fair-accountability",
+    "truthful-assessment"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "相反する証言と沈黙を左右の皿に載せ、中央に結果の影を映す透明な天秤",
+        "centralParadox": "公平に判断するにはすべての声を聴く必要があるが、完全な証拠が揃うまで待てば被害が続く",
+        "lightAspects": [
+          "事実に基づく判断",
+          "説明責任",
+          "釣り合う結果"
+        ],
+        "shadowAspects": [
+          "冷たい断罪",
+          "偽りの中立",
+          "証拠集めによる決断回避"
+        ],
+        "lore": "証言の天秤は身分や声量を量らない。片方の皿に語られたこと、もう片方に語られなかったことを置くと、中央の鏡に選択の結果を受け取る人々が映る。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "公正",
+            "検証",
+            "責任"
+          ],
+          "core": "感情を否定せず、確認できる事実、合意した基準、結果への責任を揃えて判断することが求められている。",
+          "advice": "判断基準を先に明示し、事実と推測を分け、決定理由を後から説明できる形で残す。",
+          "warning": "同じ扱いをすることが、異なる条件に対して常に公正とは限らない。"
+        },
+        "reversed": {
+          "mode": "distorted",
+          "keywords": [
+            "偏見",
+            "責任回避",
+            "見せかけの中立"
+          ],
+          "core": "都合のよい証拠だけを採用するか、誰も傷つけないふりをして実際の不均衡を放置している。",
+          "advice": "自分の利益、見落とした声、決定の影響を受ける人を改めて書き出す。",
+          "warning": "規則に従ったという事実だけで、判断の結果への責任を免れない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "評価基準と意思決定の説明責任",
+          "advice": "評価前に基準を共有し、例外と判断理由を記録する。"
+        },
+        "relationships": {
+          "focus": "双方の認識と行動の結果",
+          "advice": "正しさの勝負を止め、起きた事実と必要な修復を順に話す。"
+        },
+        "creativity": {
+          "focus": "作品への厳密で公正な評価",
+          "advice": "好みと目的適合を分け、同じ基準で複数案を見る。"
+        },
+        "self": {
+          "focus": "自分の選択を誠実に引き受けること",
+          "advice": "言い訳を外して、選んだ理由と次に修正する一点を書く。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-scales-of-testimony-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "透明な天秤の皿に文字でできた証言と黒い沈黙が載り、中央の鏡に判断の影響を受ける人々が映っている"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+
