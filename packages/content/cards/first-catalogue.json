@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "first-catalogue",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "第一目録"
+  },
+  "subtitle": {
+    "ja-JP": "世界に最初の棚番号を与えた書"
+  },
+  "archetypeId": "emperor",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "authority",
+    "catalogue",
+    "classification",
+    "structure"
+  ],
+  "manifestationForm": "object",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "structure",
+    "responsible-authority"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "あらゆる書架と知識の位置を決める、金属の留め具を持つ巨大な目録",
+        "centralParadox": "秩序は知識を見つけやすくするが、分類名を持たないものを世界の外へ追いやる",
+        "lightAspects": [
+          "安定した構造",
+          "責任ある管理",
+          "再現可能な分類"
+        ],
+        "shadowAspects": [
+          "硬直した規則",
+          "分類による支配",
+          "例外の抹消"
+        ],
+        "lore": "書庫がまだ地平まで散乱していた時代、最初の司書王が第一目録を編んだ。棚は並び、人々は本へ辿り着けたが、目録に記されない声は存在しないものとして扱われた。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "構造",
+            "管理",
+            "責任"
+          ],
+          "core": "目的を守るための境界、役割、判断基準を明文化することで、混乱を安定した運用へ変えられる。",
+          "advice": "誰が、何を、いつ決めるかを定め、例外を扱う入口も同時に用意する。",
+          "warning": "現在の分類が現実そのものではなく、管理のための仮の枠組みだと忘れない。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "硬直",
+            "統制",
+            "分類の暴走"
+          ],
+          "core": "秩序を守る仕組みが目的より強くなり、現場の変化や名付けられない価値を排除している。",
+          "advice": "残すべき原則を一つ選び、それ以外の手順は例外を含めて見直す。",
+          "warning": "責任を持つことと、すべてを自分の判断下に置くことを混同しない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "役割、権限、運用基準の設計",
+          "advice": "意思決定者と完了条件を明文化し、例外の相談先を一つにする。"
+        },
+        "relationships": {
+          "focus": "安心を作る境界と支配の違い",
+          "advice": "一方的な規則ではなく、互いに守れる約束へ言い換える。"
+        },
+        "creativity": {
+          "focus": "制約が創作を支える範囲",
+          "advice": "分類やテンプレートを土台に使い、例外を試す余白を残す。"
+        },
+        "self": {
+          "focus": "自分を支える生活の構造",
+          "advice": "意思力に頼らず続く時間、場所、順序を一つ設計する。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-first-catalogue-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "金属の留め具が付いた巨大な目録が石の台座に開かれ、無数の書架へ光の棚番号を投射している"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

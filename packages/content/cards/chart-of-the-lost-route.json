@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "chart-of-the-lost-route",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "失われた航路の星図"
+  },
+  "subtitle": {
+    "ja-JP": "消えた旅人の光が次の方角を示す図"
+  },
+  "archetypeId": "star",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "guidance",
+    "hope",
+    "navigation",
+    "star-chart"
+  ],
+  "manifestationForm": "object",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "renewed-hope",
+    "healing-guidance"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "途絶えた航海の軌跡が星座となり、暗い海に細い進路を投げる透明な星図",
+        "centralParadox": "失われた航路は過去の旅人を連れ戻せないが、その不在が次の旅を安全に導く",
+        "lightAspects": [
+          "静かな希望",
+          "傷から得た案内",
+          "未来への信頼"
+        ],
+        "shadowAspects": [
+          "救済の幻想",
+          "遠い理想への逃避",
+          "希望を急がせること"
+        ],
+        "lore": "帰らなかった船の航海日誌は、最後の頁を夜空へ放つ。文字は星となって危険な暗礁を囲み、後の旅人へ細い水路を示す。星図は到着を約束せず、方角だけを惜しみなく渡す。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "希望",
+            "回復",
+            "導き"
+          ],
+          "core": "困難の後に、すべてを解決する確信ではなく、次の一歩を選べる静かな見通しが戻りつつある。",
+          "advice": "回復の徴候を小さく記録し、信頼できる目印を一つ選んで継続する。",
+          "warning": "希望を持てない日を失敗とせず、身体と現実の速度を尊重する。"
+        },
+        "reversed": {
+          "mode": "deficiency",
+          "keywords": [
+            "失望",
+            "方向喪失",
+            "回復への不信"
+          ],
+          "core": "遠い理想と現在の差だけを見て、すでに現れている小さな回復や助けを受け取れなくなっている。",
+          "advice": "大きな目標をいったん外し、明日を少し安全にする目印を一つ置く。",
+          "warning": "一人で希望を作れない時に、支援を求めることを弱さと見なさない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "失敗後の回復と長期方向",
+          "advice": "得た教訓を責任追及だけで終わらせず、次の安全策と小目標へ変える。"
+        },
+        "relationships": {
+          "focus": "傷ついた信頼に小さな光を戻すこと",
+          "advice": "大きな約束より、守れる小さな行動を一定期間続ける。"
+        },
+        "creativity": {
+          "focus": "迷いの後に戻る自分固有の方向",
+          "advice": "評価から離れ、何度でも作りたい題材へ小さく戻る。"
+        },
+        "self": {
+          "focus": "回復を急がず兆しを見つけること",
+          "advice": "昨日より少し楽だった瞬間と、その条件を一つ記録する。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-chart-of-the-lost-route-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "透明な星図に消えた船の航路が星座として輝き、暗い海上へ細い光の進路を投げている"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

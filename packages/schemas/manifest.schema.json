@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:infinity-arcana:schema:manifest:1.0.0",
+  "$id": "urn:infinity-arcana:schema:manifest:1.1.0",
   "title": "Infinity Arcana content manifest",
   "type": "object",
   "required": [
@@ -13,7 +13,7 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": "1.0.0"
+      "const": "1.1.0"
     },
     "releaseId": {
       "type": "string",
@@ -32,7 +32,9 @@
       "required": [
         "archetypes",
         "cards",
-        "assets"
+        "assets",
+        "domains",
+        "packs"
       ],
       "properties": {
         "archetypes": {
@@ -45,6 +47,14 @@
         "assets": {
           "type": "integer",
           "minimum": 0
+        },
+        "domains": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "packs": {
+          "type": "integer",
+          "minimum": 0
         }
       },
       "additionalProperties": false
@@ -54,6 +64,8 @@
       "required": [
         "archetypes",
         "cards",
+        "domains",
+        "packs",
         "assetCatalog"
       ],
       "properties": {
@@ -73,6 +85,22 @@
           "items": {
             "type": "string",
             "pattern": "^cards/[a-z0-9-]+\\.json$"
+          }
+        },
+        "domains": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^domains/[a-z0-9-]+\\.json$"
+          }
+        },
+        "packs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^packs/[a-z0-9-]+\\.json$"
           }
         },
         "assetCatalog": {

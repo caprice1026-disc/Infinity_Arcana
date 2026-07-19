@@ -19,9 +19,42 @@
 
 大アルカナの番号はRider–Waite–Smith系の順序を採用し、「力」をVIII、「正義」をXIとしています。
 
-## サンプルカード：バベルの図書館
+## 知識領域アルカナ 第一集
 
-最初の架空アルカナとして、女教皇の原型から派生した[バベルの図書館](packages/content/cards/babel-library.json)を収録しています。
+最初の完全セットとして、書物、記録、目録、翻訳、注釈、地図、記憶を扱う[知識領域](packages/content/domains/knowledge.json)と、22原型を各1枚ずつ収録する[知識領域アルカナ 第一集](packages/content/packs/knowledge-arcana-vol-1.json)を追加しています。
+
+パックは`compositionPolicy.type: one-per-major-archetype`を宣言し、検証処理が22枚、原型の欠落・重複、カード側との相互参照を確認します。現在はコンテンツと画像の検品前なので、領域、パック、全カードは`draft`、画像アセットは`planned`です。
+
+### 収録カード
+
+| 番号 | 原型 | 架空アルカナ |
+|---:|---|---|
+| 00 | 愚者 | [未記載の頁](packages/content/cards/unwritten-page.json) |
+| 01 | 魔術師 | [万象の写字生](packages/content/cards/scribe-of-all-things.json) |
+| 02 | 女教皇 | [バベルの図書館](packages/content/cards/babel-library.json) |
+| 03 | 女帝 | [物語の果樹園](packages/content/cards/orchard-of-stories.json) |
+| 04 | 皇帝 | [第一目録](packages/content/cards/first-catalogue.json) |
+| 05 | 教皇 | [千年講堂](packages/content/cards/millennial-lecture-hall.json) |
+| 06 | 恋人 | [双生の異本](packages/content/cards/twin-variant-texts.json) |
+| 07 | 戦車 | [走る大書庫](packages/content/cards/roaming-grand-library.json) |
+| 08 | 力 | [獣語の編纂者](packages/content/cards/compiler-of-beast-tongues.json) |
+| 09 | 隠者 | [最後の注釈者](packages/content/cards/last-annotator.json) |
+| 10 | 運命の輪 | [年代記が書き換わる夜](packages/content/cards/night-the-chronicle-rewrites.json) |
+| 11 | 正義 | [証言の天秤](packages/content/cards/scales-of-testimony.json) |
+| 12 | 吊るされた男 | [逆さの地図帳](packages/content/cards/inverted-atlas.json) |
+| 13 | 死神 | [最後の改訂](packages/content/cards/final-revision.json) |
+| 14 | 節制 | [二つのインク工房](packages/content/cards/workshop-of-two-inks.json) |
+| 15 | 悪魔 | [引用の迷宮](packages/content/cards/labyrinth-of-citations.json) |
+| 16 | 塔 | [崩落する書塔](packages/content/cards/collapsing-book-tower.json) |
+| 17 | 星 | [失われた航路の星図](packages/content/cards/chart-of-the-lost-route.json) |
+| 18 | 月 | [月光写本](packages/content/cards/moonlight-manuscript.json) |
+| 19 | 太陽 | [正午の公開書庫](packages/content/cards/noon-open-archive.json) |
+| 20 | 審判 | [再読の日](packages/content/cards/day-of-rereading.json) |
+| 21 | 世界 | [円環百科全書](packages/content/cards/cyclical-encyclopedia.json) |
+
+### 女教皇枠：バベルの図書館
+
+女教皇の原型から派生した[バベルの図書館](packages/content/cards/babel-library.json)は、第一集の起点となったカードです。
 
 | 項目 | 内容 |
 |---|---|
@@ -67,7 +100,7 @@ babel-library.json
 
 オブジェクトストレージの認証情報はコンテンツJSONへ保存しません。`connectionId`を使ってサーバー側の環境設定へ解決します。`access: signed`の場合は、将来の通常版で期限付きURLを発行する想定です。
 
-バベルの図書館の画像はまだ未制作なので、現在のアセット状態は`planned`です。
+第一集のカード画像22点とパックカバー1点はまだ未制作なので、現在のアセット状態はすべて`planned`です。各アセットにはSites同梱用WebPと、S3互換ストレージ上の原寸PNGの配置先を予約しています。
 
 ## コンテンツ構成
 
@@ -77,16 +110,20 @@ packages/
 │   ├── manifest.json
 │   ├── archetypes/       # 大アルカナ22原型
 │   ├── cards/            # 架空アルカナ
+│   ├── domains/          # テーマ領域と解釈・生成方針
+│   ├── packs/            # 収録カードと配布単位
 │   └── assets/           # 画像アセット台帳
 └── schemas/
     ├── shared.schema.json
     ├── archetype.schema.json
     ├── card.schema.json
+    ├── domain.schema.json
+    ├── pack.schema.json
     ├── asset-catalog.schema.json
     └── manifest.schema.json
 ```
 
-アプリケーションは[manifest.json](packages/content/manifest.json)を入口として、公開対象の原型、カード、画像台帳を読み込みます。
+アプリケーションは[manifest.json](packages/content/manifest.json)を入口として、公開対象の原型、カード、領域、パック、画像台帳を読み込みます。
 
 ## 検証
 
@@ -100,7 +137,7 @@ npm run validate:content
 成功時の出力：
 
 ```text
-Validated 22 archetypes, 1 card, and 1 asset.
+Validated 22 archetypes, 22 cards, 1 domain, 1 pack, and 23 assets.
 Content validation passed.
 ```
 
@@ -110,7 +147,9 @@ Content validation passed.
 - 原型が0から21まで重複なく揃っていること
 - manifestの件数とファイル一覧
 - 架空アルカナが原型の必須テーマを継承していること
-- カードから画像アセットへの参照
+- カードから領域、パック、画像アセットへの参照
+- パックとカードの相互参照、収録件数、原型の欠落・重複
+- パックカバーとカード画像の種別
 - 利用可能状態のローカル画像が実在すること
 
 ## コンテンツの状態

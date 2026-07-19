@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "night-the-chronicle-rewrites",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "年代記が書き換わる夜"
+  },
+  "subtitle": {
+    "ja-JP": "昨日の因果が別の順序で目覚める刻"
+  },
+  "archetypeId": "wheel-of-fortune",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "change",
+    "chronicle",
+    "cycle",
+    "turning-point"
+  ],
+  "manifestationForm": "event",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "cyclical-change",
+    "contingency"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "真夜中に巨大な年代記の頁が風もなく回り、出来事の順序と脚注が入れ替わる現象",
+        "centralParadox": "過去の事実は同じでも、順序と意味が変われば未来へ向かう選択も変わってしまう",
+        "lightAspects": [
+          "転機への適応",
+          "循環の理解",
+          "偶然から機会を拾うこと"
+        ],
+        "shadowAspects": [
+          "運任せ",
+          "変化への固執",
+          "都合のよい歴史改変"
+        ],
+        "lore": "百年に一度、都市の年代記は自ら綴じ糸をほどく。朝になると事件の順番は変わり、敗北の脚注が発明の起点になっている。人々は事実ではなく、次に何をするかを読み直す。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "転機",
+            "循環",
+            "機会"
+          ],
+          "core": "自分だけでは制御できない変化が起きている。固定した筋書きより、流れの中で選べる応答に注意を向ける時である。",
+          "advice": "変えられない条件、今変わった条件、今日選べる行動を三列に分ける。",
+          "warning": "好転を待つだけで、利用できる小さな機会を見送らない。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "停滞感",
+            "不運への固着",
+            "同じ循環"
+          ],
+          "core": "変化を以前の筋書きだけで説明し、同じ反応を繰り返すことで循環から出られなくなっている。",
+          "advice": "前回と同じ場面で取った反応を一つ変え、結果の違いを観察する。",
+          "warning": "すべてを運命のせいにして、自分の影響範囲を手放さない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "外部環境の変化と戦略の更新",
+          "advice": "旧計画を守る理由ではなく、現在の前提で次の短期実験を決める。"
+        },
+        "relationships": {
+          "focus": "繰り返す関係のパターン",
+          "advice": "同じ衝突が始まる合図を見つけ、いつもと違う一言を選ぶ。"
+        },
+        "creativity": {
+          "focus": "偶然の素材と計画変更",
+          "advice": "予定外の結果から面白い一要素を拾い、作品の規則に取り込む。"
+        },
+        "self": {
+          "focus": "人生の出来事へ与える意味の更新",
+          "advice": "過去の一件を、現在得た視点から別の題名で書き直す。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-night-the-chronicle-rewrites-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "真夜中の広場で巨大な年代記の頁が宙に回転し、出来事の絵と脚注の順序が光の輪の中で入れ替わっている"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

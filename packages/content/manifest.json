@@ -1,12 +1,14 @@
 {
-  "schemaVersion": "1.0.0",
-  "releaseId": "release-2026-07-19-phase-0",
-  "releasedAt": "2026-07-19T00:00:00Z",
-  "minimumAppVersion": "0.1.0",
+  "schemaVersion": "1.1.0",
+  "releaseId": "release-2026-07-19-knowledge-vol-1",
+  "releasedAt": "2026-07-19T18:30:00Z",
+  "minimumAppVersion": "0.2.0",
   "counts": {
     "archetypes": 22,
-    "cards": 1,
-    "assets": 1
+    "cards": 22,
+    "assets": 23,
+    "domains": 1,
+    "packs": 1
   },
   "files": {
     "archetypes": [
@@ -34,7 +36,34 @@
       "archetypes/21-world.json"
     ],
     "cards": [
-      "cards/babel-library.json"
+      "cards/unwritten-page.json",
+      "cards/scribe-of-all-things.json",
+      "cards/babel-library.json",
+      "cards/orchard-of-stories.json",
+      "cards/first-catalogue.json",
+      "cards/millennial-lecture-hall.json",
+      "cards/twin-variant-texts.json",
+      "cards/roaming-grand-library.json",
+      "cards/compiler-of-beast-tongues.json",
+      "cards/last-annotator.json",
+      "cards/night-the-chronicle-rewrites.json",
+      "cards/scales-of-testimony.json",
+      "cards/inverted-atlas.json",
+      "cards/final-revision.json",
+      "cards/workshop-of-two-inks.json",
+      "cards/labyrinth-of-citations.json",
+      "cards/collapsing-book-tower.json",
+      "cards/chart-of-the-lost-route.json",
+      "cards/moonlight-manuscript.json",
+      "cards/noon-open-archive.json",
+      "cards/day-of-rereading.json",
+      "cards/cyclical-encyclopedia.json"
+    ],
+    "domains": [
+      "domains/knowledge.json"
+    ],
+    "packs": [
+      "packs/knowledge-arcana-vol-1.json"
     ],
     "assetCatalog": "assets/assets.json"
   }

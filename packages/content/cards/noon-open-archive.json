@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "noon-open-archive",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "正午の公開書庫"
+  },
+  "subtitle": {
+    "ja-JP": "影が最も短い時だけ全記録を開く場所"
+  },
+  "archetypeId": "sun",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "archive",
+    "clarity",
+    "openness",
+    "shared-joy"
+  ],
+  "manifestationForm": "place",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "clarity",
+    "shared-joy"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "天井が開き、正午の光で封印文書まで照らされ、人々が同じ閲覧卓を囲む書庫",
+        "centralParadox": "公開は疑念を晴らし共同体を活気づけるが、文脈と配慮のない光は守るべきものまで曝す",
+        "lightAspects": [
+          "明快な理解",
+          "成果の共有",
+          "生命力ある公開"
+        ],
+        "shadowAspects": [
+          "過度な露出",
+          "楽観による見落とし",
+          "透明性の強制"
+        ],
+        "lore": "正午の一時間、公開書庫の鍵はすべて外れ、王の記録も子どもの絵日記も同じ卓へ並ぶ。人々は発見を声に出して祝い、影が伸び始める前に必要な保護を戻す。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "明晰",
+            "公開",
+            "喜び"
+          ],
+          "core": "曖昧だったことが明らかになり、成果や理解を他者と分かち合うことで次の活力が生まれる。",
+          "advice": "分かったことと達成したことを、関係者が利用できる分かりやすい形で公開する。",
+          "warning": "明るい結果の中でも、同意なく公開してはいけない情報を区別する。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "露出過多",
+            "空元気",
+            "見落とし"
+          ],
+          "core": "明るさや成功を演じるために複雑さを消すか、透明性を理由に他者の境界を越えている。",
+          "advice": "祝うことと検証することを両立させ、誰に何を見せるか同意を確認する。",
+          "warning": "見えるものがすべてであるという自信に注意する。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "成果、判断、情報の明快な共有",
+          "advice": "成果を祝う場と、残課題を確認する場を同じ報告に用意する。"
+        },
+        "relationships": {
+          "focus": "率直さと安心して見せられる範囲",
+          "advice": "隠さず話すことを求める前に、受け止め方と秘密の扱いを約束する。"
+        },
+        "creativity": {
+          "focus": "作品を外へ開き反応を受けること",
+          "advice": "完成度を隠れ蓑にせず、今の形で信頼できる観客へ見せる。"
+        },
+        "self": {
+          "focus": "できたことを認めて活力にすること",
+          "advice": "達成を具体的に数え、誰かと小さく祝う。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-noon-open-archive-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "天井の開いた巨大書庫へ正午の光が真っ直ぐ差し、世代の違う人々が同じ閲覧卓で記録を分かち合っている"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

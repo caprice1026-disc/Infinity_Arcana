@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "millennial-lecture-hall",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "千年講堂"
+  },
+  "subtitle": {
+    "ja-JP": "問いと教えが石壁に積層する場所"
+  },
+  "archetypeId": "hierophant",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "initiation",
+    "lecture-hall",
+    "teaching",
+    "tradition"
+  ],
+  "manifestationForm": "place",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "shared-tradition",
+    "transmitted-knowledge"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "千年分の講義が反響として残り、世代ごとの教師と学徒が同じ円形壇上を囲む講堂",
+        "centralParadox": "伝統は一人では到達できない知恵を渡すが、反響が強すぎると新しい問いを聞こえなくする",
+        "lightAspects": [
+          "知恵の継承",
+          "共同体への参入",
+          "信頼できる型から学ぶこと"
+        ],
+        "shadowAspects": [
+          "権威への盲従",
+          "形式だけの儀礼",
+          "異論の排除"
+        ],
+        "lore": "千年講堂では、よい問いだけが石壁へ刻まれ、答えは時代ごとに上書きされる。新たな学徒は古い反響を聴いた後、自分の声で一つ問い返して初めて席を得る。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "継承",
+            "学び",
+            "共同体"
+          ],
+          "core": "確立された知恵や信頼できる指導者から型を受け取り、自分の経験へ接続する段階にある。",
+          "advice": "誰から何を学ぶかを選び、教えを小さく実践して自分の問いを持ち帰る。",
+          "warning": "肩書や古さだけで教えの妥当性を判断しない。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "教条",
+            "形骸化",
+            "孤立"
+          ],
+          "core": "伝統への反発か過度な服従によって、知恵を自分の判断で受け取る回路が塞がれている。",
+          "advice": "守る価値のある原則と、時代に合わない形式を分けて言語化する。",
+          "warning": "共同体から離れる自由と、助けを受け取れない孤立を混同しない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "専門知と組織の暗黙知の継承",
+          "advice": "熟練者の判断過程を観察し、自分の言葉で手順と例外を説明する。"
+        },
+        "relationships": {
+          "focus": "家族や集団から受け継いだ価値観",
+          "advice": "守りたい教えと、二人で作り直したい慣習を話し合う。"
+        },
+        "creativity": {
+          "focus": "型を学んでから崩す順序",
+          "advice": "一つの伝統技法を忠実に試し、どこを変えたいか記録する。"
+        },
+        "self": {
+          "focus": "師や共同体との距離",
+          "advice": "尊敬できる教えを一つ選び、検証可能な実践へ落とす。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-millennial-lecture-hall-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "世代の異なる教師と学徒が円形壇上を囲み、石壁に過去の講義の文字が光の反響として重なる"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

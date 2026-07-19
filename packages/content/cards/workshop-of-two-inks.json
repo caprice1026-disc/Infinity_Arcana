@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "workshop-of-two-inks",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "二つのインク工房"
+  },
+  "subtitle": {
+    "ja-JP": "記憶と可能性を一色へ調律する場所"
+  },
+  "archetypeId": "temperance",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "balance",
+    "integration",
+    "ink",
+    "workshop"
+  ],
+  "manifestationForm": "place",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "balanced-integration",
+    "calibration"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "過去を記す黒いインクと未来を描く白いインクを、職人が絶えず往復させる工房",
+        "centralParadox": "二つのインクは混ぜ切ると灰色に死に、分けたままでは一つの文章を書けない",
+        "lightAspects": [
+          "異質な要素の統合",
+          "細やかな調整",
+          "持続する流れ"
+        ],
+        "shadowAspects": [
+          "無難な折衷",
+          "調整のしすぎ",
+          "両極間の消耗"
+        ],
+        "lore": "工房の職人は黒と白を同じ器へ注がない。二本の筆を交互に走らせ、文字の境界で色を馴染ませる。正しい配合は固定値ではなく、紙と季節に合わせ毎朝量り直される。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "調和",
+            "配合",
+            "漸進"
+          ],
+          "core": "対立する要素をどちらかへ寄せるのでなく、目的に合わせて少しずつ配合し直すことで持続可能な形が生まれる。",
+          "advice": "二つの要素を小さな比率で試し、身体と結果の反応を見ながら次の配合を決める。",
+          "warning": "衝突を避けるだけの中間案を、統合と呼ばない。"
+        },
+        "reversed": {
+          "mode": "distorted",
+          "keywords": [
+            "不均衡",
+            "過剰調整",
+            "混濁"
+          ],
+          "core": "すべてを同時に整えようとして、優先順位と各要素の輪郭が失われている。",
+          "advice": "いま不足している側を一つ特定し、短期間だけ配分を明確に傾ける。",
+          "warning": "平静に見せるために、実際の負荷や対立を薄めない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "品質と速度、専門性と協働の調整",
+          "advice": "両方を最大化せず、今期の比率と見直し日を合意する。"
+        },
+        "relationships": {
+          "focus": "二人の違いを生かす日々の配分",
+          "advice": "負担と回復の量を具体的に比べ、小さく配分を変える。"
+        },
+        "creativity": {
+          "focus": "異なる素材や様式の統合",
+          "advice": "各要素の役割を残したまま、接点だけを丁寧に作る。"
+        },
+        "self": {
+          "focus": "心身と予定の再調律",
+          "advice": "増やすものより、流れを滞らせている一つを減らす。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-workshop-of-two-inks-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "職人が黒と白の二つのインクを別々の器から交互にすくい、境界で虹色に変わる文字を書いている工房"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

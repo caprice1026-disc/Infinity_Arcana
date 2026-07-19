@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "orchard-of-stories",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "物語の果樹園"
+  },
+  "subtitle": {
+    "ja-JP": "語られた経験が実を結ぶ庭"
+  },
+  "archetypeId": "empress",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "abundance",
+    "garden",
+    "growth",
+    "stories"
+  ],
+  "manifestationForm": "place",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "nurturing-abundance",
+    "growth"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "語りかけるほど枝を伸ばし、本の形をした果実を実らせる果樹園",
+        "centralParadox": "物語は分かち合うほど豊かになるが、すべてを育てようとすればどの実にも栄養が届かない",
+        "lightAspects": [
+          "経験を育てる力",
+          "豊かな創造性",
+          "惜しみない分かち合い"
+        ],
+        "shadowAspects": [
+          "過保護な編集",
+          "成果を急ぐ搾取",
+          "増やしすぎによる枯渇"
+        ],
+        "lore": "この果樹園では、人が大切に語り直した経験が種となる。聞き手のまなざしが水となり、季節を越えた話は本の実を結ぶ。熟さなかった物語も土へ戻り、次の根を養う。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "育成",
+            "実り",
+            "創造"
+          ],
+          "core": "すでに芽生えているものへ時間、注意、身体的な余裕を与えることで、自然な成長と成果が期待できる。",
+          "advice": "最も生命力を感じる一つを選び、続けて世話できる環境と周期を整える。",
+          "warning": "与えることを続けるために、自分の休息と境界も資源として数える。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "過保護",
+            "枯渇",
+            "未熟な収穫"
+          ],
+          "core": "育てたいものを抱えすぎるか、成長を急いで本来の季節を無視している。",
+          "advice": "育成中のものを減らし、手放すもの、休ませるもの、今期に収穫するものを分ける。",
+          "warning": "世話を焼くことが、相手や作品の自立を妨げていないか見る。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "人材・企画・知識を育てる環境",
+          "advice": "短期成果だけでなく、反復して改善できる時間と世話役を確保する。"
+        },
+        "relationships": {
+          "focus": "互いを養う関わり",
+          "advice": "頼まれている支援と、自分が与えたい支援を分けて確認する。"
+        },
+        "creativity": {
+          "focus": "作品を熟成させる周期",
+          "advice": "着想を増やす日と、一案を育てる日を分ける。"
+        },
+        "self": {
+          "focus": "自分の感覚と身体を土壌として扱うこと",
+          "advice": "成果の前に睡眠、食事、余白のどれを回復させるか決める。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-orchard-of-stories-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "本の形をした果実がなる樹々と、根元で物語を語り聞かせる人々のいる広大な果樹園"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

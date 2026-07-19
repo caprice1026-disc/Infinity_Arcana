@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "final-revision",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "最後の改訂"
+  },
+  "subtitle": {
+    "ja-JP": "終止符を削り、次の版へ余白を渡す儀式"
+  },
+  "archetypeId": "death",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "ending",
+    "release",
+    "revision",
+    "transition"
+  ],
+  "manifestationForm": "event",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "necessary-ending",
+    "transition"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "古い版の最終章を黒い刃で切り離し、白い綴じ糸で新しい余白を挿す改訂の儀式",
+        "centralParadox": "大切な章を終わらせなければ本は生き残れず、残そうとするほど全体が読めなくなる",
+        "lightAspects": [
+          "必要な終結",
+          "脱皮としての改訂",
+          "次へ渡す余白"
+        ],
+        "shadowAspects": [
+          "喪失の否認",
+          "乱暴な切断",
+          "終わりへの執着"
+        ],
+        "lore": "どれほど愛された本も、時が来ると最後の改訂を受ける。編者は古い章へ感謝の印を押して切り離し、その紙を新しい版の見返しへ漉き込む。消えた言葉は形を変えて残る。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "終結",
+            "移行",
+            "解放"
+          ],
+          "core": "すでに役目を終えた形を明確に閉じることで、失ったものを否定せず新しい段階へ移れる。",
+          "advice": "終える対象、残す学び、次へ持ち込まない習慣を一つずつ定める。",
+          "warning": "変化を急ぐあまり、必要な別れや後始末を省略しない。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "しがみつき",
+            "未完の別れ",
+            "停滞"
+          ],
+          "core": "終わったことを認めれば自分の一部まで失うと感じ、移行に必要な区切りを避けている。",
+          "advice": "戻らない事実を一つ認め、感謝や悲しみを表す小さな儀式を行う。",
+          "warning": "過去を消すことと、過去に支配されないことは別である。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "役目を終えた計画や仕組みの終了",
+          "advice": "終了条件を宣言し、学びと引き継ぎだけを次の版へ残す。"
+        },
+        "relationships": {
+          "focus": "関係の形が変わる時の区切り",
+          "advice": "続けられない約束と、尊重して残したいものを分けて伝える。"
+        },
+        "creativity": {
+          "focus": "削除によって作品を次の形へ移すこと",
+          "advice": "最も愛着のある不要部分を別ファイルへ退避し、本体から外す。"
+        },
+        "self": {
+          "focus": "古い自己像の終了",
+          "advice": "もう果たさなくてよい役割を一つ書き、日常の行動から外す。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-final-revision-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "黒い刃で古い本の最終章を切り離し、白い綴じ糸で新しい空白頁を挿し込む改訂儀式"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

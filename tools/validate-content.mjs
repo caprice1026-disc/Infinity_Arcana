@@ -21,14 +21,14 @@ function assert(condition, message) {
 
 function formatAjvErrors(errors = []) {
   return errors
-    .map((error) => `${error.instancePath || "/"} ${error.message}`)
+    .map((error) => (error.instancePath || "/") + " " + error.message)
     .join("; ");
 }
 
 async function validateFile(validator, filePath) {
   const value = await readJson(filePath);
   if (!validator(value)) {
-    throw new Error(`${path.relative(repositoryRoot, filePath)}: ${formatAjvErrors(validator.errors)}`);
+    throw new Error(path.relative(repositoryRoot, filePath) + ": " + formatAjvErrors(validator.errors));
   }
   return value;
 }
@@ -40,10 +40,44 @@ async function listJsonFiles(directory) {
     .sort();
 }
 
+function buildUniqueMap(items, label) {
+  const byId = new Map();
+  for (const item of items) {
+    assert(!byId.has(item.id), "Duplicate " + label + " ID: " + item.id + ".");
+    byId.set(item.id, item);
+  }
+  return byId;
+}
+
+async function assertManifestDirectoryMatches(relativePaths, directoryName, label) {
+  const listedFiles = relativePaths.map((filePath) => path.basename(filePath)).sort();
+  const actualFiles = await listJsonFiles(path.join(contentDirectory, directoryName));
+  assert(
+    JSON.stringify(listedFiles) === JSON.stringify(actualFiles),
+    "Manifest " + label + " file list is incomplete or stale."
+  );
+}
+
+function assertDefaultLocaleContent(item, label) {
+  assert(item.name[item.defaultLocale], item.id + ": default locale is missing from " + label + " name.");
+  assert(
+    item.localizedContent[item.defaultLocale],
+    item.id + ": default locale content is missing from " + label + "."
+  );
+}
+
+function assertPublication(item, label) {
+  if (item.status === "published") {
+    assert(item.publication.publishedAt, item.id + ": published " + label + " needs publishedAt.");
+  }
+}
+
 const schemaFiles = [
   "shared.schema.json",
   "archetype.schema.json",
   "card.schema.json",
+  "domain.schema.json",
+  "pack.schema.json",
   "asset-catalog.schema.json",
   "manifest.schema.json"
 ];
@@ -60,70 +94,111 @@ for (const schema of schemas) {
 
 const validateArchetype = ajv.getSchema("urn:infinity-arcana:schema:archetype:1.0.0");
 const validateCard = ajv.getSchema("urn:infinity-arcana:schema:card:1.0.0");
+const validateDomain = ajv.getSchema("urn:infinity-arcana:schema:domain:1.0.0");
+const validatePack = ajv.getSchema("urn:infinity-arcana:schema:pack:1.0.0");
 const validateAssetCatalog = ajv.getSchema("urn:infinity-arcana:schema:asset-catalog:1.0.0");
-const validateManifest = ajv.getSchema("urn:infinity-arcana:schema:manifest:1.0.0");
+const validateManifest = ajv.getSchema("urn:infinity-arcana:schema:manifest:1.1.0");
 
-assert(validateArchetype && validateCard && validateAssetCatalog && validateManifest, "Schema compilation failed.");
+assert(
+  validateArchetype &&
+    validateCard &&
+    validateDomain &&
+    validatePack &&
+    validateAssetCatalog &&
+    validateManifest,
+  "Schema compilation failed."
+);
 
 const manifest = await validateFile(validateManifest, path.join(contentDirectory, "manifest.json"));
 
-const archetypePaths = manifest.files.archetypes.map((relativePath) => path.join(contentDirectory, relativePath));
-const cardPaths = manifest.files.cards.map((relativePath) => path.join(contentDirectory, relativePath));
+const archetypePaths = manifest.files.archetypes.map((relativePath) =>
+  path.join(contentDirectory, relativePath)
+);
+const cardPaths = manifest.files.cards.map((relativePath) =>
+  path.join(contentDirectory, relativePath)
+);
+const domainPaths = manifest.files.domains.map((relativePath) =>
+  path.join(contentDirectory, relativePath)
+);
+const packPaths = manifest.files.packs.map((relativePath) =>
+  path.join(contentDirectory, relativePath)
+);
 const assetCatalogPath = path.join(contentDirectory, manifest.files.assetCatalog);
 
-const archetypes = await Promise.all(archetypePaths.map((filePath) => validateFile(validateArchetype, filePath)));
-const cards = await Promise.all(cardPaths.map((filePath) => validateFile(validateCard, filePath)));
+const archetypes = await Promise.all(
+  archetypePaths.map((filePath) => validateFile(validateArchetype, filePath))
+);
+const cards = await Promise.all(
+  cardPaths.map((filePath) => validateFile(validateCard, filePath))
+);
+const domains = await Promise.all(
+  domainPaths.map((filePath) => validateFile(validateDomain, filePath))
+);
+const packs = await Promise.all(
+  packPaths.map((filePath) => validateFile(validatePack, filePath))
+);
 const assetCatalog = await validateFile(validateAssetCatalog, assetCatalogPath);
 
-assert(archetypes.length === 22, `Expected 22 archetypes, found ${archetypes.length}.`);
-assert(manifest.counts.archetypes === archetypes.length, "Manifest archetype count does not match loaded content.");
+assert(archetypes.length === 22, "Expected 22 archetypes, found " + archetypes.length + ".");
+assert(
+  manifest.counts.archetypes === archetypes.length,
+  "Manifest archetype count does not match loaded content."
+);
 assert(manifest.counts.cards === cards.length, "Manifest card count does not match loaded content.");
-assert(manifest.counts.assets === assetCatalog.assets.length, "Manifest asset count does not match loaded content.");
+assert(
+  manifest.counts.domains === domains.length,
+  "Manifest domain count does not match loaded content."
+);
+assert(manifest.counts.packs === packs.length, "Manifest pack count does not match loaded content.");
+assert(
+  manifest.counts.assets === assetCatalog.assets.length,
+  "Manifest asset count does not match loaded content."
+);
 
-const archetypeIds = new Set(archetypes.map((archetype) => archetype.id));
+const archetypeById = buildUniqueMap(archetypes, "archetype");
+const cardById = buildUniqueMap(cards, "card");
+const domainById = buildUniqueMap(domains, "domain");
+const packById = buildUniqueMap(packs, "pack");
+
 const archetypeNumbers = new Set(archetypes.map((archetype) => archetype.majorArcanaNumber));
-assert(archetypeIds.size === 22, "Archetype IDs must be unique.");
 assert(archetypeNumbers.size === 22, "Major arcana numbers must be unique.");
 for (let number = 0; number <= 21; number += 1) {
-  assert(archetypeNumbers.has(number), `Missing major arcana number ${number}.`);
+  assert(archetypeNumbers.has(number), "Missing major arcana number " + number + ".");
 }
 
 for (const archetype of archetypes) {
-  assert(archetype.name[archetype.defaultLocale], `${archetype.id}: default locale is missing from name.`);
-  assert(archetype.localizedContent[archetype.defaultLocale], `${archetype.id}: default locale content is missing.`);
+  assertDefaultLocaleContent(archetype, "archetype");
   assert(
-    archetype.inheritancePolicy.minimumRequiredThemeMatches <= archetype.semanticAnchors.requiredThemeIds.length,
-    `${archetype.id}: minimumRequiredThemeMatches exceeds required themes.`
+    archetype.inheritancePolicy.minimumRequiredThemeMatches <=
+      archetype.semanticAnchors.requiredThemeIds.length,
+    archetype.id + ": minimumRequiredThemeMatches exceeds required themes."
   );
-  if (archetype.status === "published") {
-    assert(archetype.publication.publishedAt, `${archetype.id}: published archetype needs publishedAt.`);
-  }
+  assertPublication(archetype, "archetype");
 }
 
-const listedArchetypeFiles = manifest.files.archetypes.map((filePath) => path.basename(filePath)).sort();
-const actualArchetypeFiles = await listJsonFiles(path.join(contentDirectory, "archetypes"));
-assert(JSON.stringify(listedArchetypeFiles) === JSON.stringify(actualArchetypeFiles), "Manifest archetype file list is incomplete or stale.");
+for (const domain of domains) {
+  assertDefaultLocaleContent(domain, "domain");
+  assert(domain.description[domain.defaultLocale], domain.id + ": default locale is missing from description.");
+  assertPublication(domain, "domain");
+}
 
-const listedCardFiles = manifest.files.cards.map((filePath) => path.basename(filePath)).sort();
-const actualCardFiles = await listJsonFiles(path.join(contentDirectory, "cards"));
-assert(JSON.stringify(listedCardFiles) === JSON.stringify(actualCardFiles), "Manifest card file list is incomplete or stale.");
+await assertManifestDirectoryMatches(manifest.files.archetypes, "archetypes", "archetype");
+await assertManifestDirectoryMatches(manifest.files.cards, "cards", "card");
+await assertManifestDirectoryMatches(manifest.files.domains, "domains", "domain");
+await assertManifestDirectoryMatches(manifest.files.packs, "packs", "pack");
 
-const assetRoots = new Map(assetCatalog.assetRoots.map((root) => [root.id, root]));
-assert(assetRoots.size === assetCatalog.assetRoots.length, "Asset root IDs must be unique.");
+const assetRoots = buildUniqueMap(assetCatalog.assetRoots, "asset root");
+const assets = buildUniqueMap(assetCatalog.assets, "asset");
 
-const assets = new Map();
 for (const asset of assetCatalog.assets) {
-  assert(!assets.has(asset.id), `Duplicate asset ID: ${asset.id}.`);
-  assets.set(asset.id, asset);
-
   const variantIds = new Set(asset.variants.map((variant) => variant.id));
-  assert(variantIds.size === asset.variants.length, `${asset.id}: variant IDs must be unique.`);
-  assert(variantIds.has(asset.defaultVariantId), `${asset.id}: defaultVariantId does not exist.`);
+  assert(variantIds.size === asset.variants.length, asset.id + ": variant IDs must be unique.");
+  assert(variantIds.has(asset.defaultVariantId), asset.id + ": defaultVariantId does not exist.");
 
   for (const variant of asset.variants) {
     if (variant.source.type === "local") {
       const root = assetRoots.get(variant.source.rootId);
-      assert(root, `${asset.id}/${variant.id}: unknown asset root ${variant.source.rootId}.`);
+      assert(root, asset.id + "/" + variant.id + ": unknown asset root " + variant.source.rootId + ".");
       if (asset.status === "available") {
         await access(path.join(repositoryRoot, root.basePath, variant.source.path));
       }
@@ -131,22 +206,32 @@ for (const asset of assetCatalog.assets) {
   }
 }
 
-const archetypeById = new Map(archetypes.map((archetype) => [archetype.id, archetype]));
 for (const card of cards) {
   const archetype = archetypeById.get(card.archetypeId);
-  assert(archetype, `${card.id}: unknown archetype ${card.archetypeId}.`);
+  assert(archetype, card.id + ": unknown archetype " + card.archetypeId + ".");
 
   const inheritedMatches = card.inheritedThemeIds.filter((themeId) =>
     archetype.semanticAnchors.requiredThemeIds.includes(themeId)
   );
   assert(
     inheritedMatches.length >= archetype.inheritancePolicy.minimumRequiredThemeMatches,
-    `${card.id}: does not inherit enough required themes from ${archetype.id}.`
+    card.id + ": does not inherit enough required themes from " + archetype.id + "."
   );
   assert(
-    !card.inheritedThemeIds.some((themeId) => archetype.semanticAnchors.prohibitedThemeIds.includes(themeId)),
-    `${card.id}: inherits a prohibited theme from ${archetype.id}.`
+    !card.inheritedThemeIds.some((themeId) =>
+      archetype.semanticAnchors.prohibitedThemeIds.includes(themeId)
+    ),
+    card.id + ": inherits a prohibited theme from " + archetype.id + "."
   );
+
+  for (const domainId of card.domainIds) {
+    assert(domainById.has(domainId), card.id + ": unknown domain " + domainId + ".");
+  }
+  for (const packId of card.packIds) {
+    const pack = packById.get(packId);
+    assert(pack, card.id + ": unknown pack " + packId + ".");
+    assert(pack.cardIds.includes(card.id), card.id + ": pack " + packId + " does not list this card.");
+  }
 
   const referencedAssetIds = [
     card.visual.primaryAssetId,
@@ -154,16 +239,104 @@ for (const card of cards) {
     ...(card.visual.cardBackAssetId ? [card.visual.cardBackAssetId] : [])
   ];
   for (const assetId of referencedAssetIds) {
-    assert(assets.has(assetId), `${card.id}: unknown visual asset ${assetId}.`);
+    assert(assets.has(assetId), card.id + ": unknown visual asset " + assetId + ".");
   }
+  assert(
+    assets.get(card.visual.primaryAssetId).kind === "card-front",
+    card.id + ": primary visual asset must be a card-front."
+  );
 
-  assert(card.name[card.defaultLocale], `${card.id}: default locale is missing from name.`);
-  assert(card.localizedContent[card.defaultLocale], `${card.id}: default locale content is missing.`);
+  assertDefaultLocaleContent(card, "card");
+  assertPublication(card, "card");
   if (card.status === "published") {
-    assert(card.publication.publishedAt, `${card.id}: published card needs publishedAt.`);
-    assert(assets.get(card.visual.primaryAssetId).status === "available", `${card.id}: published card needs an available primary asset.`);
+    assert(
+      assets.get(card.visual.primaryAssetId).status === "available",
+      card.id + ": published card needs an available primary asset."
+    );
   }
 }
 
-console.log(`Validated ${archetypes.length} archetypes, ${cards.length} card, and ${assetCatalog.assets.length} asset.`);
+for (const pack of packs) {
+  assertDefaultLocaleContent(pack, "pack");
+  assert(pack.subtitle[pack.defaultLocale], pack.id + ": default locale is missing from subtitle.");
+  assert(pack.description[pack.defaultLocale], pack.id + ": default locale is missing from description.");
+  assertPublication(pack, "pack");
+
+  if (pack.accessPolicy.accessLevel === "free") {
+    assert(pack.accessPolicy.entitlementId === null, pack.id + ": free pack must not require an entitlement.");
+  }
+  if (pack.accessPolicy.accessLevel === "premium") {
+    assert(pack.accessPolicy.entitlementId, pack.id + ": premium pack needs an entitlementId.");
+  }
+
+  for (const domainId of pack.domainIds) {
+    assert(domainById.has(domainId), pack.id + ": unknown domain " + domainId + ".");
+  }
+
+  const coverAsset = assets.get(pack.coverAssetId);
+  assert(coverAsset, pack.id + ": unknown cover asset " + pack.coverAssetId + ".");
+  assert(coverAsset.kind === "pack-cover", pack.id + ": cover asset must be a pack-cover.");
+
+  assert(
+    pack.cardIds.length === pack.compositionPolicy.expectedCardCount,
+    pack.id + ": card count does not match compositionPolicy.expectedCardCount."
+  );
+
+  const packCards = pack.cardIds.map((cardId) => {
+    const card = cardById.get(cardId);
+    assert(card, pack.id + ": unknown card " + cardId + ".");
+    assert(card.packIds.includes(pack.id), pack.id + ": card " + cardId + " does not reference this pack.");
+    for (const domainId of pack.domainIds) {
+      assert(
+        card.domainIds.includes(domainId),
+        pack.id + ": card " + cardId + " does not inherit pack domain " + domainId + "."
+      );
+    }
+    return card;
+  });
+
+  const packArchetypeIds = packCards.map((card) => card.archetypeId);
+  const uniquePackArchetypeIds = new Set(packArchetypeIds);
+  if (!pack.compositionPolicy.allowDuplicateArchetypes) {
+    assert(
+      uniquePackArchetypeIds.size === packArchetypeIds.length,
+      pack.id + ": duplicate archetypes are not allowed."
+    );
+  }
+
+  if (pack.compositionPolicy.type === "one-per-major-archetype") {
+    assert(pack.cardIds.length === 22, pack.id + ": complete major set must contain 22 cards.");
+    assert(
+      uniquePackArchetypeIds.size === 22,
+      pack.id + ": complete major set must contain each archetype exactly once."
+    );
+    for (const archetypeId of archetypeById.keys()) {
+      assert(
+        uniquePackArchetypeIds.has(archetypeId),
+        pack.id + ": complete major set is missing archetype " + archetypeId + "."
+      );
+    }
+  }
+
+  if (pack.status === "published") {
+    assert(coverAsset.status === "available", pack.id + ": published pack needs an available cover.");
+    for (const card of packCards) {
+      assert(card.status === "published", pack.id + ": published pack contains unpublished card " + card.id + ".");
+    }
+  }
+}
+
+console.log(
+  "Validated " +
+    archetypes.length +
+    " archetypes, " +
+    cards.length +
+    " cards, " +
+    domains.length +
+    " domain, " +
+    packs.length +
+    " pack, and " +
+    assetCatalog.assets.length +
+    " assets."
+);
 console.log("Content validation passed.");

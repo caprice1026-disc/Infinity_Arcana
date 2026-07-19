@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "compiler-of-beast-tongues",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "獣語の編纂者"
+  },
+  "subtitle": {
+    "ja-JP": "声を奪わずに野生の文法を聴く者"
+  },
+  "archetypeId": "strength",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "beasts",
+    "compassion",
+    "language",
+    "restraint"
+  ],
+  "manifestationForm": "person",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "gentle-courage",
+    "inner-mastery"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "牙ある獣たちの輪に座り、武器を置いて呼吸と仕草を文字へ編む学者",
+        "centralParadox": "理解するには言葉を記録しなければならないが、完全に固定すれば生きた声を殺してしまう",
+        "lightAspects": [
+          "穏やかな勇気",
+          "衝動との対話",
+          "力を使わない熟練"
+        ],
+        "shadowAspects": [
+          "感情の抑圧",
+          "理解を装う支配",
+          "優しさによる自己消耗"
+        ],
+        "lore": "獣語の編纂者は、唸り声だけでなく耳の角度や沈黙の長さまで辞書へ記す。獣を鎖につなぐことはない。信頼が失われた日は、空白も一つの語として頁に残す。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "忍耐",
+            "対話",
+            "内なる力"
+          ],
+          "core": "強く押さえ込むより、恐れや衝動を観察して扱える形へ翻訳することで本来の力を発揮できる。",
+          "advice": "反応する前に身体の感覚を一つ名付け、守りたいことを穏やかな言葉で伝える。",
+          "warning": "耐えることだけを優しさと呼び、自分の限界を消さない。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "抑圧",
+            "威圧",
+            "消耗"
+          ],
+          "core": "内側の強い感情を恐れて封じるか、逆に大きな力で周囲を従わせようとしている。",
+          "advice": "安全な場所で感情の強さと必要としている境界を別々に言葉にする。",
+          "warning": "理解したつもりで、相手の声を自分の辞書へ一方的に翻訳しない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "緊張や反発を力で潰さず扱うこと",
+          "advice": "反対意見の背後にある懸念を要約し、守る条件へ変換する。"
+        },
+        "relationships": {
+          "focus": "強い感情と安全な対話",
+          "advice": "声量を上げる前に休止を提案し、戻る時刻と話す論点を決める。"
+        },
+        "creativity": {
+          "focus": "荒々しい素材を生かす編集",
+          "advice": "最初の衝動を消さず、読者へ届く形だけを整える。"
+        },
+        "self": {
+          "focus": "内なる衝動への思いやりある統制",
+          "advice": "抑えるのでなく、感情が守ろうとしているものを尋ねる。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-compiler-of-beast-tongues-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "武器を置いた学者が牙ある獣たちの輪に静かに座り、呼吸や仕草を発光する文字へ記している"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+

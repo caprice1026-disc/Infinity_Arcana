@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "inverted-atlas",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "逆さの地図帳"
+  },
+  "subtitle": {
+    "ja-JP": "立ち止まった者にだけ道を返す地図"
+  },
+  "archetypeId": "hanged-man",
+  "domainIds": [
+    "knowledge"
+  ],
+  "packIds": [
+    "knowledge-arcana-vol-1"
+  ],
+  "tags": [
+    "atlas",
+    "pause",
+    "perspective",
+    "surrender"
+  ],
+  "manifestationForm": "object",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "voluntary-pause",
+    "perspective-shift"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "上下を逆さに吊るすと初めて現在地と道が浮かぶ、鎖で綴じられた地図帳",
+        "centralParadox": "目的地へ急ぐほど道は消え、進むことをやめた時にだけ別の進路が見える",
+        "lightAspects": [
+          "自発的な停止",
+          "視点の反転",
+          "執着を緩めること"
+        ],
+        "shadowAspects": [
+          "犠牲者意識",
+          "無期限の保留",
+          "停止を美化すること"
+        ],
+        "lore": "逆さの地図帳には地名がない。旅人が歩みを止め、地図を天地逆に掲げると、これまで見えなかった川と橋が銀色に現れる。地図を正位置へ戻すと道は再び消える。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "停止",
+            "反転",
+            "手放し"
+          ],
+          "core": "同じ努力を増やすより、意図的に止まり、前提や見方を反転させることで新しい道が現れる。",
+          "advice": "期限付きで行動を止め、失うと思っているものと、停止によって見えるものを記録する。",
+          "warning": "休止には再評価する日時を設け、責任まで宙づりにしない。"
+        },
+        "reversed": {
+          "mode": "delayed",
+          "keywords": [
+            "膠着",
+            "徒労",
+            "犠牲の固定化"
+          ],
+          "core": "手放せない前提のために動き続けるか、逆に何も決めない状態へ安住している。",
+          "advice": "続ける代償と止める代償を比べ、回収不能なものを一つ認める。",
+          "warning": "我慢の長さを、選択の正しさの証明にしない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "行き詰まりに対する計画的な停止",
+          "advice": "追加作業を止め、問題設定と成功条件を別の人に説明してもらう。"
+        },
+        "relationships": {
+          "focus": "すぐ答えを出さず見方を変えること",
+          "advice": "反論を保留し、相手の視点から状況を一度要約する。"
+        },
+        "creativity": {
+          "focus": "作品から距離を取り構図を反転すること",
+          "advice": "一晩離れ、削る・逆順にする・別視点で語るの一つを試す。"
+        },
+        "self": {
+          "focus": "努力と執着の違い",
+          "advice": "いま証明しようとしていることを問い、証明を止めた自分を想像する。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-inverted-atlas-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": null,
+    "altText": {
+      "ja-JP": "鎖で綴じられた巨大な地図帳が天地逆さに吊られ、銀色の川と橋だけが頁上へ浮かんでいる"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
+
