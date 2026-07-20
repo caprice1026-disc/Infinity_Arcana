@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "validate:content": "node tools/validate-content.mjs"
+    "validate:content": "node tools/validate-content.mjs",
+    "assets:build:babel-library": "node tools/build-babel-library-assets.mjs"
   },
   "devDependencies": {
     "ajv": "8.17.1",

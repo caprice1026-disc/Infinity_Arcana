@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": 2,
+  "catalogVersion": 3,
   "assetRoots": [
     {
       "id": "sites-public",
@@ -10,8 +10,8 @@
   "assets": [
     {
       "id": "card-unwritten-page-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -25,7 +25,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/unwritten-page/front.webp"
-          }
+          },
+          "byteSize": 446952,
+          "sha256": "ca8a8911b844780e559f0e8b4e42f15b79984640ad27867175c03db06fe28711"
         },
         {
           "id": "original-remote",
@@ -46,8 +48,8 @@
     },
     {
       "id": "card-scribe-of-all-things-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -61,7 +63,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/scribe-of-all-things/front.webp"
-          }
+          },
+          "byteSize": 502014,
+          "sha256": "1772db56a9e1f7a3e5ea8a137c5ad7a4603f363be0d55278f19746cfbb0cf1dd"
         },
         {
           "id": "original-remote",
@@ -82,8 +86,8 @@
     },
     {
       "id": "card-babel-library-front",
-      "contentVersion": 2,
-      "status": "planned",
+      "contentVersion": 3,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -97,7 +101,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/babel-library/front.webp"
-          }
+          },
+          "byteSize": 585566,
+          "sha256": "da4d003b9933a4da3ff2bd686c5ccdb2531d2c4a7df9069da90558b4fdc4d0a9"
         },
         {
           "id": "original-remote",
@@ -118,8 +124,8 @@
     },
     {
       "id": "card-orchard-of-stories-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -133,7 +139,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/orchard-of-stories/front.webp"
-          }
+          },
+          "byteSize": 570614,
+          "sha256": "4b49635c2d3a36e6c39365f5a399f7267d8c52645abd36923c17f78a9720055d"
         },
         {
           "id": "original-remote",
@@ -154,8 +162,8 @@
     },
     {
       "id": "card-first-catalogue-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -169,7 +177,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/first-catalogue/front.webp"
-          }
+          },
+          "byteSize": 537188,
+          "sha256": "9ab016f793ac4d54907bfa67728133b2ac1a0a65002eb639f13a20c1bde85acf"
         },
         {
           "id": "original-remote",
@@ -190,8 +200,8 @@
     },
     {
       "id": "card-millennial-lecture-hall-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -205,7 +215,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/millennial-lecture-hall/front.webp"
-          }
+          },
+          "byteSize": 564908,
+          "sha256": "51945e3578a7f7b6f9b5d4afba0c821f727290eaaee949ecf47ebb3a6c5ef304"
         },
         {
           "id": "original-remote",
@@ -226,8 +238,8 @@
     },
     {
       "id": "card-twin-variant-texts-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -241,7 +253,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/twin-variant-texts/front.webp"
-          }
+          },
+          "byteSize": 518720,
+          "sha256": "156a40b41c8f37de8d64a4ed64cfe7c47581bb02df455459e0f697e79458f6b3"
         },
         {
           "id": "original-remote",
@@ -262,8 +276,8 @@
     },
     {
       "id": "card-roaming-grand-library-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -277,7 +291,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/roaming-grand-library/front.webp"
-          }
+          },
+          "byteSize": 555730,
+          "sha256": "b8086b006fd8af4e5015997b3aef28564769a150331c760647eae44f8c3b0fa2"
         },
         {
           "id": "original-remote",
@@ -298,8 +314,8 @@
     },
     {
       "id": "card-compiler-of-beast-tongues-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -313,7 +329,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/compiler-of-beast-tongues/front.webp"
-          }
+          },
+          "byteSize": 520724,
+          "sha256": "db7976373c2b7c5f4f0dc200070d662f7f1d91dd6d40e6c2b3bd1b114ee84b29"
         },
         {
           "id": "original-remote",
@@ -334,8 +352,8 @@
     },
     {
       "id": "card-last-annotator-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -349,7 +367,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/last-annotator/front.webp"
-          }
+          },
+          "byteSize": 454318,
+          "sha256": "d1661fe077dde2487ac89233e9b8baaab5fec5651f654947c4b4639b13fb4805"
         },
         {
           "id": "original-remote",
@@ -370,8 +390,8 @@
     },
     {
       "id": "card-night-the-chronicle-rewrites-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -385,7 +405,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/night-the-chronicle-rewrites/front.webp"
-          }
+          },
+          "byteSize": 539006,
+          "sha256": "a379f0638c09c0c1e0f4c3238566cdf43dcf3f35fd4a6c7eecda93bdccf3916b"
         },
         {
           "id": "original-remote",
@@ -406,8 +428,8 @@
     },
     {
       "id": "card-scales-of-testimony-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -421,7 +443,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/scales-of-testimony/front.webp"
-          }
+          },
+          "byteSize": 508626,
+          "sha256": "378cd30894d6ff8ff13e1f5b67e26d820eacbae2e52c69d905969af7bf6d1d8d"
         },
         {
           "id": "original-remote",
@@ -442,8 +466,8 @@
     },
     {
       "id": "card-inverted-atlas-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -457,7 +481,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/inverted-atlas/front.webp"
-          }
+          },
+          "byteSize": 466964,
+          "sha256": "06b2530684235ad7e1b68af1ddafc1c66f830fb600d2245bb545c1ad2b750f40"
         },
         {
           "id": "original-remote",
@@ -478,8 +504,8 @@
     },
     {
       "id": "card-final-revision-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -493,7 +519,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/final-revision/front.webp"
-          }
+          },
+          "byteSize": 411154,
+          "sha256": "2c16b350016c757a30ffe5656e318557ff6b8f1160bf5304e86d20cbed0ced30"
         },
         {
           "id": "original-remote",
@@ -514,8 +542,8 @@
     },
     {
       "id": "card-workshop-of-two-inks-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -529,7 +557,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/workshop-of-two-inks/front.webp"
-          }
+          },
+          "byteSize": 480700,
+          "sha256": "c15459fc986b24f35565c827259cdfbeb0ea3e8e445acb32563e53beb7f2ac1c"
         },
         {
           "id": "original-remote",
@@ -550,8 +580,8 @@
     },
     {
       "id": "card-labyrinth-of-citations-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -565,7 +595,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/labyrinth-of-citations/front.webp"
-          }
+          },
+          "byteSize": 523804,
+          "sha256": "0071e75b77cd235d50ec5209c9ac02edb6e289766c98b1d98263fc1f3cb80084"
         },
         {
           "id": "original-remote",
@@ -586,8 +618,8 @@
     },
     {
       "id": "card-collapsing-book-tower-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -601,7 +633,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/collapsing-book-tower/front.webp"
-          }
+          },
+          "byteSize": 555564,
+          "sha256": "b2369d0b8c84e359b5305c7e0d7ccbbd8a2f4d0c197ff14cbc6297fdc4a5ea8f"
         },
         {
           "id": "original-remote",
@@ -622,8 +656,8 @@
     },
     {
       "id": "card-chart-of-the-lost-route-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -637,7 +671,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/chart-of-the-lost-route/front.webp"
-          }
+          },
+          "byteSize": 523610,
+          "sha256": "68d713f1c343dbe16ca97acbbae06907df0e9e045d135b0c4118cbae90c76556"
         },
         {
           "id": "original-remote",
@@ -658,8 +694,8 @@
     },
     {
       "id": "card-moonlight-manuscript-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -673,7 +709,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/moonlight-manuscript/front.webp"
-          }
+          },
+          "byteSize": 496434,
+          "sha256": "c0968d326c45047b845eabf1e860efcad4883a72a165a1bf3138bda81710dc50"
         },
         {
           "id": "original-remote",
@@ -694,8 +732,8 @@
     },
     {
       "id": "card-noon-open-archive-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -709,7 +747,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/noon-open-archive/front.webp"
-          }
+          },
+          "byteSize": 530486,
+          "sha256": "86e6098c2c8b84f5d947b660b2062a37fd84b5ca1b019a434420208e75ceeb4d"
         },
         {
           "id": "original-remote",
@@ -730,8 +770,8 @@
     },
     {
       "id": "card-day-of-rereading-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -745,7 +785,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/day-of-rereading/front.webp"
-          }
+          },
+          "byteSize": 513994,
+          "sha256": "c4d129e88c8866c925f72e54de34dd7a2f666cb35f849114a17de0c7e4427ca6"
         },
         {
           "id": "original-remote",
@@ -766,8 +808,8 @@
     },
     {
       "id": "card-cyclical-encyclopedia-front",
-      "contentVersion": 1,
-      "status": "planned",
+      "contentVersion": 2,
+      "status": "available",
       "kind": "card-front",
       "defaultVariantId": "display-local",
       "variants": [
@@ -781,7 +823,9 @@
             "type": "local",
             "rootId": "sites-public",
             "path": "cards/cyclical-encyclopedia/front.webp"
-          }
+          },
+          "byteSize": 519058,
+          "sha256": "c54077047d4248100124f8a5f1c168ed96f49fa3bf0c585c6eff9db05182e88a"
         },
         {
           "id": "original-remote",
