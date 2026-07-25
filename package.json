@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "validate:content": "node tools/validate-content.mjs",
-    "assets:build:babel-library": "node tools/build-babel-library-assets.mjs"
+    "assets:build:babel-library": "node tools/build-babel-library-assets.mjs",
+    "sites:build": "python tools/build_sites_lite.py",
+    "content:quality": "python tools/content_pipeline/validate_content.py",
+    "content:candidates": "python tools/content_pipeline/generate_candidates.py"
   },
   "devDependencies": {
     "ajv": "8.17.1",

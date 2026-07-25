@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "workshop-of-two-inks",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-workshop-of-two-inks-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "職人が黒と白の二つのインクを別々の器から交互にすくい、境界で虹色に変わる文字を書いている工房"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

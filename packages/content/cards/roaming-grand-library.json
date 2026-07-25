@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "roaming-grand-library",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-roaming-grand-library-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "昼と夜の二つの書庫を左右に載せた巨大な移動図書館が無数の車輪で荒野を進んでいる"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

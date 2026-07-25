@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "last-annotator",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-last-annotator-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "崩れかけた巨大写本の余白へ、手持ちの灯火を頼りに一人の老人が細い注釈を書き込んでいる"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

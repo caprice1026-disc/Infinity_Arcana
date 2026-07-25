@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "twin-variant-texts",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-twin-variant-texts-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "一つの背表紙から左右へ開く二冊の写本が異なる結末を映し、中央で金色の糸が両者を結んでいる"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

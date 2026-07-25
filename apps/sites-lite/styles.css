@@ -1,0 +1,17 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; background: #171521; color: #f5f0e8; --muted: #b9aec6; --accent: #d8a85c; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: radial-gradient(circle at top, #302342, #171521 55%); }
+a { color: inherit; }
+.site-header { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: .8rem 1rem; background: #171521eF; backdrop-filter: blur(12px); border-bottom: 1px solid #ffffff1a; }
+.brand { color: var(--accent); text-decoration: none; font-weight: 700; }
+nav { display: flex; gap: .75rem; } nav a { text-decoration: none; color: var(--muted); font-size: .9rem; }
+main { width: min(100% - 2rem, 980px); margin: 0 auto; padding: 2rem 0 5rem; }
+section { display: none; } section:target, section.active { display: block; }
+h1 { font-size: clamp(1.8rem, 8vw, 3.5rem); line-height: 1.1; } h2 { color: var(--accent); }
+.lead { color: var(--muted); max-width: 42rem; line-height: 1.7; }
+button, select, textarea, input[type=file] { font: inherit; } button { border: 1px solid var(--accent); background: #d8a85c1a; color: #fff; border-radius: .5rem; padding: .7rem 1rem; cursor: pointer; } button:hover, button:focus-visible { background: #d8a85c40; } button.secondary { border-color: #ffffff40; }
+.panel { border: 1px solid #ffffff1c; border-radius: 1rem; background: #ffffff08; padding: 1rem; margin: 1rem 0; }
+label { display: grid; gap: .4rem; color: var(--muted); margin: 1rem 0; } select, textarea { color: #fff; background: #171521; border: 1px solid #ffffff40; border-radius: .4rem; padding: .6rem; } textarea { width: 100%; min-height: 7rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1rem; } .card { display: grid; gap: .6rem; } .card img { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: .7rem; border: 1px solid #ffffff26; } .card h3 { margin: 0; font-size: 1rem; } .card p { color: var(--muted); font-size: .9rem; margin: 0; }
+footer { padding: 1rem; text-align: center; color: var(--muted); border-top: 1px solid #ffffff1a; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }

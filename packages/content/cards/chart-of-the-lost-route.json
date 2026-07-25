@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "chart-of-the-lost-route",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-chart-of-the-lost-route-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "透明な星図に消えた船の航路が星座として輝き、暗い海上へ細い光の進路を投げている"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

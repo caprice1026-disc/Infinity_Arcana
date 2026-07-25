@@ -23,7 +23,7 @@
 
 最初の完全セットとして、書物、記録、目録、翻訳、注釈、地図、記憶を扱う[知識領域](packages/content/domains/knowledge.json)と、22原型を各1枚ずつ収録する[知識領域アルカナ 第一集](packages/content/packs/knowledge-arcana-vol-1.json)を追加しています。
 
-パックは`compositionPolicy.type: one-per-major-archetype`を宣言し、検証処理が22枚、原型の欠落・重複、カード側との相互参照を確認します。現在はコンテンツと画像の検品前なので、領域、パック、全カードは`draft`、画像アセットは`planned`です。
+パックは`compositionPolicy.type: one-per-major-archetype`を宣言し、検証処理が22枚、原型の欠落・重複、カード側との相互参照を確認します。現在のカード・領域・パックはレビュー前の`draft`ですが、ローカルWebPは生成済みで、画像アセットは`available`としてSHA-256を台帳管理しています。
 
 ### 収録カード
 
@@ -100,7 +100,7 @@ babel-library.json
 
 オブジェクトストレージの認証情報はコンテンツJSONへ保存しません。`connectionId`を使ってサーバー側の環境設定へ解決します。`access: signed`の場合は、将来の通常版で期限付きURLを発行する想定です。
 
-第一集のカード画像22点とパックカバー1点はまだ未制作なので、現在のアセット状態はすべて`planned`です。各アセットにはSites同梱用WebPと、S3互換ストレージ上の原寸PNGの配置先を予約しています。
+第一集のカード画像22点とパック共通裏面はSites同梱用WebPを生成済みです。画像台帳にはWebPのサイズ・SHA-256と、将来のS3互換ストレージ上の原寸PNGの配置先を記録しています。
 
 ## コンテンツ構成
 
@@ -134,10 +134,78 @@ npm ci
 npm run validate:content
 ```
 
+## Phase 1〜4 のローカル実行
+
+PowerShell では `npm.cmd` を使用してください。最小の検証セットは次の通りです。
+
+```powershell
+python -m unittest discover -s tests -v
+node --test apps/sites-lite/test/engine.test.mjs
+npm.cmd run validate:content
+npm.cmd run content:quality
+npm.cmd run sites:build
+```
+
+`content:quality` は `artifacts/content-quality-report.json` と
+`artifacts/release-manifest.json` を生成します。`artifacts/` は生成物のためGit管理対象外です。
+品質レポートは、原型テーマ継承、カード名の正規化重複、ローカル画像の存在、SHA-256台帳一致を確認します。
+
+### Sites-lite
+
+`npm.cmd run sites:build` の出力先は `apps/sites-lite/dist` です。静的サーバーで確認する場合は、リポジトリルートで次を実行します。
+
+```powershell
+python -m http.server 4173 --directory apps/sites-lite/dist
+```
+
+Sites-lite は、抽選、カード公開、定型解釈、図鑑、履歴、IndexedDB（未対応時はlocalStorage）、JSONエクスポート／インポートを提供します。
+
+### Gemini鑑定エンドポイント
+
+Gemini APIキーはブラウザへ渡さず、Pythonサーバー側だけで読み込みます。`.env.example` を `.env` にコピーし、サーバープロセスの環境変数として設定してください。
+
+```powershell
+$env:GEMINI_API_KEY = "your-key"
+$env:GEMINI_MODEL = "gemini-3.1-flash-lite"
+python apps/api/server.py
+```
+
+`google-genai` は `requirements.txt` に宣言しています（必要時に `python -m pip install -r requirements.txt`）。未インストール、キー未設定、タイムアウト、構造化出力の不正時は、カード定義に基づく定型結果へフォールバックします。Geminiの無料枠・モデル提供状況はGoogle AI Studioの現行設定を確認してください。
+
+### バベルの図書館アセット
+
+カード裏面の入力PNGは `cards/template/card-knowledge-arcana-vol-1-back-v1.png`、配信用WebPは `apps/sites-lite/public/assets/cards/knowledge-arcana-vol-1/back.webp` です。再生成する場合は次を実行します。
+
+```powershell
+python tools/content_pipeline/build_pack_card_back.py
+```
+
+同じパックの22枚のカードが `card-knowledge-arcana-vol-1-back` を共有し、`assets/assets.json` にサイズとSHA-256が記録されます。
+
+### コンテンツ候補の生成・レビュー
+
+候補生成はアプリ実行時ではなく、バッチ定義を入力にしたオフラインCLIで行います。Geminiを使う場合だけAPIキーを設定し、生成結果は自動検証後も必ず人手レビューを通します。
+
+```powershell
+$env:GEMINI_API_KEY = "your-key"
+python tools/content_pipeline/generate_candidates.py `
+  --batch tools/content_pipeline/batches/high-priestess-books-001.json `
+  --archetype packages/content/archetypes/02-high-priestess.json `
+  --output artifacts/high-priestess-books-001.candidates.json
+python tools/content_pipeline/validate_content.py `
+  --batch artifacts/high-priestess-books-001.candidates.json
+python tools/content_pipeline/review_record.py `
+  --candidate artifacts/high-priestess-books-001.candidates.json `
+  --batch-id batch-high-priestess-books-001 `
+  --output artifacts/high-priestess-books-001.review.json
+```
+
+類似度はレビュー支援情報であり、自動却下の根拠にはしません。`approved` は人手レビューの明示的な記録がない限り公開扱いにしない方針です。
+
 成功時の出力：
 
 ```text
-Validated 22 archetypes, 22 cards, 1 domain, 1 pack, and 23 assets.
+Validated 22 archetypes, 22 cards, 1 domain, 1 pack, 3 spreads, and 24 assets.
 Content validation passed.
 ```
 

@@ -1,0 +1,1 @@
+{"schemaVersion":"1.0.0","id":"single-card","contentVersion":1,"name":{"ja-JP":"一枚引き"},"positions":[{"id":"guidance","order":1,"meaning":{"ja-JP":"いま意識するテーマ"}}],"drawPolicyId":"balanced-two-stage-v1","constraints":{"uniqueCards":true,"uniqueArchetypes":true,"allowReversed":true}}

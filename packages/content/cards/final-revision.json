@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "final-revision",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-final-revision-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "黒い刃で古い本の最終章を切り離し、白い綴じ糸で新しい空白頁を挿し込む改訂儀式"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

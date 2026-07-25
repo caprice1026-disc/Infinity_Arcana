@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "labyrinth-of-citations",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-labyrinth-of-citations-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "地下迷宮のすべての脚注が別の扉へ続き、旅人の足元から引用符の形をした鎖が伸びている"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

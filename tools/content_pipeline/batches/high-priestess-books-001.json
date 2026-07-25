@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "batch-high-priestess-books-001",
+  "targetArchetypeId": "high-priestess",
+  "targetDomainIds": ["knowledge"],
+  "requestedCount": 10,
+  "formDistribution": {"person": 2, "place": 2, "object": 2, "event": 1, "creature": 1, "organization": 1, "concept": 1},
+  "requiredVariationAxes": ["era", "scale", "emotional-tone", "central-paradox"],
+  "avoidTerms": ["永遠の時計", "虚無の旅人", "バベルの図書館"],
+  "referenceReleaseId": "release-2026-07-19-knowledge-vol-1",
+  "outputLocale": "ja-JP"
+}

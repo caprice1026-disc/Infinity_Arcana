@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "babel-library",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -94,7 +94,7 @@
   "visual": {
     "primaryAssetId": "card-babel-library-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "無限に続く六角形の書架と、その中央で一冊の本を見上げる小さな人物"
     },

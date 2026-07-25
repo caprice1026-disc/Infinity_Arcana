@@ -210,3 +210,4 @@ __marimo__/
 node_modules/
 npm-debug.log*
 cards/template/card-knowledge-arcana-vol-1-back-v1.png
+artifacts/

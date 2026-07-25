@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:infinity-arcana:schema:review-record:1.0.0",
+  "type": "object",
+  "required": ["schemaVersion", "batchId", "candidateSha256", "reviewer", "decision", "notes", "reviewedAt", "publishedRequiresHumanApproval"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "batchId": {"type": "string"},
+    "candidateSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "reviewer": {"type": "string"},
+    "decision": {"enum": ["needs-review", "approved", "rejected"]},
+    "notes": {"type": "string"},
+    "reviewedAt": {"type": "string", "format": "date-time"},
+    "publishedRequiresHumanApproval": {"const": true}
+  },
+  "additionalProperties": false
+}

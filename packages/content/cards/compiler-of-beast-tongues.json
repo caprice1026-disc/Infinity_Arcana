@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "compiler-of-beast-tongues",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-compiler-of-beast-tongues-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "武器を置いた学者が牙ある獣たちの輪に静かに座り、呼吸や仕草を発光する文字へ記している"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

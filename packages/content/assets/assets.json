@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": 3,
+  "catalogVersion": 4,
   "assetRoots": [
     {
       "id": "sites-public",
@@ -877,6 +877,29 @@
             "objectKey": "knowledge-arcana-vol-1/pack/cover.png",
             "access": "signed"
           }
+        }
+      ]
+    },
+    {
+      "id": "card-knowledge-arcana-vol-1-back",
+      "contentVersion": 1,
+      "status": "available",
+      "kind": "card-back",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/knowledge-arcana-vol-1/back.webp"
+          },
+          "byteSize": 612382,
+          "sha256": "eda4ec129c9156d608e96d207a9f34343570359d7270dca8cc2547e1fd6244ff"
         }
       ]
     }

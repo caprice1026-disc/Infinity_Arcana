@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:infinity-arcana:schema:spread:1.0.0",
+  "title": "Infinity Arcana spread",
+  "type": "object",
+  "required": ["schemaVersion", "id", "contentVersion", "name", "positions", "drawPolicyId", "constraints"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "id": {"$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableId"},
+    "contentVersion": {"type": "integer", "minimum": 1},
+    "name": {"$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/localizedText"},
+    "positions": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {
+        "type": "object", "required": ["id", "order", "meaning"],
+        "properties": {
+          "id": {"$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableId"},
+          "order": {"type": "integer", "minimum": 1},
+          "meaning": {"$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/localizedText"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "drawPolicyId": {"$ref": "urn:infinity-arcana:schema:shared:1.0.0#/$defs/stableId"},
+    "constraints": {
+      "type": "object", "required": ["uniqueCards", "uniqueArchetypes", "allowReversed"],
+      "properties": {
+        "uniqueCards": {"type": "boolean"},
+        "uniqueArchetypes": {"type": "boolean"},
+        "allowReversed": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

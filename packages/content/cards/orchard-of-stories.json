@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "orchard-of-stories",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-orchard-of-stories-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "本の形をした果実がなる樹々と、根元で物語を語り聞かせる人々のいる広大な果樹園"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

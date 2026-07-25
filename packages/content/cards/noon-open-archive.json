@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "noon-open-archive",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-noon-open-archive-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "天井の開いた巨大書庫へ正午の光が真っ直ぐ差し、世代の違う人々が同じ閲覧卓で記録を分かち合っている"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

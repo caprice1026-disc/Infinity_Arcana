@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "moonlight-manuscript",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-moonlight-manuscript-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "青銀の写本が月光の下で開き、頁に夢の森と二つの月が浮かび、余白の文字が波のように変化している"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

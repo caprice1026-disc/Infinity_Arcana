@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "collapsing-book-tower",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-collapsing-book-tower-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "雲まで積まれた書物の塔から礎の一冊が抜け、頁の嵐と雷光の中で塔が崩れ空が開いている"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

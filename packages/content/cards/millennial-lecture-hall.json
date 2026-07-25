@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "millennial-lecture-hall",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-millennial-lecture-hall-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "世代の異なる教師と学徒が円形壇上を囲み、石壁に過去の講義の文字が光の反響として重なる"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

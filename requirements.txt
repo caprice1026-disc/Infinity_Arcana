@@ -1,0 +1,4 @@
+# Optional server-side dependency for the Gemini interpretation endpoint.
+# The core engine, Sites-lite build, and offline quality pipeline use Python's
+# standard library and do not require this package.
+google-genai>=1.0,<2

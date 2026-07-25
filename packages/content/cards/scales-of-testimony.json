@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "scales-of-testimony",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-scales-of-testimony-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "透明な天秤の皿に文字でできた証言と黒い沈黙が載り、中央の鏡に判断の影響を受ける人々が映っている"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

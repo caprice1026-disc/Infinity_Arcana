@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "unwritten-page",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-unwritten-page-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "巨大な開いた書物から白い一頁が風へ舞い、頁の先に未知の道が続いている"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

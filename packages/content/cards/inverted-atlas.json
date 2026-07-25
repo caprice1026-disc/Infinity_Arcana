@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "inverted-atlas",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-inverted-atlas-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "鎖で綴じられた巨大な地図帳が天地逆さに吊られ、銀色の川と橋だけが頁上へ浮かんでいる"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

@@ -78,6 +78,7 @@ const schemaFiles = [
   "card.schema.json",
   "domain.schema.json",
   "pack.schema.json",
+  "spread.schema.json",
   "asset-catalog.schema.json",
   "manifest.schema.json"
 ];
@@ -97,13 +98,15 @@ const validateCard = ajv.getSchema("urn:infinity-arcana:schema:card:1.0.0");
 const validateDomain = ajv.getSchema("urn:infinity-arcana:schema:domain:1.0.0");
 const validatePack = ajv.getSchema("urn:infinity-arcana:schema:pack:1.0.0");
 const validateAssetCatalog = ajv.getSchema("urn:infinity-arcana:schema:asset-catalog:1.0.0");
-const validateManifest = ajv.getSchema("urn:infinity-arcana:schema:manifest:1.1.0");
+const validateManifest = ajv.getSchema("urn:infinity-arcana:schema:manifest:1.2.0");
+const validateSpread = ajv.getSchema("urn:infinity-arcana:schema:spread:1.0.0");
 
 assert(
   validateArchetype &&
     validateCard &&
     validateDomain &&
     validatePack &&
+    validateSpread &&
     validateAssetCatalog &&
     validateManifest,
   "Schema compilation failed."
@@ -123,6 +126,9 @@ const domainPaths = manifest.files.domains.map((relativePath) =>
 const packPaths = manifest.files.packs.map((relativePath) =>
   path.join(contentDirectory, relativePath)
 );
+const spreadPaths = manifest.files.spreads.map((relativePath) =>
+  path.join(contentDirectory, relativePath)
+);
 const assetCatalogPath = path.join(contentDirectory, manifest.files.assetCatalog);
 
 const archetypes = await Promise.all(
@@ -137,6 +143,9 @@ const domains = await Promise.all(
 const packs = await Promise.all(
   packPaths.map((filePath) => validateFile(validatePack, filePath))
 );
+const spreads = await Promise.all(
+  spreadPaths.map((filePath) => validateFile(validateSpread, filePath))
+);
 const assetCatalog = await validateFile(validateAssetCatalog, assetCatalogPath);
 
 assert(archetypes.length === 22, "Expected 22 archetypes, found " + archetypes.length + ".");
@@ -150,6 +159,7 @@ assert(
   "Manifest domain count does not match loaded content."
 );
 assert(manifest.counts.packs === packs.length, "Manifest pack count does not match loaded content.");
+assert(manifest.counts.spreads === spreads.length, "Manifest spread count does not match loaded content.");
 assert(
   manifest.counts.assets === assetCatalog.assets.length,
   "Manifest asset count does not match loaded content."
@@ -186,6 +196,7 @@ await assertManifestDirectoryMatches(manifest.files.archetypes, "archetypes", "a
 await assertManifestDirectoryMatches(manifest.files.cards, "cards", "card");
 await assertManifestDirectoryMatches(manifest.files.domains, "domains", "domain");
 await assertManifestDirectoryMatches(manifest.files.packs, "packs", "pack");
+await assertManifestDirectoryMatches(manifest.files.spreads, "spreads", "spread");
 
 const assetRoots = buildUniqueMap(assetCatalog.assetRoots, "asset root");
 const assets = buildUniqueMap(assetCatalog.assets, "asset");
@@ -245,6 +256,10 @@ for (const card of cards) {
     assets.get(card.visual.primaryAssetId).kind === "card-front",
     card.id + ": primary visual asset must be a card-front."
   );
+  if (card.visual.cardBackAssetId) {
+    assert(assets.has(card.visual.cardBackAssetId), card.id + ": unknown card-back asset " + card.visual.cardBackAssetId + ".");
+    assert(assets.get(card.visual.cardBackAssetId).kind === "card-back", card.id + ": cardBackAssetId must reference a card-back.");
+  }
 
   assertDefaultLocaleContent(card, "card");
   assertPublication(card, "card");
@@ -335,7 +350,9 @@ console.log(
     domains.length +
     " domain, " +
     packs.length +
-    " pack, and " +
+    " pack, " +
+    spreads.length +
+    " spreads, and " +
     assetCatalog.assets.length +
     " assets."
 );

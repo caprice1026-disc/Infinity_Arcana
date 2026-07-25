@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "day-of-rereading",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-day-of-rereading-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "都市中で古い日記と記録が一斉に宙へ開き、頁から鐘の輪のような光が読者の名を呼んでいる"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

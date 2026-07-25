@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "night-the-chronicle-rewrites",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-night-the-chronicle-rewrites-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "真夜中の広場で巨大な年代記の頁が宙に回転し、出来事の絵と脚注の順序が光の輪の中で入れ替わっている"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

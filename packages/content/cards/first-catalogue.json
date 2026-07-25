@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "first-catalogue",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-first-catalogue-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "金属の留め具が付いた巨大な目録が石の台座に開かれ、無数の書架へ光の棚番号を投射している"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-

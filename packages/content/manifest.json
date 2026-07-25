@@ -1,14 +1,15 @@
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "releaseId": "release-2026-07-19-knowledge-vol-1",
   "releasedAt": "2026-07-19T18:30:00Z",
   "minimumAppVersion": "0.2.0",
   "counts": {
     "archetypes": 22,
     "cards": 22,
-    "assets": 23,
+    "assets": 24,
     "domains": 1,
-    "packs": 1
+    "packs": 1,
+    "spreads": 3
   },
   "files": {
     "archetypes": [
@@ -64,6 +65,11 @@
     ],
     "packs": [
       "packs/knowledge-arcana-vol-1.json"
+    ],
+    "spreads": [
+      "spreads/past-present-future.json",
+      "spreads/single-card.json",
+      "spreads/situation-obstacle-advice.json"
     ],
     "assetCatalog": "assets/assets.json"
   }

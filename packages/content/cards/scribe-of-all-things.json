@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "id": "scribe-of-all-things",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "status": "draft",
   "defaultLocale": "ja-JP",
   "name": {
@@ -92,7 +92,7 @@
   "visual": {
     "primaryAssetId": "card-scribe-of-all-things-front",
     "alternateAssetIds": [],
-    "cardBackAssetId": null,
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
     "altText": {
       "ja-JP": "羽根筆、測量器、拡大鏡、封印を並べた机で発光する文字を書く若い写字生"
     },
@@ -110,4 +110,3 @@
     "retiredAt": null
   }
 }
-
