@@ -33,6 +33,10 @@ class ContentPipelineTests(unittest.TestCase):
             report = build_quality_report(Path("packages/content"), Path("."), batch)
             self.assertEqual(report["summary"]["errors"], 1)
 
+    def test_gemini_secret_is_not_embedded_in_browser_sources(self):
+        browser_source = Path("apps/sites-lite/src/app.mjs").read_text(encoding="utf-8")
+        self.assertNotIn("GEMINI_API_KEY", browser_source)
+
     def test_batch_definition_and_candidate_validation_require_review_for_similarity(self):
         batch = load_batch(Path("tools/content_pipeline/batches/high-priestess-books-001.json"))
         cards = [
