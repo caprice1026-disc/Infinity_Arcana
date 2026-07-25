@@ -2,7 +2,7 @@ import json
 import unittest
 from pathlib import Path
 
-from packages.core.infinite_arcana_core.content import load_content
+from packages.core.infinite_arcana_core.content import filter_cards, load_content
 from packages.core.infinite_arcana_core.records import ReadingRecord
 
 
@@ -12,6 +12,15 @@ class CoreContentTests(unittest.TestCase):
         self.assertEqual(len(content.archetypes), 22)
         self.assertEqual(len(content.cards), 22)
         self.assertEqual({"single-card", "past-present-future", "situation-obstacle-advice"}, set(content.spreads))
+
+    def test_card_filters_apply_domain_pack_status_and_publication_window(self):
+        cards = [
+            {"id": "published", "domainIds": ["knowledge"], "packIds": ["base"], "status": "published", "publication": {"publishedAt": "2026-01-01T00:00:00Z", "retiredAt": None}},
+            {"id": "future", "domainIds": ["knowledge"], "packIds": ["base"], "status": "published", "publication": {"publishedAt": "2027-01-01T00:00:00Z", "retiredAt": None}},
+            {"id": "other", "domainIds": ["other"], "packIds": ["base"], "status": "draft", "publication": {"publishedAt": None, "retiredAt": None}},
+        ]
+        filtered = filter_cards(cards, domain_ids={"knowledge"}, pack_ids={"base"}, statuses={"published"}, as_of="2026-06-01T00:00:00Z")
+        self.assertEqual([card["id"] for card in filtered], ["published"])
 
     def test_reading_record_round_trips_as_versioned_json(self):
         record = ReadingRecord(

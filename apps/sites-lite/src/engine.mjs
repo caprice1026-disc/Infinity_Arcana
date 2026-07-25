@@ -22,7 +22,9 @@ export async function drawSpread(cards, positions, options) {
     const archetypeId = archetypeIds[Math.floor((await seededValue(options.seed, counter++)) * archetypeIds.length)];
     const candidates = groups.get(archetypeId).sort((left, right) => left.id.localeCompare(right.id));
     const card = candidates[Math.floor((await seededValue(options.seed, counter++)) * candidates.length)];
-    const orientation = options.allowReversed && (await seededValue(options.seed, counter++)) < 0.5 ? "reversed" : "upright";
+    const reversedProbability = options.reversedProbability ?? 0.5;
+    if (reversedProbability < 0 || reversedProbability > 1) throw new Error("reversedProbability must be between 0 and 1.");
+    const orientation = options.allowReversed && (await seededValue(options.seed, counter++)) < reversedProbability ? "reversed" : "upright";
     draws.push({ positionId, cardId: card.id, archetypeId, orientation });
     if (options.uniqueCards || options.uniqueArchetypes) {
       remaining.splice(0, remaining.length, ...remaining.filter((candidate) => candidate.id !== card.id && (!options.uniqueArchetypes || candidate.archetypeId !== archetypeId)));

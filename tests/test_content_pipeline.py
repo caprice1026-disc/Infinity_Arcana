@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from tools.content_pipeline.generate_candidates import load_batch, validate_candidates
+from tools.content_pipeline.generate_candidates import generate_candidates, load_batch, validate_candidates
 from tools.content_pipeline.review_record import create_review_record
 from tools.content_pipeline.validate_content import build_quality_report, build_release_manifest, similarity_report
 
@@ -26,6 +26,13 @@ class ContentPipelineTests(unittest.TestCase):
             report = build_quality_report(Path("packages/content"), Path("."), batch)
             self.assertGreaterEqual(report["summary"]["warnings"], 1)
 
+    def test_published_batch_requires_approved_review(self):
+        with tempfile.TemporaryDirectory() as directory:
+            batch = Path(directory) / "published.json"
+            batch.write_text(json.dumps({"status": "published", "cards": []}), encoding="utf-8")
+            report = build_quality_report(Path("packages/content"), Path("."), batch)
+            self.assertEqual(report["summary"]["errors"], 1)
+
     def test_batch_definition_and_candidate_validation_require_review_for_similarity(self):
         batch = load_batch(Path("tools/content_pipeline/batches/high-priestess-books-001.json"))
         cards = [
@@ -46,3 +53,24 @@ class ContentPipelineTests(unittest.TestCase):
             self.assertEqual(len(record["candidateSha256"]), 64)
             self.assertEqual(record["decision"], "needs-review")
             self.assertTrue(record["publishedRequiresHumanApproval"])
+
+    def test_candidate_generation_retries_and_uses_prompt_cache(self):
+        class Client:
+            def __init__(self):
+                self.calls = 0
+
+            def generate_json(self, prompt, schema, model):
+                self.calls += 1
+                if self.calls == 1:
+                    raise RuntimeError("429 RESOURCE_EXHAUSTED")
+                return {"cards": [{"name": f"候補{i}", "subtitle": "静かな書庫", "manifestationForm": "place", "centralParadox": "答えと迷い", "uprightCore": "観察と選別", "reversedCore": "情報過多"} for i in range(1, 11)]}
+
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory) / "candidates.cache.json"
+            batch = load_batch(Path("tools/content_pipeline/batches/high-priestess-books-001.json"))
+            client = Client()
+            result = generate_candidates(client, batch, {"semanticAnchors": {"requiredThemeIds": ["hidden-knowledge"]}}, [], max_retries=1, cache_path=cache)
+            self.assertEqual(result["status"], "automatically-validated")
+            self.assertEqual(client.calls, 2)
+            cached = generate_candidates(Client(), batch, {"semanticAnchors": {"requiredThemeIds": ["hidden-knowledge"]}}, [], max_retries=0, cache_path=cache)
+            self.assertEqual(cached["cards"], result["cards"])

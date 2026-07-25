@@ -57,12 +57,22 @@ def _valid_response(value: Any, known_card_ids: set[str] | None = None) -> bool:
     )
 
 
+def _generate_json(client: Any, prompt: str, schema: dict[str, Any], model: str, max_output_tokens: int) -> Any:
+    """Support test doubles and small adapters that predate the token-limit argument."""
+
+    try:
+        return client.generate_json(prompt, schema, model, max_output_tokens)
+    except TypeError:
+        return client.generate_json(prompt, schema, model)
+
+
 class GeminiInterpreter:
-    def __init__(self, client: Any, model: str | None = None, max_retries: int | None = None, timeout_seconds: float | None = None):
+    def __init__(self, client: Any, model: str | None = None, max_retries: int | None = None, timeout_seconds: float | None = None, max_output_tokens: int | None = None):
         self.client = client
         self.model = model or os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite")
         self.max_retries = int(os.getenv("GEMINI_MAX_RETRIES", "2")) if max_retries is None else max_retries
         self.timeout_seconds = float(os.getenv("GEMINI_TIMEOUT_SECONDS", "15")) if timeout_seconds is None else timeout_seconds
+        self.max_output_tokens = int(os.getenv("GEMINI_MAX_OUTPUT_TOKENS", "800")) if max_output_tokens is None else max_output_tokens
 
     def _prompt(self, request: dict[str, Any]) -> str:
         return (
@@ -112,7 +122,7 @@ class GeminiInterpreter:
         for attempt in range(self.max_retries + 1):
             executor = ThreadPoolExecutor(max_workers=1)
             try:
-                future = executor.submit(self.client.generate_json, prompt, OUTPUT_SCHEMA, self.model)
+                future = executor.submit(_generate_json, self.client, prompt, OUTPUT_SCHEMA, self.model, self.max_output_tokens)
                 value = future.result(timeout=self.timeout_seconds)
                 if _valid_response(value, known_card_ids):
                     return {**value, "fallbackUsed": False}
@@ -132,11 +142,11 @@ class GoogleGenaiClient:
 
         self._client = genai.Client(api_key=api_key or os.environ["GEMINI_API_KEY"])
 
-    def generate_json(self, prompt: str, schema: dict[str, Any], model: str) -> dict[str, Any]:
+    def generate_json(self, prompt: str, schema: dict[str, Any], model: str, max_output_tokens: int = 800) -> dict[str, Any]:
         response = self._client.models.generate_content(
             model=model,
             contents=prompt,
-            config={"response_mime_type": "application/json", "response_schema": schema},
+            config={"response_mime_type": "application/json", "response_schema": schema, "max_output_tokens": max_output_tokens},
         )
         import json
 

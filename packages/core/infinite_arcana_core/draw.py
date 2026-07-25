@@ -34,9 +34,12 @@ def draw_spread(
     unique_cards: bool,
     unique_archetypes: bool,
     allow_reversed: bool = True,
+    reversed_probability: float = 0.5,
 ) -> list[dict[str, str]]:
     """Draw positions by choosing an archetype uniformly, then a card uniformly."""
 
+    if not 0 <= reversed_probability <= 1:
+        raise ValueError("reversed_probability must be between 0 and 1")
     random_source = Sha256CounterRandom(seed)
     remaining = sorted((dict(card) for card in cards), key=lambda card: card["id"])
     draws: list[dict[str, str]] = []
@@ -46,11 +49,11 @@ def draw_spread(
             by_archetype[card["archetypeId"]].append(card)
         archetype_ids = sorted(by_archetype)
         if not archetype_ids:
-            raise CandidateExhaustedError("Not enough candidate cards for spread constraints.")
+            raise CandidateExhaustedError(f"Not enough candidate cards for position '{position_id}'.")
         archetype_id = archetype_ids[int(random_source.next() * len(archetype_ids))]
         candidates = sorted(by_archetype[archetype_id], key=lambda card: card["id"])
         card = candidates[int(random_source.next() * len(candidates))]
-        orientation = "reversed" if allow_reversed and random_source.next() < 0.5 else "upright"
+        orientation = "reversed" if allow_reversed and random_source.next() < reversed_probability else "upright"
         draws.append(
             {"positionId": position_id, "cardId": card["id"], "archetypeId": archetype_id, "orientation": orientation}
         )

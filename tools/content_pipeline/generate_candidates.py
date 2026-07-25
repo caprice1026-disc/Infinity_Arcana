@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -30,6 +31,7 @@ CANDIDATE_SCHEMA = {
         }
     },
 }
+HIGH_RISK_TERMS = ("必ず", "絶対", "運命として決ま", "治る", "診断", "投資すべき", "死ぬ")
 
 
 def load_batch(path: Path) -> dict[str, Any]:
@@ -74,13 +76,45 @@ def validate_candidates(value: Any, batch: dict[str, Any]) -> dict[str, Any]:
             raise ValueError(f"duplicate candidate name: {card['name']}")
         if any(term in candidate_text for term in avoid_terms):
             raise ValueError(f"candidate contains avoid term: {card['name']}")
+        if any(term in candidate_text for term in HIGH_RISK_TERMS):
+            raise ValueError(f"candidate contains high-risk deterministic wording: {card['name']}")
         names.add(name)
     return {"schemaVersion": "1.0.0", "batchId": batch["id"], "status": "automatically-validated", "cards": cards}
 
 
-def generate_candidates(client: Any, batch: dict[str, Any], archetype: dict[str, Any], existing_names: list[str], model: str | None = None) -> dict[str, Any]:
-    response = client.generate_json(candidate_prompt(batch, archetype, existing_names), CANDIDATE_SCHEMA, model or os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite"))
-    return validate_candidates(response, batch)
+def generate_candidates(
+    client: Any,
+    batch: dict[str, Any],
+    archetype: dict[str, Any],
+    existing_names: list[str],
+    model: str | None = None,
+    max_retries: int | None = None,
+    cache_path: Path | None = None,
+) -> dict[str, Any]:
+    if archetype.get("id") and archetype["id"] != batch["targetArchetypeId"]:
+        raise ValueError("batch target archetype does not match archetype input")
+    prompt = candidate_prompt(batch, archetype, existing_names)
+    cache_path = Path(cache_path) if cache_path else None
+    cache_key = hashlib.sha256(f"{model or os.getenv('GEMINI_MODEL', 'gemini-3.1-flash-lite')}\n{prompt}".encode("utf-8")).hexdigest()
+    if cache_path and cache_path.is_file():
+        cached = json.loads(cache_path.read_text(encoding="utf-8"))
+        if cached.get("cacheKey") == cache_key:
+            return validate_candidates(cached["response"], batch)
+    retries = int(os.getenv("GEMINI_MAX_RETRIES", "2")) if max_retries is None else max_retries
+    last_error: Exception | None = None
+    for attempt in range(retries + 1):
+        try:
+            response = client.generate_json(prompt, CANDIDATE_SCHEMA, model or os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite"))
+            result = validate_candidates(response, batch)
+            if cache_path:
+                cache_path.parent.mkdir(parents=True, exist_ok=True)
+                cache_path.write_text(json.dumps({"cacheKey": cache_key, "response": response}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            return result
+        except Exception as error:
+            last_error = error
+            if attempt < retries:
+                continue
+    raise ValueError(f"candidate generation failed after {retries + 1} attempts: {last_error}") from last_error
 
 
 class GoogleGenaiCandidateClient:
@@ -100,10 +134,11 @@ def main() -> int:
     parser.add_argument("--archetype", required=True, help="JSON file for the target archetype")
     parser.add_argument("--existing-names", nargs="*", default=[])
     parser.add_argument("--output", required=True)
+    parser.add_argument("--cache")
     args = parser.parse_args()
     if not os.getenv("GEMINI_API_KEY"):
         raise SystemExit("GEMINI_API_KEY is required for candidate generation; use the quality CLI for offline validation")
-    result = generate_candidates(GoogleGenaiCandidateClient(), load_batch(Path(args.batch)), json.loads(Path(args.archetype).read_text(encoding="utf-8")), args.existing_names)
+    result = generate_candidates(GoogleGenaiCandidateClient(), load_batch(Path(args.batch)), json.loads(Path(args.archetype).read_text(encoding="utf-8")), args.existing_names, cache_path=Path(args.cache) if args.cache else None)
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Generated {len(result['cards'])} candidates with status={result['status']}")

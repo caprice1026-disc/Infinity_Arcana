@@ -1,6 +1,8 @@
 import unittest
+import time
 
 from apps.api.interpreter import GeminiInterpreter
+from apps.api.server import canonicalize_draws
 
 
 class FakeClient:
@@ -9,10 +11,17 @@ class FakeClient:
         self.error = error
         self.calls = 0
 
-    def generate_json(self, prompt, schema, model):
+    def generate_json(self, prompt, schema, model, max_output_tokens=800):
         self.calls += 1
         if self.error:
             raise self.error
+        return self.response
+
+
+class SlowClient(FakeClient):
+    def generate_json(self, prompt, schema, model, max_output_tokens=800):
+        self.calls += 1
+        time.sleep(0.1)
         return self.response
 
 
@@ -50,3 +59,15 @@ class InterpretationTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             GeminiInterpreter(client=client, model="test-model").interpret({**self.request, "draws": [{"cardId": "unknown"}]}, {"babel-library"})
         self.assertEqual(client.calls, 0)
+
+    def test_timeout_retries_and_falls_back(self):
+        client = SlowClient(self.valid_response)
+        result = GeminiInterpreter(client=client, model="test-model", max_retries=1, timeout_seconds=0.01).interpret(self.request)
+        self.assertTrue(result["fallbackUsed"])
+        self.assertEqual(client.calls, 2)
+
+    def test_server_canonicalizes_card_content_and_rejects_version_mismatch(self):
+        canonical = canonicalize_draws({"draws": [{"cardId": "babel-library", "contentVersion": 3, "orientation": "upright", "positionId": "guidance", "name": "偽名"}]})
+        self.assertEqual(canonical["draws"][0]["name"], "バベルの図書館")
+        with self.assertRaisesRegex(ValueError, "contentVersion mismatch"):
+            canonicalize_draws({"draws": [{"cardId": "babel-library", "contentVersion": 999, "orientation": "upright", "positionId": "guidance"}]})

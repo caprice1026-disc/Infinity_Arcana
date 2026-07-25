@@ -12,6 +12,35 @@ from packages.core.infinite_arcana_core.content import load_content
 ROOT = Path(__file__).resolve().parents[2]
 CONTENT = load_content(ROOT / "packages" / "content")
 KNOWN_CARD_IDS = {card["id"] for card in CONTENT.cards}
+KNOWN_CARDS = {card["id"]: card for card in CONTENT.cards}
+
+
+def canonicalize_draws(request: dict) -> dict:
+    """Replace client-supplied card fields with the server's versioned content."""
+
+    canonical = dict(request)
+    draws = []
+    for draw in request.get("draws", []):
+        card = KNOWN_CARDS.get(draw.get("cardId")) if isinstance(draw, dict) else None
+        if card is None:
+            draws.append(draw)
+            continue
+        requested_version = draw.get("contentVersion")
+        if requested_version is not None and requested_version != card["contentVersion"]:
+            raise ValueError(f"card contentVersion mismatch for {card['id']}")
+        locale = card.get("defaultLocale", "ja-JP")
+        localized = card.get("localizedContent", {}).get(locale, {})
+        meanings = localized.get("meanings", {}).get(draw.get("orientation"), {})
+        draws.append({
+            "positionId": draw.get("positionId"),
+            "cardId": card["id"],
+            "contentVersion": card["contentVersion"],
+            "orientation": draw.get("orientation"),
+            "name": card.get("name", {}).get(locale, card["id"]),
+            "meaning": {"keywords": meanings.get("keywords", []), "core": meanings.get("core", ""), "advice": meanings.get("advice", "")},
+        })
+    canonical["draws"] = draws
+    return canonical
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -23,7 +52,10 @@ class Handler(BaseHTTPRequestHandler):
             content_length = int(self.headers.get("Content-Length", "0"))
             if content_length <= 0 or content_length > 32_000:
                 raise ValueError("request body must be between 1 and 32000 bytes")
-            request = json.loads(self.rfile.read(content_length))
+            parsed = json.loads(self.rfile.read(content_length))
+            if not isinstance(parsed, dict):
+                raise ValueError("request body must be a JSON object")
+            request = canonicalize_draws(parsed)
             if os.getenv("GEMINI_API_KEY"):
                 interpreter = GeminiInterpreter(
                     client=GoogleGenaiClient(),

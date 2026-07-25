@@ -149,6 +149,7 @@ npm.cmd run sites:build
 `content:quality` は `artifacts/content-quality-report.json` と
 `artifacts/release-manifest.json` を生成します。`artifacts/` は生成物のためGit管理対象外です。
 品質レポートは、原型テーマ継承、カード名の正規化重複、ローカル画像の存在、SHA-256台帳一致を確認します。
+現行の公開manifestはPhase 0の検証用として22枚（原型ごとに1枚）を収録しています。追加カードはバッチ生成・自動検証・人手承認を経てから公開manifestへ追加します。
 
 ### Sites-lite
 
@@ -170,7 +171,7 @@ $env:GEMINI_MODEL = "gemini-3.1-flash-lite"
 python apps/api/server.py
 ```
 
-`google-genai` は `requirements.txt` に宣言しています（必要時に `python -m pip install -r requirements.txt`）。未インストール、キー未設定、タイムアウト、構造化出力の不正時は、カード定義に基づく定型結果へフォールバックします。Geminiの無料枠・モデル提供状況はGoogle AI Studioの現行設定を確認してください。
+`google-genai` は `requirements.txt` に宣言しています（必要時に `python -m pip install -r requirements.txt`）。未インストール、キー未設定、タイムアウト、構造化出力の不正時は、カード定義に基づく定型結果へフォールバックします。モデルを自動的に有料モデルへ切り替える処理はありません。無料枠では入力がGoogleの製品改善に使用される場合があるため、相談内容を送信する前にGoogleの現行規約・料金・レート制限を確認してください。
 
 ### バベルの図書館アセット
 
