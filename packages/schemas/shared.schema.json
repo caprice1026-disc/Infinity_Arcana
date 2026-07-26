@@ -43,6 +43,7 @@
     "contentStatus": {
       "enum": [
         "draft",
+        "available",
         "generated",
         "automatically-validated",
         "needs-review",

@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "id": "inverted-atlas",
   "contentVersion": 2,
-  "status": "draft",
+  "status": "available",
   "defaultLocale": "ja-JP",
   "name": {
     "ja-JP": "逆さの地図帳"

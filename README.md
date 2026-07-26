@@ -23,7 +23,7 @@
 
 最初の完全セットとして、書物、記録、目録、翻訳、注釈、地図、記憶を扱う[知識領域](packages/content/domains/knowledge.json)と、22原型を各1枚ずつ収録する[知識領域アルカナ 第一集](packages/content/packs/knowledge-arcana-vol-1.json)を追加しています。
 
-パックは`compositionPolicy.type: one-per-major-archetype`を宣言し、検証処理が22枚、原型の欠落・重複、カード側との相互参照を確認します。現在のカード・領域・パックはレビュー前の`draft`ですが、ローカルWebPは生成済みで、画像アセットは`available`としてSHA-256を台帳管理しています。
+パックは`compositionPolicy.type: one-per-major-archetype`を宣言し、検証処理が22枚、原型の欠落・重複、カード側との相互参照を確認します。現在の22カードは`available`、領域とパックはレビュー前の`draft`です。ローカルWebPは生成済みで、画像アセットは`available`としてSHA-256を台帳管理しています。
 
 ### 収録カード
 
@@ -64,7 +64,7 @@
 | 中心的象徴 | あらゆる文章を収め、無限に連なる六角形の書庫 |
 | 中心的矛盾 | すべての答えが存在するが、目的の一冊を発見できる保証はない |
 | 継承テーマ | 隠された知識、受容 |
-| 現在の状態 | `draft` |
+| 現在の状態 | `available` |
 
 JSONには次の情報が含まれます。
 
@@ -203,6 +203,102 @@ python tools/content_pipeline/review_record.py `
 
 類似度はレビュー支援情報であり、自動却下の根拠にはしません。`approved` は人手レビューの明示的な記録がない限り公開扱いにしない方針です。
 
+## 新規カードの追加方法
+
+新規カードは、カードJSON、画像アセット台帳、manifest、パックの相互参照を同じ変更として追加します。既存カードJSONを上書きせず、新しい安定IDを発行してください。
+
+### 1. 原型・領域・パックを決める
+
+1. `packages/content/archetypes/*.json` から継承する原型を選びます。
+2. 原型の `semanticAnchors.requiredThemeIds` から少なくとも必要数を `inheritedThemeIds` に設定します。`prohibitedThemeIds` は継承しません。
+3. 既存パックへ入れる場合は `packIds` とパックJSONの `cardIds` の両方へ追加します。`one-per-major-archetype` パックは原型重複を禁止しているため、同じ原型の2枚目は別パックにしてください。
+4. カードID・ファイル名・アセットIDは小文字英数字とハイフンで統一します。例は `new-card`、`card-new-card-front` です。
+
+### 2. カード画像を登録する
+
+バベルの図書館パックの画像は `cards/babel-library` に、次の命名で配置します。
+
+```text
+cards/babel-library/card-new-card-front-v1.png
+```
+
+`packages/content/assets/assets.json` に `kind: "card-front"` のアセットを追加し、Sites用WebPの `display-local` variantを次のように登録します。
+
+```json
+{
+  "id": "card-new-card-front",
+  "contentVersion": 1,
+  "status": "planned",
+  "kind": "card-front",
+  "defaultVariantId": "display-local",
+  "variants": [{
+    "id": "display-local",
+    "usage": "display",
+    "mimeType": "image/webp",
+    "width": 1024,
+    "height": 1536,
+    "source": {"type": "local", "rootId": "sites-public", "path": "cards/new-card/front.webp"}
+  }]
+}
+```
+
+入力PNGを追加した後、次のCLIが全カードフロントをWebPへ変換し、寸法・バイト数・SHA-256・`available`状態を台帳へ反映します。
+
+```powershell
+npm.cmd run assets:build:babel-library
+```
+
+カード裏面は個別に複製せず、知識領域アルカナ第一集では全カードが `card-knowledge-arcana-vol-1-back` を `visual.cardBackAssetId` に設定します。
+
+### 3. カードJSONを作成する
+
+`packages/content/cards/new-card.json` を作成し、`card.schema.json` に従って次を設定します。以下は主要フィールドの簡略例です。実ファイルでは既存カードの `localizedContent` 構造も必ず含めてください。
+
+```json
+{
+  "schemaVersion": "1.0.0",
+  "id": "new-card",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {"ja-JP": "新しいカード"},
+  "subtitle": {"ja-JP": "短い副題"},
+  "archetypeId": "high-priestess",
+  "domainIds": ["knowledge"],
+  "packIds": ["knowledge-arcana-vol-1"],
+  "tags": ["books", "new-card"],
+  "manifestationForm": "place",
+  "rarity": "uncommon",
+  "inheritedThemeIds": ["hidden-knowledge"],
+  "visual": {
+    "primaryAssetId": "card-new-card-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-knowledge-arcana-vol-1-back",
+    "altText": {"ja-JP": "画像の説明"},
+    "presentation": {"aspectRatio": "2:3", "fit": "cover", "focalPoint": {"x": 0.5, "y": 0.5}}
+  },
+  "publication": {"publishedAt": null, "retiredAt": null}
+}
+```
+
+`localizedContent` の `concept`、`meanings.upright`、`meanings.reversed`、`contexts` は省略できません。正位置・逆位置にはそれぞれ3〜8個のキーワード、core、具体的なadvice、warningを記載します。検品が完了し画像が利用可能になったカードだけを `status: "available"` に変更します。`published` は `publishedAt` と人手レビューが必要です。
+
+### 4. manifestへ追加して検証する
+
+カードファイルを `packages/content/manifest.json` の `files.cards` に追加し、`counts.cards` を更新します。パックへ収録する場合は `cardIds` と `expectedCardCount` も一致させます。
+
+```powershell
+npm.cmd run validate:content
+python -m unittest discover -s tests -v
+npm.cmd run content:quality
+npm.cmd run sites:build
+git diff --check
+```
+
+`validate:content` はJSON Schema、ID、原型・領域・パック・画像・裏面の参照、manifest件数を検証します。`content:quality` はテーマ継承、名前・キーワード重複、正逆差分、禁止表現、画像の寸法・形式・SHA-256を検査します。エラーが残った状態では `available` や `published` に進めません。
+
+候補をGeminiで作る場合は、[候補生成・レビュー](#コンテンツ候補の生成レビュー)のバッチCLIを使い、生成結果を直接公開カードへコピーせず、必ず自動検証と人手レビュー記録を経由してください。
+
 成功時の出力：
 
 ```text
@@ -227,6 +323,7 @@ Content validation passed.
 draft
 → generated
 → automatically-validated
+→ available
 → needs-review
 → approved
 → published
