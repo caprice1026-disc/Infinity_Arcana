@@ -8,6 +8,7 @@ class BabelLibraryAvailabilityTests(unittest.TestCase):
         root = Path("packages/content")
         manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
         cards = [json.loads((root / relative).read_text(encoding="utf-8")) for relative in manifest["files"]["cards"]]
+        cards = [card for card in cards if "knowledge-arcana-vol-1" in card["packIds"]]
 
         self.assertEqual(len(cards), 22)
         self.assertTrue(all(card["status"] == "available" for card in cards))

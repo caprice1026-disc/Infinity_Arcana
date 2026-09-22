@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "summons-of-the-pulsar",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "脈動星の呼び声"
+  },
+  "subtitle": {
+    "ja-JP": "歩いてきた道から、もう一度応える"
+  },
+  "archetypeId": "judgement",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "judgement",
+    "summons-of-the-pulsar"
+  ],
+  "manifestationForm": "event",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "awakening-call",
+    "life-review",
+    "renewed-response"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "脈動する星の光を受け、自分の星図を開き直す旅人たち",
+        "centralParadox": "新しい呼び声は、忘れたい過去まで振り返ったときに聞き分けられる",
+        "lightAspects": [
+          "目覚め",
+          "人生の再評価",
+          "新たな応答"
+        ],
+        "shadowAspects": [
+          "自己断罪",
+          "承認待ち",
+          "過去への固着"
+        ],
+        "lore": "観測所に届く脈動は、旅人の名を呼ばない。それでも同じ光を受けた人々は、それぞれ違う古い道を思い出す。誰かの許可を待たず星図へ新しい線を引いた者から、次の旅が始まる。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "覚醒",
+            "総括",
+            "再応答"
+          ],
+          "core": "これまでの選択を振り返ることで、今あらためて引き受けたい役割が見える。過去の経験を現在の行動へ結び直す機会になる。",
+          "advice": "繰り返し気になる出来事を一つ振り返り、今ならどう応えるか決める。",
+          "warning": "振り返りを、自分や他者への終わりのない裁きにしない。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "自己裁判",
+            "逡巡",
+            "承認待ち"
+          ],
+          "core": "過去を反省することが自己否定へ変わり、次の応答を選べずにいる。誰かに認められるまで再出発できないと考えている。",
+          "advice": "改められる行動と変えられない過去を分け、今日できる訂正を一つ行う。",
+          "warning": "過去を消すために、新しい自分を大きく演出しない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "経験を踏まえた再挑戦",
+          "advice": "以前の失敗から変更した点を明記して提案する。"
+        },
+        "relationships": {
+          "focus": "過去への応答",
+          "advice": "必要な謝意や謝罪を具体的に伝え、相手の返答は強制しない。"
+        },
+        "creativity": {
+          "focus": "制作の主題の再発見",
+          "advice": "古い作品を見直し、今も残る問いを新作へ引き継ぐ。"
+        },
+        "self": {
+          "focus": "生き方の再選択",
+          "advice": "長く先延ばしにした関心に、今週使う時間を決める。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-summons-of-the-pulsar-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "脈動する星の光を受け、自分の星図を開き直す旅人たち。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

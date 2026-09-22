@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "upside-down-observatory",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "逆さの天文台"
+  },
+  "subtitle": {
+    "ja-JP": "手を止めると、空の向きが変わる"
+  },
+  "archetypeId": "hanged-man",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "hanged-man",
+    "upside-down-observatory"
+  ],
+  "manifestationForm": "place",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "voluntary-pause",
+    "perspective-shift",
+    "surrender"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "鏡の水面を見下ろす、逆さに浮かんだ天文台",
+        "centralParadox": "観測を進めるために、望遠鏡を握る手を一度離さなければならない",
+        "lightAspects": [
+          "自ら選ぶ休止",
+          "視点の転換",
+          "執着を緩めること"
+        ],
+        "shadowAspects": [
+          "無期限の保留",
+          "報われない我慢",
+          "選択の放棄"
+        ],
+        "lore": "この天文台では、空を見続けた者ほど椅子を倒すよう勧められる。鏡の水面を通すと、見慣れた星の並びが違って見える。観測者は自分で留め具を外せる。留まる長さも、戻る時も自分で決める。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "休止",
+            "転換",
+            "委ねる"
+          ],
+          "core": "押し続けても動かない局面では、意図して手を止めることで別の見方が得られる。結果への執着を緩め、取り組み方を見直す余地を作る。",
+          "advice": "保留する期間を決め、相手や未来の自分の立場から状況を書き直す。",
+          "warning": "休止を選べることと、苦しみに耐え続けることを混同しない。"
+        },
+        "reversed": {
+          "mode": "delayed",
+          "keywords": [
+            "停滞",
+            "犠牲",
+            "宙づり"
+          ],
+          "core": "待つ目的や終わる条件が曖昧になり、我慢だけが続いている。状況に委ねることが、自分の選択を失うことへ変わっている。",
+          "advice": "何を待っているかと期限を言葉にし、満たされなければ取る行動を決める。",
+          "warning": "すでに費やした時間だけを、留まる理由にしない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "行き詰まった作業",
+          "advice": "同じ手順の再試行を止め、前提を一つ入れ替えて検討する。"
+        },
+        "relationships": {
+          "focus": "関係を考える間",
+          "advice": "返答を保留する理由と連絡する日を伝える。"
+        },
+        "creativity": {
+          "focus": "見方の反転",
+          "advice": "作品を離れて眺め、主役以外の視点から構成を試す。"
+        },
+        "self": {
+          "focus": "手放せない期待",
+          "advice": "結果を急ぐ理由を書き、今週は判断しない項目を決める。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-upside-down-observatory-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "鏡の水面を見下ろす、逆さに浮かんだ天文台。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

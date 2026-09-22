@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "captive-of-the-dark-star",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "暗黒星の虜"
+  },
+  "subtitle": {
+    "ja-JP": "惹かれる理由が、鎖の結び目"
+  },
+  "archetypeId": "devil",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "devil",
+    "captive-of-the-dark-star"
+  ],
+  "manifestationForm": "person",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "binding-desire",
+    "shadow-awareness",
+    "self-maintained-chain"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "暗黒の星を囲む光輪と、自分の手に残る緩んだ鎖を見る旅人",
+        "centralParadox": "抜け出したい引力に、手放したくない報酬も結び付いている",
+        "lightAspects": [
+          "欲望の自覚",
+          "依存の構造への気付き",
+          "境界を取り戻す力"
+        ],
+        "shadowAspects": [
+          "執着",
+          "選べないという思い込み",
+          "代償の隠蔽"
+        ],
+        "lore": "旅人は星の光輪から目を離せない。鎖は冷たいが、その先には欲しかった輝きがある。ふと手を見ると、輪の一つは留められていなかった。旅人は立ち去る前に、なぜここへ来たのかを思い出す。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "執着",
+            "誘惑",
+            "自覚"
+          ],
+          "core": "得ている報酬と払っている代償を見比べると、自分を縛る仕組みが見えてくる。欲望を責めずに認めることが、選べる範囲を取り戻す出発点になる。",
+          "advice": "やめにくい行動について、得るものと失うものを一つずつ書く。",
+          "warning": "問題の原因を外の悪意だけへ押し付け、自分の選択肢を消さない。"
+        },
+        "reversed": {
+          "mode": "internalized",
+          "keywords": [
+            "否認",
+            "隠れた束縛",
+            "自己非難"
+          ],
+          "core": "もう自由だと思いたい気持ちや恥ずかしさから、残っている結び目を見ないようにしている。表面の行動を変えても、同じ報酬を別の形で追っている。",
+          "advice": "隠している負担を安全に話せる相手へ伝え、一つの誘惑との距離を決める。",
+          "warning": "抜け出せない理由を意志の弱さだけで片付けない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "報酬と過剰な拘束",
+          "advice": "条件の魅力と失う時間を比べ、受ける範囲を決める。"
+        },
+        "relationships": {
+          "focus": "所有と結び付きの混同",
+          "advice": "不安から求めている制限を一つ見直し、相手の選択を尊重する。"
+        },
+        "creativity": {
+          "focus": "評価への依存",
+          "advice": "反応を確認する時間を区切り、自分で選んだ制作を続ける。"
+        },
+        "self": {
+          "focus": "習慣の報酬",
+          "advice": "やめる前に満たしている欲求を確かめ、別の満たし方を試す。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-captive-of-the-dark-star-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "暗黒の星を囲む光輪と、自分の手に残る緩んだ鎖を見る旅人。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

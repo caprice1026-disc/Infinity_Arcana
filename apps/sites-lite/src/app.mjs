@@ -24,7 +24,7 @@ function section(id, body) { return `<section id="${id}" class="${location.hash.
 function shell() {
   const spreadOptions = Object.values(state.content.spreads).map((spread) => `<option value="${spread.id}">${localized(spread.name)}</option>`).join("");
   app.innerHTML = [
-    section("home", `<h1>知識の迷宮で、問いを読む。</h1><p class="lead">答えを増やす前に、いま何を知れば判断できるのかを見つける。知識領域アルカナのカードが、問いを静かに照らします。</p><p><a href="#draw"><button>一枚引く</button></a></p>`),
+    section("home", `<h1>星と書物のあいだで、問いを読む。</h1><p class="lead">答えを増やす前に、いま何を知れば判断できるのかを見つける。知識領域と天体領域のアルカナが、問いを静かに照らします。</p><p><a href="#draw"><button>一枚引く</button></a></p>`),
     section("draw", `<h2>カードを引く</h2><div class="panel"><label>スプレッド<select id="spread">${spreadOptions}</select></label><label>相談内容<textarea id="question" maxlength="1000" placeholder="任意の問いを書いてください"></textarea></label><button id="draw-button">カードを引く</button></div><div id="draw-results" class="cards" aria-live="polite"></div>`),
     section("collection", `<h2>図鑑</h2><p class="lead">引いたカードはこの端末に記録されます。</p><div id="collection-list" class="cards"></div>`),
     section("history", `<h2>履歴</h2><div id="history-list"></div>`),
@@ -47,7 +47,7 @@ async function draw() {
 }
 function renderDraw() {
   const results = document.querySelector("#draw-results"); if (!results || !state.lastDraw) return;
-  results.innerHTML = state.lastDraw.draws.map((drawResult) => { const card = cardById(drawResult.cardId); return `<article class="card"><img src="${assetUrl(card.visual.cardBackAssetId)}" alt="カードの裏面"><button class="secondary reveal" data-card="${card.id}">裏面をめくる</button><div class="card-face" hidden><img src="${assetUrl(card.visual.primaryAssetId)}" alt="${localized(card.visual.altText)}"><h3>${localized(card.name)}</h3><p>${drawResult.orientation === "reversed" ? "逆位置" : "正位置"}｜${drawResult.positionId}</p><p>${localized(card.localizedContent.meanings[drawResult.orientation]?.core)}</p></div></article>`; }).join("") + `<div class="panel" style="grid-column:1/-1"><button id="interpret-button" class="secondary">Geminiで鑑定する</button><div id="interpretation" aria-live="polite"></div></div>`;
+  results.innerHTML = state.lastDraw.draws.map((drawResult) => { const card = cardById(drawResult.cardId); return `<article class="card"><img src="${assetUrl(card.visual.cardBackAssetId)}" alt="カードの裏面"><button class="secondary reveal" data-card="${card.id}">裏面をめくる</button><div class="card-face" hidden><img src="${assetUrl(card.visual.primaryAssetId)}" alt="${localized(card.visual.altText)}"><h3>${localized(card.name)}</h3><p>${drawResult.orientation === "reversed" ? "逆位置" : "正位置"}｜${drawResult.positionId}</p><p>${localized(localized(card.localizedContent).meanings[drawResult.orientation]?.core)}</p></div></article>`; }).join("") + `<div class="panel" style="grid-column:1/-1"><button id="interpret-button" class="secondary">Geminiで鑑定する</button><div id="interpretation" aria-live="polite"></div></div>`;
   results.querySelectorAll(".reveal").forEach((button) => button.addEventListener("click", () => { button.hidden = true; button.previousElementSibling.hidden = true; button.nextElementSibling.hidden = false; }));
   results.querySelector("#interpret-button").addEventListener("click", interpret);
 }

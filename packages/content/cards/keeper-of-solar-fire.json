@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "keeper-of-solar-fire",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "太陽風の手なずけ手"
+  },
+  "subtitle": {
+    "ja-JP": "激しさを消さず、扱える距離へ"
+  },
+  "archetypeId": "strength",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "strength",
+    "keeper-of-solar-fire"
+  ],
+  "manifestationForm": "person",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "gentle-courage",
+    "inner-mastery",
+    "compassionate-restraint"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "太陽の炎を獅子のたてがみのように導き、小さな惑星を守る人",
+        "centralParadox": "力を抑え込もうと握り締めるほど、炎は指の間から荒れ出す",
+        "lightAspects": [
+          "穏やかな勇気",
+          "感情との協働",
+          "思いやりある抑制"
+        ],
+        "shadowAspects": [
+          "我慢の蓄積",
+          "強さの演技",
+          "衝動への敗北"
+        ],
+        "lore": "炎を扱う者は、火を冷たくしようとはしない。熱さを認め、手を近づける時間と離す時間を覚える。小さな星を守れるのは、炎の強さを忘れない手だけだ。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "胆力",
+            "柔和",
+            "自制"
+          ],
+          "core": "強い感情や衝動を否定せず、害を生まない形で使う余地がある。落ち着いた対応は弱さではなく、力を選んで使う技術になる。",
+          "advice": "強く反応したことを言葉にし、返答の前に短い間を取る。",
+          "warning": "平静を保つために、限界や助けの必要まで隠さない。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "抑圧",
+            "反動",
+            "虚勢"
+          ],
+          "core": "耐えることを強さと考え、感情を閉じ込め過ぎている。抑えた力が、思わぬ相手や場面へ向かいかけている。",
+          "advice": "負荷が高い場面から一度離れ、困っている点を短く伝える。",
+          "warning": "衝動を感じたこと自体を責めて、さらに閉じ込めない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "緊張の高い対話",
+          "advice": "反論する前に論点を一つ確認し、落ち着いて対応できる時間を取る。"
+        },
+        "relationships": {
+          "focus": "感情と境界の両立",
+          "advice": "怒りの理由を説明し、受け入れられない行為を具体的に伝える。"
+        },
+        "creativity": {
+          "focus": "強い表現の制御",
+          "advice": "最も激しい一箇所を残し、周囲の表現に余白を作る。"
+        },
+        "self": {
+          "focus": "自分の衝動との付き合い",
+          "advice": "反応しやすい条件を記録し、休む合図を決める。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-keeper-of-solar-fire-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "太陽の炎を獅子のたてがみのように導き、小さな惑星を守る人。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

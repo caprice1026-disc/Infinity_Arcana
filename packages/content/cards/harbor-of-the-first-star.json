@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "harbor-of-the-first-star",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "一番星の港"
+  },
+  "subtitle": {
+    "ja-JP": "小さな灯を頼りに、再び満たす"
+  },
+  "archetypeId": "star",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "star",
+    "harbor-of-the-first-star"
+  ],
+  "manifestationForm": "place",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "renewed-hope",
+    "healing-guidance",
+    "authentic-openness"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "嵐の後の港で、水を注ぐ旅人と水面に映る一番星",
+        "centralParadox": "遠い星は港を直してくれないが、直し始める向きを教えてくれる",
+        "lightAspects": [
+          "希望の回復",
+          "素直な開示",
+          "小さな手当て"
+        ],
+        "shadowAspects": [
+          "救いを待つ姿勢",
+          "希望の枯渇",
+          "傷の隠蔽"
+        ],
+        "lore": "嵐で割れた港の水盤へ、旅人は一杯の水を注いだ。すぐには満ちないが、湿った溝に流れが戻る。星の位置を目印に、翌日も同じ場所へ戻って世話を続ける。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "希望",
+            "手当て",
+            "素直さ"
+          ],
+          "core": "疲れや失望の後にも、少しずつ立て直す道を見つけられる。飾らない現状を認め、続けられる小さな行動へ希望を結び付ける。",
+          "advice": "今の状態を信頼できる人に伝え、負担の少ない手当てを一つ続ける。",
+          "warning": "希望があることを、何もしなくても救われる約束と読まない。"
+        },
+        "reversed": {
+          "mode": "deficiency",
+          "keywords": [
+            "落胆",
+            "枯渇",
+            "閉じこもり"
+          ],
+          "core": "過去の失望から、支えになるものまで受け取れなくなっている。すぐに明るくなれない自分を責め、回復の余地を狭めている。",
+          "advice": "前向きになろうとせず、今日の負担を一つ減らす助けを頼む。",
+          "warning": "回復の速さを他者と比べて、足りないと決めない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "失敗後の立て直し",
+          "advice": "できた点を一つ残し、次に試す範囲を小さくする。"
+        },
+        "relationships": {
+          "focus": "弱さを話せる関係",
+          "advice": "励ましを急がず、今してほしい支えを聞く。"
+        },
+        "creativity": {
+          "focus": "制作意欲の再開",
+          "advice": "公開を前提にせず、好きな素材で短い習作を作る。"
+        },
+        "self": {
+          "focus": "消耗からの回復",
+          "advice": "続けられる休息を一つ決め、効果を急いで採点しない。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-harbor-of-the-first-star-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "嵐の後の港で、水を注ぐ旅人と水面に映る一番星。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

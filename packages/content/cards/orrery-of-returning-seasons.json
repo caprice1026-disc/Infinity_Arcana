@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "orrery-of-returning-seasons",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "巡りゆく天球儀"
+  },
+  "subtitle": {
+    "ja-JP": "同じ円の、異なる巡り合わせ"
+  },
+  "archetypeId": "wheel-of-fortune",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "wheel-of-fortune",
+    "orrery-of-returning-seasons"
+  ],
+  "manifestationForm": "object",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "cyclical-change",
+    "contingency",
+    "turning-point"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "季節の色を映す門と惑星が巡る巨大な天球儀",
+        "centralParadox": "同じ門が戻ってきても、それを見る者と通れる条件は以前と同じではない",
+        "lightAspects": [
+          "変化への適応",
+          "好機への気付き",
+          "循環の理解"
+        ],
+        "shadowAspects": [
+          "運任せ",
+          "過去の型への固執",
+          "転機への抵抗"
+        ],
+        "lore": "天球儀の門は一定の間隔で巡るが、すべてが毎回開くわけではない。ある門は修繕中で、別の門は旅人が荷物を減らしたときだけ通れる。見張り番は巡りを記し、通れなかった日にも次の準備をする。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "巡り",
+            "転機",
+            "適応"
+          ],
+          "core": "状況の変化によって、以前は動かなかった選択肢が開くことがある。制御できない流れを認めながら、いま対応できる部分へ力を向ける。",
+          "advice": "変わった条件を三つ挙げ、以前見送った案を一つだけ再検討する。",
+          "warning": "好調や不調を、自分の価値そのものの評価にしない。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "固執",
+            "空待ち",
+            "見落とし"
+          ],
+          "core": "以前の成功条件にこだわるか、状況が自然に変わるのを待ち続けている。小さな変化を見逃し、対応が後手になっている。",
+          "advice": "変えられる準備を一つ進め、条件を見直す日を決める。",
+          "warning": "流れに合わせることを、理由のない方針転換の口実にしない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "環境変化への対応",
+          "advice": "需要や制約の変化を確かめ、計画の前提を更新する。"
+        },
+        "relationships": {
+          "focus": "関係の時期と変化",
+          "advice": "以前の反応だけで決めず、今の事情を聞く。"
+        },
+        "creativity": {
+          "focus": "制作の周期",
+          "advice": "調子が出ない時期にできる整理や素材集めを選ぶ。"
+        },
+        "self": {
+          "focus": "波のある日常",
+          "advice": "好不調の傾向を記録し、余裕のある日に備えを作る。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-orrery-of-returning-seasons-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "季節の色を映す門と惑星が巡る巨大な天球儀。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

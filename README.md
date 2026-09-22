@@ -19,6 +19,14 @@
 
 大アルカナの番号はRider–Waite–Smith系の順序を採用し、「力」をVIII、「正義」をXIとしています。
 
+## 天体領域アルカナ 第一集
+
+[天体領域アルカナ 第一集](packages/content/packs/celestial-arcana-vol-1.json)は、彗星、恒星、連星、星雲、軌道、銀河を象徴にした22枚の完全セットです。各カードに正位置・逆位置、物語、仕事・人間関係・創作・自己理解の助言を収録しています。
+
+画像生成スキルの組み込みツールで、既存テンプレートから22枚の表面と共通裏面を制作しました。[画像・意味の一覧と生成プロンプト](cards/celestial-arcana/README.md)から全カードを確認できます。原寸PNGと配信用WebPを同梱し、カードと画像は`available`、領域とパックはレビュー前の`draft`です。
+
+表面のWebPを再生成する場合は`npm.cmd run assets:build:celestial`を実行します。知識セットと天体セットはそれぞれ22原型を一巡し、manifest全体では44枚を読み込みます。Sites-liteの抽選対象には両セットが含まれます。
+
 ## 知識領域アルカナ 第一集
 
 最初の完全セットとして、書物、記録、目録、翻訳、注釈、地図、記憶を扱う[知識領域](packages/content/domains/knowledge.json)と、22原型を各1枚ずつ収録する[知識領域アルカナ 第一集](packages/content/packs/knowledge-arcana-vol-1.json)を追加しています。
@@ -149,7 +157,7 @@ npm.cmd run sites:build
 `content:quality` は `artifacts/content-quality-report.json` と
 `artifacts/release-manifest.json` を生成します。`artifacts/` は生成物のためGit管理対象外です。
 品質レポートは、原型テーマ継承、カード名の正規化重複、ローカル画像の存在、SHA-256台帳一致を確認します。
-現行の公開manifestはPhase 0の検証用として22枚（原型ごとに1枚）を収録しています。追加カードはバッチ生成・自動検証・人手承認を経てから公開manifestへ追加します。
+現行のmanifestは知識領域と天体領域の2セット44枚（各セットで原型ごとに1枚）を収録しています。`published`への変更には人手レビューが必要です。
 
 ### Sites-lite
 
@@ -242,7 +250,7 @@ cards/babel-library/card-new-card-front-v1.png
 }
 ```
 
-入力PNGを追加した後、次のCLIが全カードフロントをWebPへ変換し、寸法・バイト数・SHA-256・`available`状態を台帳へ反映します。
+入力PNGを追加した後、次のCLIが知識パックのカードフロントをWebPへ変換し、寸法・バイト数・SHA-256・`available`状態を台帳へ反映します。天体パックは`npm.cmd run assets:build:celestial`を使います。
 
 ```powershell
 npm.cmd run assets:build:babel-library
@@ -302,7 +310,7 @@ git diff --check
 成功時の出力：
 
 ```text
-Validated 22 archetypes, 22 cards, 1 domain, 1 pack, 3 spreads, and 24 assets.
+Validated 22 archetypes, 44 cards, 2 domain, 2 pack, 3 spreads, and 48 assets.
 Content validation passed.
 ```
 

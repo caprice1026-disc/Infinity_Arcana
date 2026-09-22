@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "celestial-arcana-vol-1",
+  "contentVersion": 1,
+  "status": "draft",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "天体領域アルカナ 第一集"
+  },
+  "subtitle": {
+    "ja-JP": "星々の誕生と巡りをたどる二十二景"
+  },
+  "description": {
+    "ja-JP": "軌道を持たない彗星から銀河の環冠まで、天体の象徴を通して出発、選択、変容、統合をたどる22原型の完全セット。"
+  },
+  "domainIds": [
+    "celestial"
+  ],
+  "tags": [
+    "celestial",
+    "complete-major-set",
+    "stars",
+    "volume-one"
+  ],
+  "cardIds": [
+    "unbound-comet",
+    "stellar-forge",
+    "veil-of-the-dark-moon",
+    "cradle-nebula",
+    "sovereign-of-orbits",
+    "hall-of-star-calendars",
+    "covenant-of-twin-stars",
+    "comet-helmsman",
+    "keeper-of-solar-fire",
+    "lamp-at-aphelion",
+    "orrery-of-returning-seasons",
+    "balance-of-gravity",
+    "upside-down-observatory",
+    "last-light-of-a-star",
+    "confluence-of-starlight",
+    "captive-of-the-dark-star",
+    "fractured-sky-spire",
+    "harbor-of-the-first-star",
+    "sea-of-wandering-moons",
+    "garden-of-the-young-sun",
+    "summons-of-the-pulsar",
+    "crown-of-galaxies"
+  ],
+  "coverAssetId": "pack-celestial-arcana-vol-1-cover",
+  "accessPolicy": {
+    "accessLevel": "free",
+    "entitlementId": null
+  },
+  "compositionPolicy": {
+    "type": "one-per-major-archetype",
+    "expectedCardCount": 22,
+    "allowDuplicateArchetypes": false
+  },
+  "localizedContent": {
+    "ja-JP": {
+      "concept": "異なる星々がそれぞれの距離と周期を持つ宇宙に、人が自分の選択を見直すための物語を重ねる。",
+      "curatorialRule": "大アルカナ22原型を各1枚収録し、出発、集中、受容、成長から、終結、希望、再評価、完了までを重複しない天体の象徴で表す。",
+      "readingTone": "宇宙の神秘性を残しながら、観察、対話、調整、休止、手放しなどの具体的な行動を示す。"
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

@@ -8,6 +8,8 @@
 
 `knowledge-arcana-vol-1`は、`knowledge`領域から22原型を各1枚ずつ収録する最初の完全セットです。`one-per-major-archetype`構成は検証CLIが件数、原型の欠落・重複、カードとの相互参照まで確認します。
 
+`celestial-arcana-vol-1`は、`celestial`領域から同じ22原型を各1枚ずつ収録する天体セットです。既存セットと合わせて44枚を収録し、天体セットの画像と意味の対応は[画像一覧](../../cards/celestial-arcana/README.md)で確認できます。
+
 ## 画像の参照
 
 カードJSONはファイルパスやURLを直接持たず、`visual.primaryAssetId`で`assets/assets.json`のアセットを参照します。アセットには用途別のvariantを複数登録できます。

@@ -12,11 +12,11 @@ class ContentPipelineTests(unittest.TestCase):
     def test_quality_report_covers_current_content_and_release_manifest_hashes_files(self):
         root = Path(".").resolve()
         report = build_quality_report(root / "packages" / "content", root)
-        self.assertEqual(report["summary"]["cards"], 22)
+        self.assertEqual(report["summary"]["cards"], 44)
         self.assertEqual(report["summary"]["errors"], 0)
         release = build_release_manifest(root / "packages" / "content", root)
-        self.assertEqual(release["counts"]["cards"], 22)
-        self.assertEqual(len(release["files"]), 22 + 22 + 1 + 1 + 3 + 1)
+        self.assertEqual(release["counts"]["cards"], 44)
+        self.assertEqual(len(release["files"]), 22 + 44 + 2 + 2 + 3 + 1)
         self.assertTrue(all(len(item["sha256"]) == 64 for item in release["files"]))
 
     def test_report_flags_duplicate_names_in_a_batch(self):

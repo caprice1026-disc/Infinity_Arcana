@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "confluence-of-starlight",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "星光の合流"
+  },
+  "subtitle": {
+    "ja-JP": "色を残して、流れを合わせる"
+  },
+  "archetypeId": "temperance",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "temperance",
+    "confluence-of-starlight"
+  ],
+  "manifestationForm": "event",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "balanced-integration",
+    "calibration",
+    "healing-flow"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "青白い星光と琥珀色の星光を、二つの器から同じ流れへ注ぐ調律者",
+        "centralParadox": "一つの流れを作るには、二つの光を同じ色に潰さず合わせなければならない",
+        "lightAspects": [
+          "異質な力の統合",
+          "配分の調整",
+          "無理なく続く循環"
+        ],
+        "shadowAspects": [
+          "曖昧な折衷",
+          "配分の偏り",
+          "調整による疲弊"
+        ],
+        "lore": "調律者は二つの器を同じ高さには置かない。光の強さが日ごとに違うからだ。交わる一点だけを確かめながら流量を変えると、別々の色のまま遠くまで続く一本の道になる。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "配分",
+            "調律",
+            "持続"
+          ],
+          "core": "違う性質の力を、目的に合う比率で組み合わせることで無理の少ない流れが生まれる。一度の正解より、反応を見ながら調整を続けることが役立つ。",
+          "advice": "二つの負荷を数字や時間で比べ、一週間だけ配分を変えてみる。",
+          "warning": "どちらにも配慮したつもりで、必要な優先順位を曖昧にしない。"
+        },
+        "reversed": {
+          "mode": "distorted",
+          "keywords": [
+            "偏配",
+            "混濁",
+            "調整疲れ"
+          ],
+          "core": "全てを整えようとして細部の調整が増え、何を満たすための配分か見えなくなっている。片側の負担が隠れている可能性もある。",
+          "advice": "不足している側を一つ特定し、見直す日まで配分を明確に寄せる。",
+          "warning": "見た目の落ち着きのために、実際の衝突を薄めない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "速度と品質の調整",
+          "advice": "今の優先事項を決め、配分を見直す日を共有する。"
+        },
+        "relationships": {
+          "focus": "違いを生かす生活",
+          "advice": "得意不得意と疲労の量を比べ、分担を小さく変える。"
+        },
+        "creativity": {
+          "focus": "異なる表現の統合",
+          "advice": "素材ごとの役割を残し、接点を一箇所ずつ調整する。"
+        },
+        "self": {
+          "focus": "活動と休息の配分",
+          "advice": "予定の長さを記録し、回復に必要な空白を戻す。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-confluence-of-starlight-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "青白い星光と琥珀色の星光を、二つの器から同じ流れへ注ぐ調律者。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

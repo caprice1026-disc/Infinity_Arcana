@@ -6,6 +6,7 @@
   "scripts": {
     "validate:content": "node tools/validate-content.mjs",
     "assets:build:babel-library": "node tools/build-babel-library-assets.mjs",
+    "assets:build:celestial": "node tools/build-babel-library-assets.mjs celestial-arcana-vol-1 cards/celestial-arcana",
     "sites:build": "python tools/build_sites_lite.py",
     "content:quality": "python tools/content_pipeline/validate_content.py",
     "content:candidates": "python tools/content_pipeline/generate_candidates.py"

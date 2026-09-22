@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "balance-of-gravity",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "重力の天秤"
+  },
+  "subtitle": {
+    "ja-JP": "違いを測り、釣り合いを問う"
+  },
+  "archetypeId": "justice",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "justice",
+    "balance-of-gravity"
+  ],
+  "manifestationForm": "object",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "fair-accountability",
+    "truthful-assessment",
+    "consequence"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "異なる大きさの天体を、腕の長さを調整して量る天秤",
+        "centralParadox": "同じ扱いに揃えるほど、置かれた条件の違いが見えなくなることがある",
+        "lightAspects": [
+          "公平な責任",
+          "事実に基づく評価",
+          "結果の引き受け"
+        ],
+        "shadowAspects": [
+          "機械的な平等",
+          "都合のよい採点",
+          "責任転嫁"
+        ],
+        "lore": "天秤の番人は、皿に乗る星だけでなく支点までの距離も測る。釣り合いが崩れたとき、重い星をすぐに責めない。どこをどう動かしたか記録してから、負担の所在を確かめる。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "公正",
+            "検証",
+            "応分"
+          ],
+          "core": "判断に必要な事実と条件を揃え、自分を含む関係者の責任を見直す。負担と権限の違いまで見ることで、納得できる調整へ進める。",
+          "advice": "決める基準と根拠を先に書き、自分にも同じ基準を当てる。",
+          "warning": "公平さを求める場で、報復の気持ちを基準に混ぜない。"
+        },
+        "reversed": {
+          "mode": "distorted",
+          "keywords": [
+            "偏り",
+            "隠蔽",
+            "責任逃れ"
+          ],
+          "core": "望む結論に合わせて基準を変えたり、不利な条件を除いたりしている。表面的な釣り合いのために、実際の負担が隠れている。",
+          "advice": "採用しなかった事実を一つ戻し、別の立場から判断を点検する。",
+          "warning": "厳しさだけで誠実さを証明しようとしない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "評価と分担",
+          "advice": "担当者ごとの権限と作業量を並べて見直す。"
+        },
+        "relationships": {
+          "focus": "負担の釣り合い",
+          "advice": "回数だけでなく時間や負荷を具体的に話す。"
+        },
+        "creativity": {
+          "focus": "作品への批評",
+          "advice": "好みと技術上の指摘を分けて伝える。"
+        },
+        "self": {
+          "focus": "自分の選択への責任",
+          "advice": "言い訳と反省を区別し、修正できる行動を一つ選ぶ。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-balance-of-gravity-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "異なる大きさの天体を、腕の長さを調整して量る天秤。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "covenant-of-twin-stars",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "双星の誓約"
+  },
+  "subtitle": {
+    "ja-JP": "互いの光を残して選ぶ軌道"
+  },
+  "archetypeId": "lovers",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "lovers",
+    "covenant-of-twin-stars"
+  ],
+  "manifestationForm": "event",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "value-aligned-choice",
+    "mutual-connection",
+    "commitment"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "空いた中心を挟み、異なる色の光を保ちながら巡る二つの星",
+        "centralParadox": "共に巡るには近づく必要があるが、一つに溶け合えば互いを見失う",
+        "lightAspects": [
+          "価値に沿う選択",
+          "対等な結び付き",
+          "合意への責任"
+        ],
+        "shadowAspects": [
+          "同一化",
+          "選択の先延ばし",
+          "望みの押し付け"
+        ],
+        "lore": "二つの星の間には、どちらの玉座もない。そこに置かれるのは、共に選んだ空白だけだ。周期がずれるたびに距離を調整し、離れられる余地を残して再び向き合う。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "相互性",
+            "選択",
+            "誓約"
+          ],
+          "core": "大切にしたい価値を確かめ、他者との関係や進路を自分の意志で選ぶ。違いを保ったまま引き受ける約束が、結び付きを強くする。",
+          "advice": "譲れない価値と調整できる条件を分け、相手の希望も聞いて選ぶ。",
+          "warning": "強い惹かれ合いだけで、同意や条件の確認を済ませない。"
+        },
+        "reversed": {
+          "mode": "distorted",
+          "keywords": [
+            "同調",
+            "未決",
+            "価値の不一致"
+          ],
+          "core": "関係を保つために望みを隠すか、選択の責任を相手に委ねている。表面の一致の下で負担がずれている。",
+          "advice": "自分が選びたいことを一文で伝え、合意できていない点を一つ確かめる。",
+          "warning": "関係を続けることだけを、よい選択の尺度にしない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "価値に沿った協働",
+          "advice": "組む前に成功の定義と引き受けられる条件を話す。"
+        },
+        "relationships": {
+          "focus": "互いを残す約束",
+          "advice": "一緒に過ごす時間と個人の時間を双方が選べる形にする。"
+        },
+        "creativity": {
+          "focus": "作品の方針選択",
+          "advice": "魅力的な二案を、作品で守りたい価値に照らして選ぶ。"
+        },
+        "self": {
+          "focus": "自分の基準で決めること",
+          "advice": "周囲の期待を一旦外し、選択理由を自分の言葉で書く。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-covenant-of-twin-stars-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "空いた中心を挟み、異なる色の光を保ちながら巡る二つの星。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

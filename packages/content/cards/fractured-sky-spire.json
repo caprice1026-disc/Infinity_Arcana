@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "fractured-sky-spire",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "砕ける天穹"
+  },
+  "subtitle": {
+    "ja-JP": "崩れた天井の向こうに、空がある"
+  },
+  "archetypeId": "tower",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "tower",
+    "fractured-sky-spire"
+  ],
+  "manifestationForm": "event",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "structural-collapse",
+    "sudden-revelation",
+    "false-foundation"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "流星の光で偽の天穹と細い土台が露わになり、割れる観測塔",
+        "centralParadox": "空をよく見るための塔が、本当の空を隠す天井になっていた",
+        "lightAspects": [
+          "誤った前提の発見",
+          "見せかけの解体",
+          "組み直す契機"
+        ],
+        "shadowAspects": [
+          "警告の無視",
+          "急変への混乱",
+          "崩壊の美化"
+        ],
+        "lore": "塔の住人は、天井に描かれた星を長く測っていた。ある夜、流星の光が殻を透かし、支柱の空洞を照らす。床へ散った金箔の向こうには、暦にない本物の星が見えていた。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "露見",
+            "解体",
+            "再点検"
+          ],
+          "core": "当たり前にしていた前提が崩れ、今の構造を保てないことが見える局面。まず影響を小さくし、確かめられた事実から組み直す。",
+          "advice": "崩れた前提を一つ特定し、その前提に依存する行動を止めて点検する。",
+          "warning": "このカードを、災害が起きる予告や苦しみへの罰と結び付けない。"
+        },
+        "reversed": {
+          "mode": "delayed",
+          "keywords": [
+            "先送り",
+            "継ぎ接ぎ",
+            "不信"
+          ],
+          "core": "綻びを認める負担を避け、修繕だけで古い前提を延命している。見なかったことにした問題が、判断への信頼を削っている。",
+          "advice": "繰り返している不具合を一件選び、土台の仮定まで戻って確かめる。",
+          "warning": "変えるために、無関係な支えまで壊す必要はない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "計画の前提崩れ",
+          "advice": "影響範囲を共有し、修正できる箇所から再計画する。"
+        },
+        "relationships": {
+          "focus": "隠れていた認識のずれ",
+          "advice": "事実と推測を分けて話し、今後の約束を作り直す。"
+        },
+        "creativity": {
+          "focus": "構成の破綻",
+          "advice": "成立しない仕掛けを外し、作品の主題だけから組み直す。"
+        },
+        "self": {
+          "focus": "自己像の見直し",
+          "advice": "できなかった事実を認めつつ、使える力まで否定しない。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-fractured-sky-spire-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "流星の光で偽の天穹と細い土台が露わになり、割れる観測塔。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

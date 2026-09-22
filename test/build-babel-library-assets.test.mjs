@@ -20,6 +20,8 @@ test("converts a Babel source PNG to the asset-catalog WebP path and records its
   const catalogPath = path.join(contentDirectory, "assets", "assets.json");
   await mkdir(sourceDirectory, { recursive: true });
   await mkdir(path.dirname(catalogPath), { recursive: true });
+  await mkdir(path.join(contentDirectory, "packs"), { recursive: true });
+  await writeFile(path.join(contentDirectory, "packs", "knowledge-arcana-vol-1.json"), JSON.stringify({ cardIds: ["babel-library"] }));
 
   const inputPath = path.join(sourceDirectory, "card-babel-library-front-v1.png");
   await execFile("ffmpeg", [
@@ -69,6 +71,13 @@ test("converts a Babel source PNG to the asset-catalog WebP path and records its
     ) + "\n"
   );
 
+  const before = JSON.parse(await readFile(catalogPath, "utf8"));
+  const otherAsset = structuredClone(before.assets[0]);
+  otherAsset.id = "card-other-pack-front";
+  otherAsset.variants[0].source.path = "cards/other-pack/front.webp";
+  before.assets.push(otherAsset);
+  await writeFile(catalogPath, JSON.stringify(before));
+
   const result = await buildBabelLibraryAssets({ repositoryRoot, sourceDirectory, contentDirectory });
 
   assert.equal(result.convertedAssetIds.length, 1);
@@ -94,4 +103,5 @@ test("converts a Babel source PNG to the asset-catalog WebP path and records its
   assert.equal(updatedCatalog.catalogVersion, 3);
   assert.equal(variant.byteSize, output.length);
   assert.equal(variant.sha256, createHash("sha256").update(output).digest("hex"));
+  assert.deepEqual(updatedCatalog.assets[1], otherAsset);
 });

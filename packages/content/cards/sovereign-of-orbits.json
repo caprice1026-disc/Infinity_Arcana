@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "sovereign-of-orbits",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "軌道の王座"
+  },
+  "subtitle": {
+    "ja-JP": "巡りを支える責任ある中心"
+  },
+  "archetypeId": "emperor",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "emperor",
+    "sovereign-of-orbits"
+  ],
+  "manifestationForm": "object",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "structure",
+    "responsible-authority",
+    "stability"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "星々の間隔を保つ軌道の輪と、それを見守る王座",
+        "centralParadox": "秩序を守る中心ほど、すべてを自分の手で動かさずに済む仕組みを要する",
+        "lightAspects": [
+          "安定した構造",
+          "責任ある権限",
+          "持続できる境界"
+        ],
+        "shadowAspects": [
+          "硬直した規則",
+          "権限の集中",
+          "管理への執着"
+        ],
+        "lore": "王座の主が支えるのは惑星そのものではなく、その間の輪である。小さな世界が自分の速さで巡れるよう、境界を点検する。王座を離れる日にも巡りが続くことが、この務めの尺度とされる。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "秩序",
+            "責任",
+            "基盤"
+          ],
+          "core": "役割と境界を明確にすることで、周囲が安心して動ける土台が整う。権限は自分の都合ではなく、引き受ける責任に合わせて使う。",
+          "advice": "誰が何を決めるかと、困ったときの相談先を明文化する。",
+          "warning": "安定を保つ規則が、現状に合わなくなっていないか点検する。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "硬直",
+            "支配",
+            "集中"
+          ],
+          "core": "秩序を守ろうとして細部まで握り、判断と負担を一人へ集中させている。守るための規則が動きを妨げている。",
+          "advice": "承認が滞る作業を一つ選び、判断条件を共有して担当者へ任せる。",
+          "warning": "責任を手放さず、権限だけを曖昧に渡さない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "役割と意思決定",
+          "advice": "担当範囲、期限、例外時の連絡先を揃える。"
+        },
+        "relationships": {
+          "focus": "安心できる約束",
+          "advice": "守れる時間や距離の境界を双方の言葉で決める。"
+        },
+        "creativity": {
+          "focus": "制作を続ける仕組み",
+          "advice": "保存方法と作業時間を固定し、内容には試す余地を残す。"
+        },
+        "self": {
+          "focus": "生活の安定",
+          "advice": "毎日判断し直していることを一つ、簡単な規則にする。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-sovereign-of-orbits-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "星々の間隔を保つ軌道の輪と、それを見守る王座。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

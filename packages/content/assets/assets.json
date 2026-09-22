@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": 4,
+  "catalogVersion": 7,
   "assetRoots": [
     {
       "id": "sites-public",
@@ -900,6 +900,558 @@
           },
           "byteSize": 612382,
           "sha256": "eda4ec129c9156d608e96d207a9f34343570359d7270dca8cc2547e1fd6244ff"
+        }
+      ]
+    },
+    {
+      "id": "card-unbound-comet-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/unbound-comet/front.webp"
+          },
+          "byteSize": 527520,
+          "sha256": "7fe947edb653126f3cb4c1c01826b3489ac0564a42fda24623f8594d2388f4e0"
+        }
+      ]
+    },
+    {
+      "id": "card-stellar-forge-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/stellar-forge/front.webp"
+          },
+          "byteSize": 526748,
+          "sha256": "23f5abbe9fe0623208b465401d335971292636c10bf506feb17213fcee14e838"
+        }
+      ]
+    },
+    {
+      "id": "card-veil-of-the-dark-moon-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/veil-of-the-dark-moon/front.webp"
+          },
+          "byteSize": 462886,
+          "sha256": "1e01528349c4d18f4c70a27eaf558f12ee40f7d2778b9d553ff4fcd1407020da"
+        }
+      ]
+    },
+    {
+      "id": "card-cradle-nebula-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/cradle-nebula/front.webp"
+          },
+          "byteSize": 523046,
+          "sha256": "8ad887b51dd519bb3a985651a2e8475870684ea649f07a8e8f1f625ebb4fee2b"
+        }
+      ]
+    },
+    {
+      "id": "card-sovereign-of-orbits-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/sovereign-of-orbits/front.webp"
+          },
+          "byteSize": 541702,
+          "sha256": "d7b5066d2abb9272c6e0261d7065b5aea9dedb508bbbd54929f584a3d65edde2"
+        }
+      ]
+    },
+    {
+      "id": "card-hall-of-star-calendars-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/hall-of-star-calendars/front.webp"
+          },
+          "byteSize": 548998,
+          "sha256": "90c05e4db216560587671851908e30547d15f9d1e38be82b655c7587f950cfae"
+        }
+      ]
+    },
+    {
+      "id": "card-covenant-of-twin-stars-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/covenant-of-twin-stars/front.webp"
+          },
+          "byteSize": 544156,
+          "sha256": "eb48966781c271937257502b867caa3f58fb5c11d85eea75d8181cefbde1fff7"
+        }
+      ]
+    },
+    {
+      "id": "card-comet-helmsman-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/comet-helmsman/front.webp"
+          },
+          "byteSize": 549652,
+          "sha256": "fba377602bcf00aee4b8ef823331968fabc5c95b18baa4345ee098f628a80fab"
+        }
+      ]
+    },
+    {
+      "id": "card-keeper-of-solar-fire-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/keeper-of-solar-fire/front.webp"
+          },
+          "byteSize": 575332,
+          "sha256": "43d2839cd0be564d01bc92b4a7e69d67edeebd12bb14adad4093a3475ca6356a"
+        }
+      ]
+    },
+    {
+      "id": "card-lamp-at-aphelion-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/lamp-at-aphelion/front.webp"
+          },
+          "byteSize": 487534,
+          "sha256": "4a8d7076c2ac9e3b81d931cc885cfbaa8680250a0dc981eb411880b9931bf8ff"
+        }
+      ]
+    },
+    {
+      "id": "card-orrery-of-returning-seasons-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/orrery-of-returning-seasons/front.webp"
+          },
+          "byteSize": 581556,
+          "sha256": "b639898bb6faa1b7be86dc5d490ac9c54258c946aa5410b53f6a6c5f7899537b"
+        }
+      ]
+    },
+    {
+      "id": "card-balance-of-gravity-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/balance-of-gravity/front.webp"
+          },
+          "byteSize": 506124,
+          "sha256": "fd371f5b91775d3d661eee870625550ec35acc8d5b38e9e8376c6b868a569473"
+        }
+      ]
+    },
+    {
+      "id": "card-upside-down-observatory-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/upside-down-observatory/front.webp"
+          },
+          "byteSize": 534430,
+          "sha256": "d4f29dcaea2d5e20a6c677112c2fb96e0e3e5b041549424b3184602c785f4284"
+        }
+      ]
+    },
+    {
+      "id": "card-last-light-of-a-star-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/last-light-of-a-star/front.webp"
+          },
+          "byteSize": 521116,
+          "sha256": "5de2c82852a24262b7af29ba166cf204e885658c1162c32c985e6c9502a84dd2"
+        }
+      ]
+    },
+    {
+      "id": "card-confluence-of-starlight-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/confluence-of-starlight/front.webp"
+          },
+          "byteSize": 536164,
+          "sha256": "36b8d9de818396c2035a5866562248f41d9ba4e6e084ab5b2cbf0e970a7b7701"
+        }
+      ]
+    },
+    {
+      "id": "card-captive-of-the-dark-star-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/captive-of-the-dark-star/front.webp"
+          },
+          "byteSize": 544326,
+          "sha256": "8127f2ebb7faade1c04200b5bcee08ddc554bc8fe8b824927112ab58ad192150"
+        }
+      ]
+    },
+    {
+      "id": "card-fractured-sky-spire-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/fractured-sky-spire/front.webp"
+          },
+          "byteSize": 545128,
+          "sha256": "6d629b74c40e42d75fd95eddc57e622d8af4fda4bcf2729f260aec97434560ac"
+        }
+      ]
+    },
+    {
+      "id": "card-harbor-of-the-first-star-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/harbor-of-the-first-star/front.webp"
+          },
+          "byteSize": 544586,
+          "sha256": "77870818106b636593e082a777671cf1e6090a5985ababe6f620c19713e42341"
+        }
+      ]
+    },
+    {
+      "id": "card-sea-of-wandering-moons-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/sea-of-wandering-moons/front.webp"
+          },
+          "byteSize": 462016,
+          "sha256": "f719f0054af812c6fd2809569afd99e58c5cfd7be20bf67a67a984e4348cf46f"
+        }
+      ]
+    },
+    {
+      "id": "card-garden-of-the-young-sun-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/garden-of-the-young-sun/front.webp"
+          },
+          "byteSize": 580444,
+          "sha256": "7dfd82233d405d5b7b67660d835e0d4f83de0913556db0ca3fedaf36afc69c01"
+        }
+      ]
+    },
+    {
+      "id": "card-summons-of-the-pulsar-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/summons-of-the-pulsar/front.webp"
+          },
+          "byteSize": 543144,
+          "sha256": "7ac08478724e327f6b7dc1c069840590af6e51e27197a5431a1f817886f5790e"
+        }
+      ]
+    },
+    {
+      "id": "card-crown-of-galaxies-front",
+      "contentVersion": 2,
+      "status": "available",
+      "kind": "card-front",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/crown-of-galaxies/front.webp"
+          },
+          "byteSize": 549628,
+          "sha256": "8aeeecf064097fecc756a24ac1b63a0820240e474e372d8a8b6c28cf008772e8"
+        }
+      ]
+    },
+    {
+      "id": "card-celestial-arcana-vol-1-back",
+      "contentVersion": 1,
+      "status": "available",
+      "kind": "card-back",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/celestial-arcana-vol-1/back.webp"
+          },
+          "byteSize": 531088,
+          "sha256": "085a1319d5b104e6ddef4bed4bc3d11c3aa68bacf3a4fd4ab0b01647081a7698"
+        }
+      ]
+    },
+    {
+      "id": "pack-celestial-arcana-vol-1-cover",
+      "contentVersion": 1,
+      "status": "available",
+      "kind": "pack-cover",
+      "defaultVariantId": "display-local",
+      "variants": [
+        {
+          "id": "display-local",
+          "usage": "display",
+          "mimeType": "image/webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "type": "local",
+            "rootId": "sites-public",
+            "path": "cards/celestial-arcana-vol-1/back.webp"
+          },
+          "byteSize": 531088,
+          "sha256": "085a1319d5b104e6ddef4bed4bc3d11c3aa68bacf3a4fd4ab0b01647081a7698"
         }
       ]
     }

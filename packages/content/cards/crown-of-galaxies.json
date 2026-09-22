@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "crown-of-galaxies",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "銀河の環冠"
+  },
+  "subtitle": {
+    "ja-JP": "異なる光が、一つの巡りを結ぶ"
+  },
+  "archetypeId": "world",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "world",
+    "crown-of-galaxies"
+  ],
+  "manifestationForm": "object",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "completion",
+    "integrated-wholeness",
+    "belonging"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "異なる渦を保つ銀河の環と、完成した円形の床に立つ旅人",
+        "centralParadox": "旅が一巡したと分かるとき、環の外へ続く道も見えてくる",
+        "lightAspects": [
+          "一つの完了",
+          "経験の統合",
+          "違いを含む帰属"
+        ],
+        "shadowAspects": [
+          "完成への固執",
+          "終わりの回避",
+          "閉じた一体感"
+        ],
+        "lore": "旅人が最後の石を置くと、床の円は初めて全体の模様を表した。頭上の銀河も、一つずつ異なる渦のまま環を結んでいる。旅人はしばらくそこに座り、やがて環の切れ目から続く道に気付いた。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "完了",
+            "統合",
+            "帰属"
+          ],
+          "core": "積み重ねた経験が一つの形へまとまり、区切りを受け取れる時期。異なる部分の役割を認めることで、自分の居場所と次の出発点が見える。",
+          "advice": "完了の条件を確かめ、成果を共有してから振り返りと休息の時間を取る。",
+          "warning": "完成を、今後いっさい変わらない状態と考えない。"
+        },
+        "reversed": {
+          "mode": "delayed",
+          "keywords": [
+            "未完感",
+            "閉鎖",
+            "完璧待ち"
+          ],
+          "core": "十分な区切りがあるのに、細部への不満や次への不安から終えられずにいる。まとまりを守るために違いを排除している場合もある。",
+          "advice": "必要な完了条件と追加した理想を分け、終える日を一つ決める。",
+          "warning": "所属するために、自分と周囲の違いを消さない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "納品と引き継ぎ",
+          "advice": "合意した完了条件を確認し、残る改善は次の仕事へ分ける。"
+        },
+        "relationships": {
+          "focus": "共に歩いた経験",
+          "advice": "互いの貢献と違いを言葉にし、一つの節目を祝う。"
+        },
+        "creativity": {
+          "focus": "作品の完成",
+          "advice": "主題を満たしているか確かめ、仕上げの追加に締切を置く。"
+        },
+        "self": {
+          "focus": "経験を自分のものにすること",
+          "advice": "一巡して得たものを三つ記し、次の予定の前に休む。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-crown-of-galaxies-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "異なる渦を保つ銀河の環と、完成した円形の床に立つ旅人。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cradle-nebula",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "星雲のゆりかご"
+  },
+  "subtitle": {
+    "ja-JP": "育つ速さの違いを包む場所"
+  },
+  "archetypeId": "empress",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "empress",
+    "cradle-nebula"
+  ],
+  "manifestationForm": "place",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "nurturing-abundance",
+    "embodied-creativity",
+    "growth"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "若い星々を抱く色鮮やかな星雲と、光の種を育てる庭師",
+        "centralParadox": "成長を望むほど、育つものの速さを自分では決められなくなる",
+        "lightAspects": [
+          "養育と豊かさ",
+          "身体を通した創造",
+          "成長を待つ余裕"
+        ],
+        "shadowAspects": [
+          "過保護",
+          "与え過ぎ",
+          "成果のせかし"
+        ],
+        "lore": "星雲の庭師は、まだ暗い種にも場所を残す。早く輝く星と、長く雲に隠れる星を同じ物差しで測らない。庭を豊かにするのは光の数だけでなく、互いを焼かない間隔でもある。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "育成",
+            "滋養",
+            "実り"
+          ],
+          "core": "育ちつつあるものに、時間、材料、休息を与えることで実りが増える。自分の感覚と相手の反応を確かめながら世話を続ける。",
+          "advice": "育てたい一つに必要な支えを尋ね、今週続けられる量で用意する。",
+          "warning": "尽くす側が消耗し切る配分を、豊かさと呼ばない。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "過保護",
+            "消耗",
+            "催促"
+          ],
+          "core": "世話の量が相手の必要を越え、成長の余地と自分の休息を奪っている。実りを急ぐほど関わりが重くなる。",
+          "advice": "手を出す前に助けが必要か確認し、任せる範囲と自分の休みを決める。",
+          "warning": "返事や成果を、与えたものへの当然の見返りにしない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "人や企画を育てる環境",
+          "advice": "担当者が自分で試す時間と材料を確保する。"
+        },
+        "relationships": {
+          "focus": "世話と自立の両立",
+          "advice": "してほしいことを聞き、頼まれていない支援を一つ減らす。"
+        },
+        "creativity": {
+          "focus": "感覚から育つ作品",
+          "advice": "素材に実際に触れ、手に馴染む表現を試す。"
+        },
+        "self": {
+          "focus": "生活の土台を満たすこと",
+          "advice": "予定を一つ空け、食事や休息に時間を戻す。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-cradle-nebula-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "若い星々を抱く色鮮やかな星雲と、光の種を育てる庭師。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

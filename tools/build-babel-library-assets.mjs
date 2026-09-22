@@ -84,13 +84,13 @@ function getSourceFileName(assetId, sourceNames) {
   return matchingNames[0];
 }
 
-async function getBuildTargets(catalog, sourceDirectory, repositoryRoot) {
+async function getBuildTargets(catalog, sourceDirectory, repositoryRoot, assetIds) {
   const rootsById = new Map(catalog.assetRoots.map((root) => [root.id, root]));
   const sourceNames = await readdir(sourceDirectory);
   const targets = [];
 
   for (const asset of catalog.assets) {
-    if (asset.kind !== "card-front") {
+    if (asset.kind !== "card-front" || !assetIds.has(asset.id)) {
       continue;
     }
     const variant = asset.variants.find((item) => item.id === asset.defaultVariantId);
@@ -123,12 +123,18 @@ export async function buildBabelLibraryAssets({
   repositoryRoot = defaultRepositoryRoot,
   sourceDirectory = path.join(repositoryRoot, "cards", "babel-library"),
   contentDirectory = path.join(repositoryRoot, "packages", "content"),
+  packId = "knowledge-arcana-vol-1",
   ffmpegPath = "ffmpeg",
   ffprobePath = "ffprobe"
 } = {}) {
   const catalogPath = path.join(contentDirectory, "assets", "assets.json");
   const catalog = await readJson(catalogPath);
-  const targets = await getBuildTargets(catalog, sourceDirectory, repositoryRoot);
+  const pack = await readJson(path.join(contentDirectory, "packs", packId + ".json"));
+  const assetIds = new Set(pack.cardIds.map((id) => "card-" + id + "-front"));
+  const targets = await getBuildTargets(catalog, sourceDirectory, repositoryRoot, assetIds);
+  if (targets.length !== assetIds.size) {
+    throw new Error(packId + ": one or more card-front assets are missing from the catalog.");
+  }
   if (targets.length === 0) {
     throw new Error("No local WebP card-front assets were found in the catalog.");
   }
@@ -197,12 +203,15 @@ export async function buildBabelLibraryAssets({
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === modulePath) {
-  buildBabelLibraryAssets()
+  buildBabelLibraryAssets({
+    packId: process.argv[2] || "knowledge-arcana-vol-1",
+    ...(process.argv[3] ? { sourceDirectory: path.resolve(process.argv[3]) } : {})
+  })
     .then((result) => {
       console.log(
         "Converted " +
           result.convertedAssetIds.length +
-          " Babel Library card PNGs to catalog WebP paths" +
+          " pack card PNGs to catalog WebP paths" +
           (result.catalogChanged ? " and updated the asset catalog." : ".")
       );
     })

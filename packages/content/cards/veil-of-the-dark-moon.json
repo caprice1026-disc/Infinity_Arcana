@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "veil-of-the-dark-moon",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "暗月のヴェール"
+  },
+  "subtitle": {
+    "ja-JP": "見えない輪郭に耳を澄ます"
+  },
+  "archetypeId": "high-priestess",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "high-priestess",
+    "veil-of-the-dark-moon"
+  ],
+  "manifestationForm": "person",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "intuition",
+    "hidden-knowledge",
+    "receptivity"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "暗い新月の下で、閉じた星図に手を添えるヴェールの守り手",
+        "centralParadox": "光を当て過ぎると、暗さの中でだけ感じ取れる微かな輪郭を失う",
+        "lightAspects": [
+          "静かな受容",
+          "内なる感覚",
+          "秘密を守る配慮"
+        ],
+        "shadowAspects": [
+          "沈黙への過信",
+          "思い込み",
+          "閉ざされた対話"
+        ],
+        "lore": "守り手は訪問者の前で星図を開かない。まず部屋の灯を落とし、目が暗さに慣れるまで待つ。やがて月の縁だけが見え始める。見えたものをどう読むかは、訪問者自身に委ねられる。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "直感",
+            "静観",
+            "奥行き"
+          ],
+          "core": "まだ言葉にならない違和感や関心に、急いで結論を与えず耳を傾ける時期。受け取った感覚は、確かめるための手掛かりとして扱う。",
+          "advice": "判断を短く保留し、気付いた事実とそこから感じたことを分けて書く。",
+          "warning": "直感だけで相手の意図や隠れた事情を断定しない。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "遮断",
+            "独断",
+            "聞き逃し"
+          ],
+          "core": "自分の読みを守るために、外から届く情報や内側の違和感を閉め出している。沈黙が理解を深めず距離を広げている。",
+          "advice": "一人で抱えた解釈を仮説として言葉にし、確かめられる質問を一つ作る。",
+          "warning": "すべてを話すことだけが誠実さだと考えない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "判断前の観察",
+          "advice": "会議で即答せず、不明な前提を一つ確認する。"
+        },
+        "relationships": {
+          "focus": "言葉にされていない境界",
+          "advice": "話したくない領域を尊重し、必要なことは穏やかに尋ねる。"
+        },
+        "creativity": {
+          "focus": "未成熟な着想",
+          "advice": "浮かんだ断片を評価せず記録し、翌日に読み直す。"
+        },
+        "self": {
+          "focus": "違和感の扱い",
+          "advice": "身体や気分の変化を記録し、思い込みと観察を分ける。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-veil-of-the-dark-moon-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "暗い新月の下で、閉じた星図に手を添えるヴェールの守り手。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

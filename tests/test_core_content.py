@@ -10,7 +10,7 @@ class CoreContentTests(unittest.TestCase):
     def test_loads_manifest_content_and_spreads(self):
         content = load_content(Path("packages/content"))
         self.assertEqual(len(content.archetypes), 22)
-        self.assertEqual(len(content.cards), 22)
+        self.assertEqual(len(content.cards), 44)
         self.assertEqual({"single-card", "past-present-future", "situation-obstacle-advice"}, set(content.spreads))
 
     def test_card_filters_apply_domain_pack_status_and_publication_window(self):

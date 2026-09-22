@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "unbound-comet",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "軌道を持たない彗星"
+  },
+  "subtitle": {
+    "ja-JP": "まだ名のない空へ踏み出す光"
+  },
+  "archetypeId": "fool",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "fool",
+    "unbound-comet"
+  ],
+  "manifestationForm": "object",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "new-beginning",
+    "openness",
+    "leap-into-unknown"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "整った軌道の輪を離れ、暗い空へ長い尾を引く彗星",
+        "centralParadox": "進む先を確かめるには、見慣れた周回から一度離れなければならない",
+        "lightAspects": [
+          "未知への好奇心",
+          "身軽な出発",
+          "試して学ぶ姿勢"
+        ],
+        "shadowAspects": [
+          "準備の放棄",
+          "刺激への逃避",
+          "帰路の見失い"
+        ],
+        "lore": "星々が同じ道を巡る夜、一つの彗星だけが輪の切れ目を通った。尾には故郷の氷が残っている。行き先はまだないが、戻る目印を一つずつ残しながら進んでいく。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "出発",
+            "余白",
+            "探索"
+          ],
+          "core": "まだ答えのない選択にも、小さく踏み出して確かめる余地がある。経験不足を隠すより、学ぶ姿勢を持って新しい環境に触れる。",
+          "advice": "撤退できる範囲を決め、気になることを今日一度だけ試す。",
+          "warning": "自由を理由に、必要な準備や周囲への連絡を省かない。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "無計画",
+            "逃避",
+            "散漫"
+          ],
+          "core": "新しさを追うたびに出発し直し、経験を次の判断へ結び付けられていない。離れることが目的になっている。",
+          "advice": "直近で始めたことを一つ選び、途中の成果と離れたい理由を書き出す。",
+          "warning": "不安の消失を待って動けなくなる反動にも気を付ける。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "未経験の役割への挑戦",
+          "advice": "期間と相談先を決め、小さな担当から引き受ける。"
+        },
+        "relationships": {
+          "focus": "決め付けを離れた出会い",
+          "advice": "初対面の相手には一つ質問し、答えを聞いてから距離を決める。"
+        },
+        "creativity": {
+          "focus": "制作の最初の試み",
+          "advice": "完成形を固定する前に、一枚の試作を作る。"
+        },
+        "self": {
+          "focus": "慣れた生活の外にある可能性",
+          "advice": "日常の道順を一つ変え、何に惹かれたか記録する。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-unbound-comet-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "整った軌道の輪を離れ、暗い空へ長い尾を引く彗星。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

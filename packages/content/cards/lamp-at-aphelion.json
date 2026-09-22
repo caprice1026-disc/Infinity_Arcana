@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "lamp-at-aphelion",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "遠日点の灯"
+  },
+  "subtitle": {
+    "ja-JP": "遠ざかって見つける、自分の灯り"
+  },
+  "archetypeId": "hermit",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "hermit",
+    "lamp-at-aphelion"
+  ],
+  "manifestationForm": "object",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "solitary-inquiry",
+    "inner-guidance",
+    "earned-wisdom"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "遠い氷の世界で、旅人の足元だけを照らす小さな灯",
+        "centralParadox": "遠くまで見通す答えを求めた者が、足元の数歩を照らす灯を持ち帰る",
+        "lightAspects": [
+          "一人で考える時間",
+          "経験からの洞察",
+          "内なる判断基準"
+        ],
+        "shadowAspects": [
+          "孤立の固定",
+          "考え過ぎ",
+          "助言の拒絶"
+        ],
+        "lore": "旅人は太陽が点に見える場所まで歩いた。そこで見つけた灯は、空全体を明るくするほど強くない。それでも次の一歩には足りた。旅人は帰り道で、その灯の持ち方を尋ねる者に教える。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "内省",
+            "探究",
+            "手応え"
+          ],
+          "core": "周囲の声から少し距離を取り、自分の経験を丁寧に検討する時期。静かな探究で得た基準が、次の判断を支える。",
+          "advice": "連絡を休む短い時間を確保し、いまの問いを一つだけ掘り下げる。",
+          "warning": "一人で考える時間に区切りを付け、必要な関係へ戻る道を残す。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "孤立",
+            "堂々巡り",
+            "拒絶"
+          ],
+          "core": "考えを深めるための距離が、反応を受け取らない閉じこもりに変わっている。確信が得られるまで戻れず、問いだけが増えている。",
+          "advice": "途中の考えを信頼できる一人へ話し、具体的な反応を一つ受け取る。",
+          "warning": "未完成な考えを見せることを、失敗と同一視しない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "経験からの振り返り",
+          "advice": "会議を増やす前に、一件の実績と判断理由を整理する。"
+        },
+        "relationships": {
+          "focus": "自分の気持ちを確かめる距離",
+          "advice": "一人になる目的と戻る時期を伝えてから時間を取る。"
+        },
+        "creativity": {
+          "focus": "作品固有の問い",
+          "advice": "参考作品を見る手を止め、自分が残したい一点を書く。"
+        },
+        "self": {
+          "focus": "判断の基準",
+          "advice": "最近よかった選択を一つ振り返り、何を頼りにしたか確かめる。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-lamp-at-aphelion-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "遠い氷の世界で、旅人の足元だけを照らす小さな灯。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

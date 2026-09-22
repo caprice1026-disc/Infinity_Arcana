@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hall-of-star-calendars",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "星暦の聖堂"
+  },
+  "subtitle": {
+    "ja-JP": "同じ空を学び、次へ伝える"
+  },
+  "archetypeId": "hierophant",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "hierophant",
+    "hall-of-star-calendars"
+  ],
+  "manifestationForm": "place",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "shared-tradition",
+    "transmitted-knowledge",
+    "initiation"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "古い天球儀を囲み、星暦の読み方を学ぶ師と弟子たち",
+        "centralParadox": "受け継いだ暦を守るには、新しい空に照らして読み直さなければならない",
+        "lightAspects": [
+          "共有された知恵",
+          "学びの継承",
+          "共同体への参加"
+        ],
+        "shadowAspects": [
+          "権威への依存",
+          "形式の固定",
+          "異論の排除"
+        ],
+        "lore": "聖堂では、師も弟子も同じ窓から星を見る。古い暦と空がずれた日は、どちらが誤ったかを役職で決めない。観測の手順を確かめ、新しい注記を次の世代へ残す。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "継承",
+            "学習",
+            "作法"
+          ],
+          "core": "先人の手順や共同体の知恵を学ぶことで、自分だけでは見落とす基礎を得られる。形式の背後にある目的も一緒に受け取る。",
+          "advice": "信頼できる手順を一つ実践し、その手順が必要な理由を確かめる。",
+          "warning": "伝統の長さだけを、現在も適切である根拠にしない。"
+        },
+        "reversed": {
+          "mode": "distorted",
+          "keywords": [
+            "形骸化",
+            "追従",
+            "門戸閉鎖"
+          ],
+          "core": "教わった形を守ることが目的になり、経験からの疑問や新しい参加者を遠ざけている。学びが正解の暗記へ縮んでいる。",
+          "advice": "疑問を具体的な事例にして相談し、規則の目的と例外を聞く。",
+          "warning": "反発するためだけに、役立つ基礎まで捨てない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "技術と手順の引き継ぎ",
+          "advice": "操作だけでなく、その順番にする理由を一つ添える。"
+        },
+        "relationships": {
+          "focus": "共有する慣習",
+          "advice": "家族や仲間の習慣について、続けたい理由を話す。"
+        },
+        "creativity": {
+          "focus": "伝統からの学習",
+          "advice": "一つの技法を再現してから、自分の変更点を加える。"
+        },
+        "self": {
+          "focus": "学びの居場所",
+          "advice": "質問を受け止めてもらえる学習の場へ参加する。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-hall-of-star-calendars-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "古い天球儀を囲み、星暦の読み方を学ぶ師と弟子たち。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

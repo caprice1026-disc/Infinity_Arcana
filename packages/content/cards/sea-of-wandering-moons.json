@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "sea-of-wandering-moons",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "惑い月の海"
+  },
+  "subtitle": {
+    "ja-JP": "映るものと、そこにあるものの間"
+  },
+  "archetypeId": "moon",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "moon",
+    "sea-of-wandering-moons"
+  ],
+  "manifestationForm": "place",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "ambiguity",
+    "subconscious-imagery",
+    "uncertain-path"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "霧の月明かりと複数の反射の道を進む、小さな銀の舟",
+        "centralParadox": "進路を照らす月明かりが、水面ではいくつもの道に分かれてしまう",
+        "lightAspects": [
+          "曖昧さへの感受性",
+          "想像の深さ",
+          "不確かな道での慎重さ"
+        ],
+        "shadowAspects": [
+          "恐れの投影",
+          "早合点",
+          "確証探し"
+        ],
+        "lore": "海には月が一つ、道は幾つも映る。舟の人は一番明るい反射を追いかけず、岸の低い標と波の向きを確かめる。霧が晴れるまで、答えの出ない部分を残したまま漕いでいく。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "曖昧",
+            "夢想",
+            "手探り"
+          ],
+          "core": "情報や感情が揺れ、見えたものをそのまま事実と決めにくい時期。想像や不安を手掛かりにしながら、確かめられる目印を頼りに進む。",
+          "advice": "確認済みのことと想像していることを分け、小さな事実を一つ確かめる。",
+          "warning": "恐れを未来の予告や、相手が欺いている証拠にしない。"
+        },
+        "reversed": {
+          "mode": "distorted",
+          "keywords": [
+            "疑念",
+            "混線",
+            "断定"
+          ],
+          "core": "曖昧さに耐えられず、安心できる説明や恐ろしい説明へ飛び付いている。同じ不安を裏付ける情報ばかり集めている。",
+          "advice": "繰り返し確認する手を止め、別の説明が成り立つか一つ検討する。",
+          "warning": "不安が薄れただけで、事実確認まで済んだと思わない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "不明な要件や噂",
+          "advice": "決まっている点と未決事項を分け、担当者に確認する。"
+        },
+        "relationships": {
+          "focus": "相手の反応の読み取り",
+          "advice": "返信の遅さだけで理由を決めず、必要なら穏やかに尋ねる。"
+        },
+        "creativity": {
+          "focus": "曖昧さを使った表現",
+          "advice": "説明し切らない部分と、伝える目印を意図して分ける。"
+        },
+        "self": {
+          "focus": "夢や気分との距離",
+          "advice": "印象を記録し、現実に確かめられたこととは欄を分ける。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-sea-of-wandering-moons-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "霧の月明かりと複数の反射の道を進む、小さな銀の舟。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

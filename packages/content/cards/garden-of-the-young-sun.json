@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "garden-of-the-young-sun",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "若き太陽の庭"
+  },
+  "subtitle": {
+    "ja-JP": "見える喜びを、分かち合う朝"
+  },
+  "archetypeId": "sun",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "sun",
+    "garden-of-the-young-sun"
+  ],
+  "manifestationForm": "place",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "clarity",
+    "vitality",
+    "shared-joy"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "若い太陽の下、実りを分け合う人々と緑の庭",
+        "centralParadox": "明るさを分け合う庭には、眩しさから休める木陰も必要になる",
+        "lightAspects": [
+          "明瞭な理解",
+          "生命力",
+          "共有する喜び"
+        ],
+        "shadowAspects": [
+          "楽観の押し付け",
+          "見せるための成功",
+          "休息の軽視"
+        ],
+        "lore": "若い太陽の庭には、果実の数を隠す壁がない。人々は実ったものを並べ、足りない場所へ分ける。日が高くなると皆で木陰へ移り、明るさを楽しむ力も休ませる。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "明快",
+            "活力",
+            "歓び"
+          ],
+          "core": "状況が見通せることで行動しやすくなり、得た成果を周囲と喜び合える。分かりやすい共有が、次の協力や意欲を生む。",
+          "advice": "できたことと今の課題を率直に伝え、小さな成果を一緒に味わう。",
+          "warning": "明るい面を語るときも、疲れている人の感じ方を否定しない。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "空元気",
+            "過信",
+            "眩惑"
+          ],
+          "core": "順調に見せることに力を使い、不都合な点や疲労を認めにくくなっている。喜びが他者との比較や評価に依存している。",
+          "advice": "よかった点を一つ認めた上で、隠している負担を具体的に共有する。",
+          "warning": "常に元気でいることを、周囲や自分へ課さない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "成果を共有すること",
+          "advice": "何ができたかを具体例で示し、貢献した人を明記する。"
+        },
+        "relationships": {
+          "focus": "一緒に楽しむ時間",
+          "advice": "相手の好みを聞き、無理のない喜びを共有する。"
+        },
+        "creativity": {
+          "focus": "伝わる表現",
+          "advice": "意図が伝わる箇所を確かめ、不要な説明を削る。"
+        },
+        "self": {
+          "focus": "自分の実感を味わうこと",
+          "advice": "比較を見る時間を減らし、今日できたことを一つ楽しむ。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-garden-of-the-young-sun-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "若い太陽の下、実りを分け合う人々と緑の庭。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

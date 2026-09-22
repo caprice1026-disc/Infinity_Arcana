@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "stellar-forge",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "星光の鍛冶師"
+  },
+  "subtitle": {
+    "ja-JP": "散らばる光を一つの仕事へ"
+  },
+  "archetypeId": "magician",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "magician",
+    "stellar-forge"
+  ],
+  "manifestationForm": "person",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "focused-will",
+    "skillful-action",
+    "resource-use"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "四つの道具で星光を集め、一つの小さな星を鍛える職人",
+        "centralParadox": "遠くの光を集められても、焦点を定めなければ何も形にならない",
+        "lightAspects": [
+          "意志の集中",
+          "手持ちの力の活用",
+          "技術による実現"
+        ],
+        "shadowAspects": [
+          "技巧への陶酔",
+          "目的の分散",
+          "実力以上の演出"
+        ],
+        "lore": "鍛冶師の台には、古い鏡、糸、槌、器が置かれている。どれも単独では星を生まない。職人は道具の向きと手順を揃え、散らばる光が一つの芯を結ぶまで手を動かす。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "集中",
+            "手腕",
+            "具体化"
+          ],
+          "core": "使える技術と資源を一つの目的へ集めることで、構想を形にできる。遠い理想より、いま扱える道具の組み合わせが出発点になる。",
+          "advice": "完成させたいものを一文で定め、手持ちの道具だけで最小の形を作る。",
+          "warning": "できると説明することを、実際に作ることの代わりにしない。"
+        },
+        "reversed": {
+          "mode": "distorted",
+          "keywords": [
+            "空回り",
+            "誇示",
+            "未着手"
+          ],
+          "core": "技術の説明や準備に力を使い、目的に届く作業が進んでいない。器用さが優先順位の曖昧さを隠している。",
+          "advice": "増やしてきた道具を一旦置き、未完の工程を一つだけ終える。",
+          "warning": "他者を感心させるために、出来上がりを大きく約束しない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "実行力と資源の配分",
+          "advice": "成果物と期限を一つに絞り、既存の技術で着手する。"
+        },
+        "relationships": {
+          "focus": "気持ちを行動へ変えること",
+          "advice": "相手に伝えたい意図を、守れる小さな約束として示す。"
+        },
+        "creativity": {
+          "focus": "技法と表現目的の一致",
+          "advice": "目立つ技法を一つ外し、作品の主題が残るか確かめる。"
+        },
+        "self": {
+          "focus": "自分で動かせる範囲",
+          "advice": "他人の反応を待つ前に、自分だけで進められる一工程を行う。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-stellar-forge-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "四つの道具で星光を集め、一つの小さな星を鍛える職人。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

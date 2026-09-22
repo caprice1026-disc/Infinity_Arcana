@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "last-light-of-a-star",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "星の終灯"
+  },
+  "subtitle": {
+    "ja-JP": "終わった形から、次の空へ"
+  },
+  "archetypeId": "death",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "death",
+    "last-light-of-a-star"
+  ],
+  "manifestationForm": "event",
+  "rarity": "legendary",
+  "inheritedThemeIds": [
+    "necessary-ending",
+    "transition",
+    "release"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "古い星が外層を放ち、小さな光と広がる星雲を残す光景",
+        "centralParadox": "星の形を守ろうとすれば、新しい材料へ変わる道を閉ざしてしまう",
+        "lightAspects": [
+          "必要な終わり",
+          "移行の受容",
+          "手放し"
+        ],
+        "shadowAspects": [
+          "終結への抵抗",
+          "惰性の継続",
+          "空白への恐れ"
+        ],
+        "lore": "年老いた星の灯守は、殻を繋ぎ止める綱を外した。残った小さな光の周りに、かつての衣が雲となって広がる。灯守は消えた形を惜しみながら、空いた場所へ次の器を置いた。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "終結",
+            "移行",
+            "解放"
+          ],
+          "core": "役割を終えた形に区切りを付けることで、次の段階へ使える時間と力が戻る。惜しむ気持ちを持ちながら、終える行動を取ってよい。",
+          "advice": "終了させるものを一つ選び、記録と引き継ぎを済ませて閉じる。",
+          "warning": "この象徴を、現実の死や災厄の予告として扱わない。"
+        },
+        "reversed": {
+          "mode": "blocked",
+          "keywords": [
+            "延命",
+            "未練",
+            "持ち越し"
+          ],
+          "core": "終わったことを認められず、維持の負担だけを抱えている。新しい形を探す前に、区切れない理由を確かめる必要がある。",
+          "advice": "失いたくない価値と、維持しなくてよい形を分けて書く。",
+          "warning": "終えられない自分を責めて、勢いで全てを捨てない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "役割や企画の終了",
+          "advice": "終了条件を確認し、成果と残務を引き継ぐ。"
+        },
+        "relationships": {
+          "focus": "関係の変化の受容",
+          "advice": "続けられない約束を曖昧にせず、変更を伝える。"
+        },
+        "creativity": {
+          "focus": "古い制作方針の整理",
+          "advice": "完成しない旧稿を保管し、今の作品から切り離す。"
+        },
+        "self": {
+          "focus": "習慣との別れ",
+          "advice": "役立たなくなった習慣を一つ止め、空いた時間の使い道を決める。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-last-light-of-a-star-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "古い星が外層を放ち、小さな光と広がる星雲を残す光景。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}

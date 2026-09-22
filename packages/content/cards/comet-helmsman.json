@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "comet-helmsman",
+  "contentVersion": 1,
+  "status": "available",
+  "defaultLocale": "ja-JP",
+  "name": {
+    "ja-JP": "彗星の御者"
+  },
+  "subtitle": {
+    "ja-JP": "異なる推進力を一つの進路へ"
+  },
+  "archetypeId": "chariot",
+  "domainIds": [
+    "celestial"
+  ],
+  "packIds": [
+    "celestial-arcana-vol-1"
+  ],
+  "tags": [
+    "celestial",
+    "chariot",
+    "comet-helmsman"
+  ],
+  "manifestationForm": "person",
+  "rarity": "rare",
+  "inheritedThemeIds": [
+    "directed-will",
+    "integrated-forces",
+    "forward-motion"
+  ],
+  "localizedContent": {
+    "ja-JP": {
+      "concept": {
+        "centralSymbol": "青と金の彗星を揃え、隕石の間へ進む天の御者",
+        "centralParadox": "勢いが強いほど、どこへ向かうかを細かく確かめる必要がある",
+        "lightAspects": [
+          "意志ある前進",
+          "力の統率",
+          "進路の維持"
+        ],
+        "shadowAspects": [
+          "暴走",
+          "対立の抑え込み",
+          "目的の置き去り"
+        ],
+        "lore": "二つの彗星は同じ速さでは走らない。御者は遅い方を切り捨てず、手綱の長さを変えて進路を揃える。速さを競う道から離れたとき、遠くの狭い門を通れることもある。"
+      },
+      "meanings": {
+        "upright": {
+          "keywords": [
+            "統率",
+            "進路",
+            "前進"
+          ],
+          "core": "異なる要求や力を一つの目標へ揃えれば、障害のある道でも前進できる。勢いを保ちつつ、進路を自分で選び直す。",
+          "advice": "次の到達点を一つ決め、競合する作業に順番を付ける。",
+          "warning": "早く進むことが、本来の目的に近づくことと一致しているか確かめる。"
+        },
+        "reversed": {
+          "mode": "excess",
+          "keywords": [
+            "暴走",
+            "衝突",
+            "迷走"
+          ],
+          "core": "複数の要求へ同時に応えようとして、速く動くほど進路が乱れている。意志の強さだけでは調整できなくなっている。",
+          "advice": "一度速度を落とし、今週進めることと止めることを明示する。",
+          "warning": "勝つために周囲の異論や限界を無視しない。"
+        }
+      },
+      "contexts": {
+        "work": {
+          "focus": "複数課題の推進",
+          "advice": "目的に直結する工程を先にし、同時進行を一つ減らす。"
+        },
+        "relationships": {
+          "focus": "生活の進め方を揃えること",
+          "advice": "双方の予定から共通の到達点を一つ決める。"
+        },
+        "creativity": {
+          "focus": "完成へ向かう制作",
+          "advice": "新しい案を足す前に、仕上げる順序を決める。"
+        },
+        "self": {
+          "focus": "行動の方向",
+          "advice": "忙しさではなく、望む状態へ近づいたかを振り返る。"
+        }
+      }
+    }
+  },
+  "visual": {
+    "primaryAssetId": "card-comet-helmsman-front",
+    "alternateAssetIds": [],
+    "cardBackAssetId": "card-celestial-arcana-vol-1-back",
+    "altText": {
+      "ja-JP": "青と金の彗星を揃え、隕石の間へ進む天の御者。金と紺の星月模様の枠に囲まれている。"
+    },
+    "presentation": {
+      "aspectRatio": "2:3",
+      "fit": "cover",
+      "focalPoint": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    }
+  },
+  "publication": {
+    "publishedAt": null,
+    "retiredAt": null
+  }
+}
